@@ -640,165 +640,6 @@
       </child>
 
       <child>
-	<widget class="GtkButton" id="ButtonProposeList">
-	  <property name="width_request">160</property>
-	  <property name="height_request">32</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-
-	  <child>
-	    <widget class="GtkAlignment" id="alignment15">
-	      <property name="visible">True</property>
-	      <property name="xalign">0.5</property>
-	      <property name="yalign">0.5</property>
-	      <property name="xscale">0</property>
-	      <property name="yscale">0</property>
-	      <property name="top_padding">0</property>
-	      <property name="bottom_padding">0</property>
-	      <property name="left_padding">0</property>
-	      <property name="right_padding">0</property>
-
-	      <child>
-		<widget class="GtkHBox" id="hbox14">
-		  <property name="visible">True</property>
-		  <property name="homogeneous">False</property>
-		  <property name="spacing">2</property>
-
-		  <child>
-		    <widget class="GtkImage" id="image30">
-		      <property name="visible">True</property>
-		      <property name="stock">gtk-new</property>
-		      <property name="icon_size">4</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		    </widget>
-		    <packing>
-		      <property name="padding">0</property>
-		      <property name="expand">False</property>
-		      <property name="fill">False</property>
-		    </packing>
-		  </child>
-
-		  <child>
-		    <widget class="GtkLabel" id="label158">
-		      <property name="visible">True</property>
-		      <property name="label" translatable="yes">  Proposer</property>
-		      <property name="use_underline">True</property>
-		      <property name="use_markup">False</property>
-		      <property name="justify">GTK_JUSTIFY_LEFT</property>
-		      <property name="wrap">False</property>
-		      <property name="selectable">False</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-		      <property name="width_chars">-1</property>
-		      <property name="single_line_mode">False</property>
-		      <property name="angle">0</property>
-		    </widget>
-		    <packing>
-		      <property name="padding">0</property>
-		      <property name="expand">False</property>
-		      <property name="fill">False</property>
-		    </packing>
-		  </child>
-		</widget>
-	      </child>
-	    </widget>
-	  </child>
-	</widget>
-	<packing>
-	  <property name="x">496</property>
-	  <property name="y">648</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="ButtonPreviousWindowListMain">
-	  <property name="width_request">160</property>
-	  <property name="height_request">32</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-
-	  <child>
-	    <widget class="GtkAlignment" id="alignment14">
-	      <property name="visible">True</property>
-	      <property name="xalign">0.5</property>
-	      <property name="yalign">0.5</property>
-	      <property name="xscale">0</property>
-	      <property name="yscale">0</property>
-	      <property name="top_padding">0</property>
-	      <property name="bottom_padding">0</property>
-	      <property name="left_padding">0</property>
-	      <property name="right_padding">0</property>
-
-	      <child>
-		<widget class="GtkHBox" id="hbox13">
-		  <property name="visible">True</property>
-		  <property name="homogeneous">False</property>
-		  <property name="spacing">2</property>
-
-		  <child>
-		    <widget class="GtkImage" id="image29">
-		      <property name="visible">True</property>
-		      <property name="stock">gtk-go-back</property>
-		      <property name="icon_size">4</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		    </widget>
-		    <packing>
-		      <property name="padding">0</property>
-		      <property name="expand">False</property>
-		      <property name="fill">False</property>
-		    </packing>
-		  </child>
-
-		  <child>
-		    <widget class="GtkLabel" id="label157">
-		      <property name="visible">True</property>
-		      <property name="label" translatable="yes">  Precedent
-</property>
-		      <property name="use_underline">True</property>
-		      <property name="use_markup">False</property>
-		      <property name="justify">GTK_JUSTIFY_LEFT</property>
-		      <property name="wrap">False</property>
-		      <property name="selectable">False</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-		      <property name="width_chars">-1</property>
-		      <property name="single_line_mode">False</property>
-		      <property name="angle">0</property>
-		    </widget>
-		    <packing>
-		      <property name="padding">0</property>
-		      <property name="expand">False</property>
-		      <property name="fill">False</property>
-		    </packing>
-		  </child>
-		</widget>
-	      </child>
-	    </widget>
-	  </child>
-	</widget>
-	<packing>
-	  <property name="x">312</property>
-	  <property name="y">648</property>
-	</packing>
-      </child>
-
-      <child>
 	<widget class="GtkCheckButton" id="CheckButtonOrientationCriteriaWindowListMain">
 	  <property name="width_request">126</property>
 	  <property name="height_request">24</property>
@@ -970,6 +811,182 @@
 	<packing>
 	  <property name="x">16</property>
 	  <property name="y">8</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="ButtonPreviousWindowListMain">
+	  <property name="width_request">160</property>
+	  <property name="height_request">32</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+
+	  <child>
+	    <widget class="GtkAlignment" id="alignment14">
+	      <property name="visible">True</property>
+	      <property name="xalign">0.5</property>
+	      <property name="yalign">0.5</property>
+	      <property name="xscale">0</property>
+	      <property name="yscale">0</property>
+	      <property name="top_padding">0</property>
+	      <property name="bottom_padding">0</property>
+	      <property name="left_padding">0</property>
+	      <property name="right_padding">0</property>
+
+	      <child>
+		<widget class="GtkHBox" id="hbox13">
+		  <property name="visible">True</property>
+		  <property name="homogeneous">False</property>
+		  <property name="spacing">2</property>
+
+		  <child>
+		    <widget class="GtkImage" id="image29">
+		      <property name="visible">True</property>
+		      <property name="stock">gtk-go-back</property>
+		      <property name="icon_size">4</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		    </widget>
+		    <packing>
+		      <property name="padding">0</property>
+		      <property name="expand">False</property>
+		      <property name="fill">False</property>
+		    </packing>
+		  </child>
+
+		  <child>
+		    <widget class="GtkLabel" id="label157">
+		      <property name="visible">True</property>
+		      <property name="label" translatable="yes">  Precedent
+</property>
+		      <property name="use_underline">True</property>
+		      <property name="use_markup">False</property>
+		      <property name="justify">GTK_JUSTIFY_LEFT</property>
+		      <property name="wrap">False</property>
+		      <property name="selectable">False</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+		      <property name="width_chars">-1</property>
+		      <property name="single_line_mode">False</property>
+		      <property name="angle">0</property>
+		    </widget>
+		    <packing>
+		      <property name="padding">0</property>
+		      <property name="expand">False</property>
+		      <property name="fill">False</property>
+		    </packing>
+		  </child>
+		</widget>
+	      </child>
+	    </widget>
+	  </child>
+	</widget>
+	<packing>
+	  <property name="x">24</property>
+	  <property name="y">648</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="ButtonProposeList">
+	  <property name="width_request">160</property>
+	  <property name="height_request">32</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+
+	  <child>
+	    <widget class="GtkAlignment" id="alignment15">
+	      <property name="visible">True</property>
+	      <property name="xalign">0.5</property>
+	      <property name="yalign">0.5</property>
+	      <property name="xscale">0</property>
+	      <property name="yscale">0</property>
+	      <property name="top_padding">0</property>
+	      <property name="bottom_padding">0</property>
+	      <property name="left_padding">0</property>
+	      <property name="right_padding">0</property>
+
+	      <child>
+		<widget class="GtkHBox" id="hbox14">
+		  <property name="visible">True</property>
+		  <property name="homogeneous">False</property>
+		  <property name="spacing">2</property>
+
+		  <child>
+		    <widget class="GtkImage" id="image30">
+		      <property name="visible">True</property>
+		      <property name="stock">gtk-new</property>
+		      <property name="icon_size">4</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		    </widget>
+		    <packing>
+		      <property name="padding">0</property>
+		      <property name="expand">False</property>
+		      <property name="fill">False</property>
+		    </packing>
+		  </child>
+
+		  <child>
+		    <widget class="GtkLabel" id="label158">
+		      <property name="visible">True</property>
+		      <property name="label" translatable="yes">  Proposer</property>
+		      <property name="use_underline">True</property>
+		      <property name="use_markup">False</property>
+		      <property name="justify">GTK_JUSTIFY_LEFT</property>
+		      <property name="wrap">False</property>
+		      <property name="selectable">False</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+		      <property name="width_chars">-1</property>
+		      <property name="single_line_mode">False</property>
+		      <property name="angle">0</property>
+		    </widget>
+		    <packing>
+		      <property name="padding">0</property>
+		      <property name="expand">False</property>
+		      <property name="fill">False</property>
+		    </packing>
+		  </child>
+		</widget>
+	      </child>
+	    </widget>
+	  </child>
+	</widget>
+	<packing>
+	  <property name="x">808</property>
+	  <property name="y">648</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="ButtonVoteWindowListMain">
+	  <property name="width_request">160</property>
+	  <property name="height_request">48</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Voter</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	</widget>
+	<packing>
+	  <property name="x">424</property>
+	  <property name="y">632</property>
 	</packing>
       </child>
     </widget>
@@ -4024,7 +4041,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	      <property name="is_important">False</property>
 
 	      <child>
-		<widget class="GtkButton" id="ShowUser">
+		<widget class="GtkButton" id="BouttonShowUser">
 		  <property name="width_request">120</property>
 		  <property name="height_request">50</property>
 		  <property name="visible">True</property>
@@ -4112,7 +4129,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	      <property name="is_important">False</property>
 
 	      <child>
-		<widget class="GtkButton" id="ModifyUser">
+		<widget class="GtkButton" id="BouttonModifyUser">
 		  <property name="width_request">120</property>
 		  <property name="height_request">50</property>
 		  <property name="visible">True</property>
@@ -4200,7 +4217,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	      <property name="is_important">False</property>
 
 	      <child>
-		<widget class="GtkButton" id="DelateUser">
+		<widget class="GtkButton" id="BouttonDeleteUser">
 		  <property name="width_request">120</property>
 		  <property name="height_request">50</property>
 		  <property name="visible">True</property>
@@ -4304,7 +4321,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	      <property name="window_placement">GTK_CORNER_TOP_LEFT</property>
 
 	      <child>
-		<widget class="GtkTreeView" id="treeview4">
+		<widget class="GtkTreeView" id="TreeviewUser">
 		  <property name="visible">True</property>
 		  <property name="can_focus">True</property>
 		  <property name="headers_visible">True</property>
@@ -4347,185 +4364,6 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	<packing>
 	  <property name="x">40</property>
 	  <property name="y">242</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="Id">
-	  <property name="width_request">150</property>
-	  <property name="height_request">35</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">#123456789</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">690</property>
-	  <property name="y">70</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="Name">
-	  <property name="width_request">150</property>
-	  <property name="height_request">35</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Nom &amp; Prenom</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">700</property>
-	  <property name="y">30</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="SearchUser">
-	  <property name="width_request">150</property>
-	  <property name="height_request">45</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Rechercher</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	</widget>
-	<packing>
-	  <property name="x">240</property>
-	  <property name="y">238</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkRadioButton" id="SearchRoleUser">
-	  <property name="width_request">124</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Role</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	</widget>
-	<packing>
-	  <property name="x">504</property>
-	  <property name="y">184</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkRadioButton" id="SearchDateUser">
-	  <property name="width_request">150</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Date de naissance</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	  <property name="group">SearchRoleUser</property>
-	</widget>
-	<packing>
-	  <property name="x">344</property>
-	  <property name="y">184</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkRadioButton" id="SearchSexeUser">
-	  <property name="width_request">124</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Sexe
-</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	  <property name="group">SearchRoleUser</property>
-	</widget>
-	<packing>
-	  <property name="x">272</property>
-	  <property name="y">184</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkRadioButton" id="SearchNameUser">
-	  <property name="width_request">124</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Nom </property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	  <property name="group">SearchRoleUser</property>
-	</widget>
-	<packing>
-	  <property name="x">200</property>
-	  <property name="y">184</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="searchTypeUser">
-	  <property name="width_request">150</property>
-	  <property name="height_request">35</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Type de recherche  </property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">34</property>
-	  <property name="y">176</property>
 	</packing>
       </child>
 
@@ -4611,7 +4449,59 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkImage" id="image13">
+	<widget class="GtkLabel" id="Id">
+	  <property name="width_request">150</property>
+	  <property name="height_request">35</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">#123456789</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">690</property>
+	  <property name="y">70</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="Name">
+	  <property name="width_request">150</property>
+	  <property name="height_request">35</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Nom &amp; Prenom</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">700</property>
+	  <property name="y">30</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkImage" id="Img">
 	  <property name="width_request">100</property>
 	  <property name="height_request">100</property>
 	  <property name="visible">True</property>
@@ -4623,7 +4513,117 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	</widget>
 	<packing>
 	  <property name="x">880</property>
-	  <property name="y">20</property>
+	  <property name="y">24</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="searchTypeUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">35</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Type de recherche  </property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">34</property>
+	  <property name="y">176</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkRadioButton" id="SearchNameUser">
+	  <property name="width_request">124</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Nom </property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	</widget>
+	<packing>
+	  <property name="x">200</property>
+	  <property name="y">184</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkRadioButton" id="SearchSexeUser">
+	  <property name="width_request">124</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Sexe
+</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <property name="group">SearchNameUser</property>
+	</widget>
+	<packing>
+	  <property name="x">272</property>
+	  <property name="y">184</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkRadioButton" id="SearchDateUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Date de naissance</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <property name="group">SearchNameUser</property>
+	</widget>
+	<packing>
+	  <property name="x">344</property>
+	  <property name="y">184</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkRadioButton" id="SearchRoleUser">
+	  <property name="width_request">124</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Role</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <property name="group">SearchNameUser</property>
+	</widget>
+	<packing>
+	  <property name="x">504</property>
+	  <property name="y">184</property>
 	</packing>
       </child>
 
@@ -4674,7 +4674,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 		  <child>
 		    <widget class="GtkLabel" id="label173">
 		      <property name="visible">True</property>
-		      <property name="label" translatable="yes">Precedent</property>
+		      <property name="label" translatable="yes">Précédent</property>
 		      <property name="use_underline">True</property>
 		      <property name="use_markup">False</property>
 		      <property name="justify">GTK_JUSTIFY_LEFT</property>
@@ -4705,6 +4705,23 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="y">625</property>
 	</packing>
       </child>
+
+      <child>
+	<widget class="GtkButton" id="SearchUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">45</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Rechercher</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	</widget>
+	<packing>
+	  <property name="x">240</property>
+	  <property name="y">238</property>
+	</packing>
+      </child>
     </widget>
   </child>
 </widget>
@@ -4732,33 +4749,167 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       <property name="visible">True</property>
 
       <child>
-	<widget class="GtkLabel" id="Nom">
-	  <property name="width_request">150</property>
-	  <property name="height_request">40</property>
+	<widget class="GtkEntry" id="WriteNomAddUser">
+	  <property name="width_request">200</property>
+	  <property name="height_request">35</property>
 	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Nom</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
+	  <property name="can_focus">True</property>
+	  <property name="editable">True</property>
+	  <property name="visibility">True</property>
+	  <property name="max_length">0</property>
+	  <property name="text" translatable="yes"></property>
+	  <property name="has_frame">True</property>
+	  <property name="invisible_char">•</property>
+	  <property name="activates_default">False</property>
 	</widget>
 	<packing>
-	  <property name="x">20</property>
-	  <property name="y">20</property>
+	  <property name="x">200</property>
+	  <property name="y">24</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkLabel" id="CIN">
+	<widget class="GtkEntry" id="WritePasseAddUser">
+	  <property name="width_request">200</property>
+	  <property name="height_request">35</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="editable">True</property>
+	  <property name="visibility">True</property>
+	  <property name="max_length">0</property>
+	  <property name="text" translatable="yes"></property>
+	  <property name="has_frame">True</property>
+	  <property name="invisible_char">•</property>
+	  <property name="activates_default">False</property>
+	</widget>
+	<packing>
+	  <property name="x">200</property>
+	  <property name="y">473</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkEntry" id="WriteCINAddUser">
+	  <property name="width_request">200</property>
+	  <property name="height_request">35</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="editable">True</property>
+	  <property name="visibility">True</property>
+	  <property name="max_length">0</property>
+	  <property name="text" translatable="yes"></property>
+	  <property name="has_frame">True</property>
+	  <property name="invisible_char">•</property>
+	  <property name="activates_default">False</property>
+	</widget>
+	<packing>
+	  <property name="x">200</property>
+	  <property name="y">73</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkEntry" id="WriteNationaliteAddUser">
+	  <property name="width_request">200</property>
+	  <property name="height_request">35</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="editable">True</property>
+	  <property name="visibility">True</property>
+	  <property name="max_length">0</property>
+	  <property name="text" translatable="yes"></property>
+	  <property name="has_frame">True</property>
+	  <property name="invisible_char">•</property>
+	  <property name="activates_default">False</property>
+	</widget>
+	<packing>
+	  <property name="x">680</property>
+	  <property name="y">123</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkEntry" id="WriteIdAddUser">
+	  <property name="width_request">200</property>
+	  <property name="height_request">35</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="editable">True</property>
+	  <property name="visibility">True</property>
+	  <property name="max_length">0</property>
+	  <property name="text" translatable="yes"></property>
+	  <property name="has_frame">True</property>
+	  <property name="invisible_char">•</property>
+	  <property name="activates_default">False</property>
+	</widget>
+	<packing>
+	  <property name="x">680</property>
+	  <property name="y">73</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkEntry" id="WritePrenomAddUser">
+	  <property name="width_request">200</property>
+	  <property name="height_request">35</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="editable">True</property>
+	  <property name="visibility">True</property>
+	  <property name="max_length">0</property>
+	  <property name="text" translatable="yes"></property>
+	  <property name="has_frame">True</property>
+	  <property name="invisible_char">•</property>
+	  <property name="activates_default">False</property>
+	</widget>
+	<packing>
+	  <property name="x">680</property>
+	  <property name="y">23</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkEntry" id="WriteAdresseAddUser">
+	  <property name="width_request">200</property>
+	  <property name="height_request">35</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="editable">True</property>
+	  <property name="visibility">True</property>
+	  <property name="max_length">0</property>
+	  <property name="text" translatable="yes"></property>
+	  <property name="has_frame">True</property>
+	  <property name="invisible_char">•</property>
+	  <property name="activates_default">False</property>
+	</widget>
+	<packing>
+	  <property name="x">200</property>
+	  <property name="y">123</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkSpinButton" id="WriteRoleAddUser">
+	  <property name="width_request">200</property>
+	  <property name="height_request">35</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="climb_rate">0</property>
+	  <property name="digits">0</property>
+	  <property name="numeric">False</property>
+	  <property name="update_policy">GTK_UPDATE_ALWAYS</property>
+	  <property name="snap_to_ticks">False</property>
+	  <property name="wrap">False</property>
+	  <property name="adjustment">0 0 100 1 10 10</property>
+	</widget>
+	<packing>
+	  <property name="x">200</property>
+	  <property name="y">384</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="CINAddUser">
 	  <property name="width_request">150</property>
 	  <property name="height_request">40</property>
 	  <property name="visible">True</property>
@@ -4784,7 +4935,33 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkLabel" id="Adresse">
+	<widget class="GtkLabel" id="NomAddUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Nom</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">20</property>
+	  <property name="y">20</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="AdresseAddUser">
 	  <property name="width_request">150</property>
 	  <property name="height_request">40</property>
 	  <property name="visible">True</property>
@@ -4804,13 +4981,13 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="angle">0</property>
 	</widget>
 	<packing>
-	  <property name="x">20</property>
+	  <property name="x">24</property>
 	  <property name="y">120</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkLabel" id="Prenom">
+	<widget class="GtkLabel" id="PrenomAddUser">
 	  <property name="width_request">150</property>
 	  <property name="height_request">40</property>
 	  <property name="visible">True</property>
@@ -4836,7 +5013,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkLabel" id="Idantifiant">
+	<widget class="GtkLabel" id="IdAddUser">
 	  <property name="width_request">150</property>
 	  <property name="height_request">40</property>
 	  <property name="visible">True</property>
@@ -4862,7 +5039,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkLabel" id="Nationalite">
+	<widget class="GtkLabel" id="NationaliteAddUser">
 	  <property name="width_request">150</property>
 	  <property name="height_request">40</property>
 	  <property name="visible">True</property>
@@ -4888,213 +5065,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkEntry" id="entry12">
-	  <property name="width_request">200</property>
-	  <property name="height_request">35</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="editable">True</property>
-	  <property name="visibility">True</property>
-	  <property name="max_length">0</property>
-	  <property name="text" translatable="yes"></property>
-	  <property name="has_frame">True</property>
-	  <property name="invisible_char">•</property>
-	  <property name="activates_default">False</property>
-	</widget>
-	<packing>
-	  <property name="x">200</property>
-	  <property name="y">24</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkEntry" id="entry13">
-	  <property name="width_request">200</property>
-	  <property name="height_request">35</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="editable">True</property>
-	  <property name="visibility">True</property>
-	  <property name="max_length">0</property>
-	  <property name="text" translatable="yes"></property>
-	  <property name="has_frame">True</property>
-	  <property name="invisible_char">•</property>
-	  <property name="activates_default">False</property>
-	</widget>
-	<packing>
-	  <property name="x">200</property>
-	  <property name="y">473</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkEntry" id="entry14">
-	  <property name="width_request">200</property>
-	  <property name="height_request">35</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="editable">True</property>
-	  <property name="visibility">True</property>
-	  <property name="max_length">0</property>
-	  <property name="text" translatable="yes"></property>
-	  <property name="has_frame">True</property>
-	  <property name="invisible_char">•</property>
-	  <property name="activates_default">False</property>
-	</widget>
-	<packing>
-	  <property name="x">200</property>
-	  <property name="y">73</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkEntry" id="entry15">
-	  <property name="width_request">200</property>
-	  <property name="height_request">35</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="editable">True</property>
-	  <property name="visibility">True</property>
-	  <property name="max_length">0</property>
-	  <property name="text" translatable="yes"></property>
-	  <property name="has_frame">True</property>
-	  <property name="invisible_char">•</property>
-	  <property name="activates_default">False</property>
-	</widget>
-	<packing>
-	  <property name="x">680</property>
-	  <property name="y">123</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkEntry" id="entry16">
-	  <property name="width_request">200</property>
-	  <property name="height_request">35</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="editable">True</property>
-	  <property name="visibility">True</property>
-	  <property name="max_length">0</property>
-	  <property name="text" translatable="yes"></property>
-	  <property name="has_frame">True</property>
-	  <property name="invisible_char">•</property>
-	  <property name="activates_default">False</property>
-	</widget>
-	<packing>
-	  <property name="x">680</property>
-	  <property name="y">73</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkEntry" id="entry17">
-	  <property name="width_request">200</property>
-	  <property name="height_request">35</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="editable">True</property>
-	  <property name="visibility">True</property>
-	  <property name="max_length">0</property>
-	  <property name="text" translatable="yes"></property>
-	  <property name="has_frame">True</property>
-	  <property name="invisible_char">•</property>
-	  <property name="activates_default">False</property>
-	</widget>
-	<packing>
-	  <property name="x">680</property>
-	  <property name="y">23</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkEntry" id="entry18">
-	  <property name="width_request">200</property>
-	  <property name="height_request">35</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="editable">True</property>
-	  <property name="visibility">True</property>
-	  <property name="max_length">0</property>
-	  <property name="text" translatable="yes"></property>
-	  <property name="has_frame">True</property>
-	  <property name="invisible_char">•</property>
-	  <property name="activates_default">False</property>
-	</widget>
-	<packing>
-	  <property name="x">200</property>
-	  <property name="y">123</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkCalendar" id="calendar1">
-	  <property name="width_request">216</property>
-	  <property name="height_request">160</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="display_options">GTK_CALENDAR_SHOW_HEADING|GTK_CALENDAR_SHOW_DAY_NAMES|GTK_CALENDAR_SHOW_DETAILS</property>
-	</widget>
-	<packing>
-	  <property name="x">200</property>
-	  <property name="y">190</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="DateDeNaissance">
-	  <property name="width_request">150</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Date de naissance</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">20</property>
-	  <property name="y">240</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="MotDePasse">
-	  <property name="width_request">150</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">MotDePasse</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">20</property>
-	  <property name="y">470</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="Role">
+	<widget class="GtkLabel" id="RoleAddUser">
 	  <property name="width_request">150</property>
 	  <property name="height_request">40</property>
 	  <property name="visible">True</property>
@@ -5120,11 +5091,11 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkLabel" id="Sexe">
+	<widget class="GtkLabel" id="PasseAddUser">
 	  <property name="width_request">150</property>
 	  <property name="height_request">40</property>
 	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Sexe</property>
+	  <property name="label" translatable="yes">Mot de passe</property>
 	  <property name="use_underline">False</property>
 	  <property name="use_markup">False</property>
 	  <property name="justify">GTK_JUSTIFY_LEFT</property>
@@ -5140,54 +5111,13 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="angle">0</property>
 	</widget>
 	<packing>
-	  <property name="x">500</property>
-	  <property name="y">240</property>
+	  <property name="x">20</property>
+	  <property name="y">470</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkRadioButton" id="Femme">
-	  <property name="width_request">116</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Femme</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	</widget>
-	<packing>
-	  <property name="x">685</property>
-	  <property name="y">250</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkRadioButton" id="Homme">
-	  <property name="width_request">116</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Homme</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	  <property name="group">Femme</property>
-	</widget>
-	<packing>
-	  <property name="x">785</property>
-	  <property name="y">250</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="Vote">
+	<widget class="GtkLabel" id="VoteAddUser">
 	  <property name="width_request">150</property>
 	  <property name="height_request">40</property>
 	  <property name="visible">True</property>
@@ -5207,18 +5137,44 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="angle">0</property>
 	</widget>
 	<packing>
-	  <property name="x">20</property>
-	  <property name="y">420</property>
+	  <property name="x">24</property>
+	  <property name="y">424</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkCheckButton" id="Vote">
-	  <property name="width_request">118</property>
+	<widget class="GtkLabel" id="SexeAddUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Sexe</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">496</property>
+	  <property name="y">240</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkRadioButton" id="FemmeAddUser">
+	  <property name="width_request">116</property>
 	  <property name="height_request">24</property>
 	  <property name="visible">True</property>
 	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Voté</property>
+	  <property name="label" translatable="yes">Femme</property>
 	  <property name="use_underline">True</property>
 	  <property name="relief">GTK_RELIEF_NORMAL</property>
 	  <property name="focus_on_click">True</property>
@@ -5227,13 +5183,86 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="draw_indicator">True</property>
 	</widget>
 	<packing>
-	  <property name="x">200</property>
-	  <property name="y">428</property>
+	  <property name="x">685</property>
+	  <property name="y">250</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkCheckButton" id="VoteBlanche">
+	<widget class="GtkRadioButton" id="HommeAddUser">
+	  <property name="width_request">116</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Homme</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <property name="group">FemmeAddUser</property>
+	</widget>
+	<packing>
+	  <property name="x">785</property>
+	  <property name="y">250</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="BouttonPrecedentAddUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">50</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Précédent</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	</widget>
+	<packing>
+	  <property name="x">100</property>
+	  <property name="y">600</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="BouttonAjouterAddUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">50</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Ajouter</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	</widget>
+	<packing>
+	  <property name="x">728</property>
+	  <property name="y">600</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkCheckButton" id="NonVoteAddUser">
+	  <property name="width_request">118</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Non voté</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	</widget>
+	<packing>
+	  <property name="x">400</property>
+	  <property name="y">432</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkCheckButton" id="Vote0AddUser">
 	  <property name="width_request">118</property>
 	  <property name="height_request">24</property>
 	  <property name="visible">True</property>
@@ -5253,12 +5282,12 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkCheckButton" id="NonVote">
+	<widget class="GtkCheckButton" id="Vote1AddUser">
 	  <property name="width_request">118</property>
 	  <property name="height_request">24</property>
 	  <property name="visible">True</property>
 	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Non voté</property>
+	  <property name="label" translatable="yes">Voté</property>
 	  <property name="use_underline">True</property>
 	  <property name="relief">GTK_RELIEF_NORMAL</property>
 	  <property name="focus_on_click">True</property>
@@ -5267,60 +5296,172 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="draw_indicator">True</property>
 	</widget>
 	<packing>
-	  <property name="x">400</property>
+	  <property name="x">200</property>
 	  <property name="y">428</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkSpinButton" id="Role">
-	  <property name="width_request">200</property>
-	  <property name="height_request">35</property>
+	<widget class="GtkSpinButton" id="WriteJourAddUser">
+	  <property name="width_request">60</property>
+	  <property name="height_request">30</property>
 	  <property name="visible">True</property>
 	  <property name="can_focus">True</property>
-	  <property name="climb_rate">0</property>
+	  <property name="climb_rate">1</property>
 	  <property name="digits">0</property>
 	  <property name="numeric">False</property>
 	  <property name="update_policy">GTK_UPDATE_ALWAYS</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
-	  <property name="adjustment">0 0 100 1 10 10</property>
+	  <property name="adjustment">1 0 100 1 10 10</property>
 	</widget>
 	<packing>
 	  <property name="x">200</property>
-	  <property name="y">380</property>
+	  <property name="y">280</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkButton" id="Precedent">
-	  <property name="width_request">150</property>
-	  <property name="height_request">50</property>
+	<widget class="GtkSpinButton" id="WriteAnneeAddUser">
+	  <property name="width_request">80</property>
+	  <property name="height_request">30</property>
+	  <property name="visible">True</property>
 	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Precedent</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
+	  <property name="climb_rate">1</property>
+	  <property name="digits">0</property>
+	  <property name="numeric">False</property>
+	  <property name="update_policy">GTK_UPDATE_ALWAYS</property>
+	  <property name="snap_to_ticks">False</property>
+	  <property name="wrap">False</property>
+	  <property name="adjustment">1 0 100 1 10 10</property>
 	</widget>
 	<packing>
-	  <property name="x">100</property>
-	  <property name="y">600</property>
+	  <property name="x">352</property>
+	  <property name="y">280</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkButton" id="Ajouter">
-	  <property name="width_request">150</property>
-	  <property name="height_request">50</property>
+	<widget class="GtkSpinButton" id="WriteMoiAddUser">
+	  <property name="width_request">60</property>
+	  <property name="height_request">30</property>
+	  <property name="visible">True</property>
 	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Ajouter</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
+	  <property name="climb_rate">1</property>
+	  <property name="digits">0</property>
+	  <property name="numeric">False</property>
+	  <property name="update_policy">GTK_UPDATE_ALWAYS</property>
+	  <property name="snap_to_ticks">False</property>
+	  <property name="wrap">False</property>
+	  <property name="adjustment">1 0 100 1 10 10</property>
 	</widget>
 	<packing>
-	  <property name="x">728</property>
-	  <property name="y">600</property>
+	  <property name="x">272</property>
+	  <property name="y">280</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="JourAddUser">
+	  <property name="width_request">60</property>
+	  <property name="height_request">20</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Jour</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">200</property>
+	  <property name="y">240</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="MoisAddUser">
+	  <property name="width_request">60</property>
+	  <property name="height_request">20</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Mois</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">270</property>
+	  <property name="y">240</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="AnneeAddUser">
+	  <property name="width_request">60</property>
+	  <property name="height_request">20</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Année</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">360</property>
+	  <property name="y">240</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="DateAddUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Date de naissance</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">20</property>
+	  <property name="y">275</property>
 	</packing>
       </child>
     </widget>
@@ -5350,163 +5491,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       <property name="visible">True</property>
 
       <child>
-	<widget class="GtkLabel" id="label70">
-	  <property name="width_request">150</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Nom</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">20</property>
-	  <property name="y">20</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="label71">
-	  <property name="width_request">150</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">C.I.N</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">20</property>
-	  <property name="y">70</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="label72">
-	  <property name="width_request">150</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Adresse</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">20</property>
-	  <property name="y">120</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="label73">
-	  <property name="width_request">150</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Prenom</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">500</property>
-	  <property name="y">20</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="label74">
-	  <property name="width_request">150</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Identidiant</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">500</property>
-	  <property name="y">70</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="label75">
-	  <property name="width_request">150</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Nationalite</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">500</property>
-	  <property name="y">120</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkEntry" id="entry19">
+	<widget class="GtkEntry" id="WriteNomModifyUser">
 	  <property name="width_request">200</property>
 	  <property name="height_request">35</property>
 	  <property name="visible">True</property>
@@ -5526,7 +5511,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkEntry" id="entry20">
+	<widget class="GtkEntry" id="WritePasseModifyUser">
 	  <property name="width_request">200</property>
 	  <property name="height_request">35</property>
 	  <property name="visible">True</property>
@@ -5546,7 +5531,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkEntry" id="entry21">
+	<widget class="GtkEntry" id="WriteCINModifyUser">
 	  <property name="width_request">200</property>
 	  <property name="height_request">35</property>
 	  <property name="visible">True</property>
@@ -5566,7 +5551,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkEntry" id="entry22">
+	<widget class="GtkEntry" id="WriteNationaliteModifyUser">
 	  <property name="width_request">200</property>
 	  <property name="height_request">35</property>
 	  <property name="visible">True</property>
@@ -5581,12 +5566,12 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	</widget>
 	<packing>
 	  <property name="x">680</property>
-	  <property name="y">123</property>
+	  <property name="y">128</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkEntry" id="entry23">
+	<widget class="GtkEntry" id="WriteIdModifyUser">
 	  <property name="width_request">200</property>
 	  <property name="height_request">35</property>
 	  <property name="visible">True</property>
@@ -5601,12 +5586,12 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	</widget>
 	<packing>
 	  <property name="x">680</property>
-	  <property name="y">73</property>
+	  <property name="y">72</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkEntry" id="entry24">
+	<widget class="GtkEntry" id="WritePrenomModifyUser">
 	  <property name="width_request">200</property>
 	  <property name="height_request">35</property>
 	  <property name="visible">True</property>
@@ -5626,7 +5611,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkEntry" id="entry25">
+	<widget class="GtkEntry" id="WriteAdresseModifyUser">
 	  <property name="width_request">200</property>
 	  <property name="height_request">35</property>
 	  <property name="visible">True</property>
@@ -5646,25 +5631,31 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkCalendar" id="calendar2">
-	  <property name="width_request">216</property>
-	  <property name="height_request">160</property>
+	<widget class="GtkSpinButton" id="WriteRoleModifyUser">
+	  <property name="width_request">200</property>
+	  <property name="height_request">35</property>
 	  <property name="visible">True</property>
 	  <property name="can_focus">True</property>
-	  <property name="display_options">GTK_CALENDAR_SHOW_HEADING|GTK_CALENDAR_SHOW_DAY_NAMES|GTK_CALENDAR_SHOW_DETAILS</property>
+	  <property name="climb_rate">0</property>
+	  <property name="digits">0</property>
+	  <property name="numeric">False</property>
+	  <property name="update_policy">GTK_UPDATE_ALWAYS</property>
+	  <property name="snap_to_ticks">False</property>
+	  <property name="wrap">False</property>
+	  <property name="adjustment">0 0 100 1 10 10</property>
 	</widget>
 	<packing>
 	  <property name="x">200</property>
-	  <property name="y">190</property>
+	  <property name="y">380</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkLabel" id="label76">
+	<widget class="GtkLabel" id="NomModifyUser">
 	  <property name="width_request">150</property>
 	  <property name="height_request">40</property>
 	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Date de naissance</property>
+	  <property name="label" translatable="yes">Nom</property>
 	  <property name="use_underline">False</property>
 	  <property name="use_markup">False</property>
 	  <property name="justify">GTK_JUSTIFY_LEFT</property>
@@ -5680,17 +5671,17 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="angle">0</property>
 	</widget>
 	<packing>
-	  <property name="x">20</property>
-	  <property name="y">240</property>
+	  <property name="x">16</property>
+	  <property name="y">24</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkLabel" id="label77">
+	<widget class="GtkLabel" id="CINModifyUser">
 	  <property name="width_request">150</property>
 	  <property name="height_request">40</property>
 	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">MotDePasse</property>
+	  <property name="label" translatable="yes">C.I.N</property>
 	  <property name="use_underline">False</property>
 	  <property name="use_markup">False</property>
 	  <property name="justify">GTK_JUSTIFY_LEFT</property>
@@ -5706,13 +5697,39 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="angle">0</property>
 	</widget>
 	<packing>
-	  <property name="x">20</property>
-	  <property name="y">470</property>
+	  <property name="x">24</property>
+	  <property name="y">72</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkLabel" id="label78">
+	<widget class="GtkLabel" id="AdresseModifyUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Adresse</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">24</property>
+	  <property name="y">120</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="RoleModifyUser">
 	  <property name="width_request">150</property>
 	  <property name="height_request">40</property>
 	  <property name="visible">True</property>
@@ -5738,53 +5755,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkLabel" id="label79">
-	  <property name="width_request">150</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Sexe</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">500</property>
-	  <property name="y">240</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkRadioButton" id="radiobutton9">
-	  <property name="width_request">116</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Femme</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	</widget>
-	<packing>
-	  <property name="x">685</property>
-	  <property name="y">250</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="label80">
+	<widget class="GtkLabel" id="VoteModifyUser">
 	  <property name="width_request">150</property>
 	  <property name="height_request">40</property>
 	  <property name="visible">True</property>
@@ -5810,7 +5781,209 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkCheckButton" id="checkbutton7">
+	<widget class="GtkLabel" id="PasseModifyUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Mot de passe</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">24</property>
+	  <property name="y">472</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="PrenomModifyUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Prenom</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">504</property>
+	  <property name="y">16</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="IdModifyUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Identidiant</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">504</property>
+	  <property name="y">72</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="NationaliteModifyUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Nationalite</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">500</property>
+	  <property name="y">120</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="SexeModifyUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Sexe</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">504</property>
+	  <property name="y">240</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkRadioButton" id="FemmeModifyUser">
+	  <property name="width_request">116</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Femme</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	</widget>
+	<packing>
+	  <property name="x">685</property>
+	  <property name="y">250</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkRadioButton" id="HommeModifyUser">
+	  <property name="width_request">116</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Homme</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	</widget>
+	<packing>
+	  <property name="x">785</property>
+	  <property name="y">250</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="BouttonModifierUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">50</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Modifier</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	</widget>
+	<packing>
+	  <property name="x">728</property>
+	  <property name="y">600</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="BouttonPrecedentModifyUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">50</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Précédent</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	</widget>
+	<packing>
+	  <property name="x">100</property>
+	  <property name="y">600</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkCheckButton" id="Vote1ModifyUser">
 	  <property name="width_request">118</property>
 	  <property name="height_request">24</property>
 	  <property name="visible">True</property>
@@ -5830,7 +6003,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkCheckButton" id="checkbutton8">
+	<widget class="GtkCheckButton" id="Vote0ModifyUser">
 	  <property name="width_request">118</property>
 	  <property name="height_request">24</property>
 	  <property name="visible">True</property>
@@ -5850,7 +6023,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkCheckButton" id="checkbutton9">
+	<widget class="GtkCheckButton" id="NonModifyUser">
 	  <property name="width_request">118</property>
 	  <property name="height_request">24</property>
 	  <property name="visible">True</property>
@@ -5865,79 +6038,171 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	</widget>
 	<packing>
 	  <property name="x">400</property>
-	  <property name="y">428</property>
+	  <property name="y">424</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkSpinButton" id="spinbutton3">
-	  <property name="width_request">200</property>
-	  <property name="height_request">35</property>
+	<widget class="GtkLabel" id="JourModifyUser">
+	  <property name="width_request">60</property>
+	  <property name="height_request">20</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Jour</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">200</property>
+	  <property name="y">240</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="MoisModifyUser">
+	  <property name="width_request">60</property>
+	  <property name="height_request">20</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Mois</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">270</property>
+	  <property name="y">240</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkSpinButton" id="WriteJourModifyUser">
+	  <property name="width_request">60</property>
+	  <property name="height_request">30</property>
 	  <property name="visible">True</property>
 	  <property name="can_focus">True</property>
-	  <property name="climb_rate">0</property>
+	  <property name="climb_rate">1</property>
 	  <property name="digits">0</property>
 	  <property name="numeric">False</property>
 	  <property name="update_policy">GTK_UPDATE_ALWAYS</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
-	  <property name="adjustment">0 0 100 1 10 10</property>
+	  <property name="adjustment">1 0 100 1 10 10</property>
 	</widget>
 	<packing>
 	  <property name="x">200</property>
-	  <property name="y">380</property>
+	  <property name="y">280</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkButton" id="button22">
-	  <property name="width_request">150</property>
-	  <property name="height_request">50</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Precedent</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	</widget>
-	<packing>
-	  <property name="x">100</property>
-	  <property name="y">600</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="Modifier">
-	  <property name="width_request">150</property>
-	  <property name="height_request">50</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Modifier</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	</widget>
-	<packing>
-	  <property name="x">728</property>
-	  <property name="y">600</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkRadioButton" id="radiobutton10">
-	  <property name="width_request">116</property>
-	  <property name="height_request">24</property>
+	<widget class="GtkSpinButton" id="WriteAnneeModifyUser">
+	  <property name="width_request">80</property>
+	  <property name="height_request">30</property>
 	  <property name="visible">True</property>
 	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Homme</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
+	  <property name="climb_rate">1</property>
+	  <property name="digits">0</property>
+	  <property name="numeric">False</property>
+	  <property name="update_policy">GTK_UPDATE_ALWAYS</property>
+	  <property name="snap_to_ticks">False</property>
+	  <property name="wrap">False</property>
+	  <property name="adjustment">1 0 100 1 10 10</property>
 	</widget>
 	<packing>
-	  <property name="x">785</property>
-	  <property name="y">250</property>
+	  <property name="x">352</property>
+	  <property name="y">280</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkSpinButton" id="WriteMoisModifyUser">
+	  <property name="width_request">60</property>
+	  <property name="height_request">30</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="climb_rate">1</property>
+	  <property name="digits">0</property>
+	  <property name="numeric">False</property>
+	  <property name="update_policy">GTK_UPDATE_ALWAYS</property>
+	  <property name="snap_to_ticks">False</property>
+	  <property name="wrap">False</property>
+	  <property name="adjustment">1 0 100 1 10 10</property>
+	</widget>
+	<packing>
+	  <property name="x">272</property>
+	  <property name="y">280</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="AnneeModifyUser">
+	  <property name="width_request">60</property>
+	  <property name="height_request">20</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Année</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">360</property>
+	  <property name="y">240</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="DateModifyUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Date de naissance</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">20</property>
+	  <property name="y">275</property>
 	</packing>
       </child>
     </widget>
@@ -5945,6 +6210,8 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 </widget>
 
 <widget class="GtkWindow" id="windowSucced">
+  <property name="width_request">0</property>
+  <property name="height_request">0</property>
   <property name="visible">True</property>
   <property name="title" translatable="yes">Succés</property>
   <property name="type">GTK_WINDOW_TOPLEVEL</property>
@@ -5974,24 +6241,9 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 
       <child>
 	<widget class="GtkFixed" id="fixed19">
+	  <property name="width_request">400</property>
+	  <property name="height_request">109</property>
 	  <property name="visible">True</property>
-
-	  <child>
-	    <widget class="GtkButton" id="button24">
-	      <property name="width_request">66</property>
-	      <property name="height_request">29</property>
-	      <property name="visible">True</property>
-	      <property name="can_focus">True</property>
-	      <property name="label" translatable="yes">OK</property>
-	      <property name="use_underline">True</property>
-	      <property name="relief">GTK_RELIEF_NORMAL</property>
-	      <property name="focus_on_click">True</property>
-	    </widget>
-	    <packing>
-	      <property name="x">160</property>
-	      <property name="y">80</property>
-	    </packing>
-	  </child>
 
 	  <child>
 	    <widget class="GtkLabel" id="Succes">
@@ -6036,6 +6288,23 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	      <property name="y">20</property>
 	    </packing>
 	  </child>
+
+	  <child>
+	    <widget class="GtkButton" id="button24">
+	      <property name="width_request">100</property>
+	      <property name="height_request">35</property>
+	      <property name="visible">True</property>
+	      <property name="can_focus">True</property>
+	      <property name="label" translatable="yes">OK</property>
+	      <property name="use_underline">True</property>
+	      <property name="relief">GTK_RELIEF_NORMAL</property>
+	      <property name="focus_on_click">True</property>
+	    </widget>
+	    <packing>
+	      <property name="x">150</property>
+	      <property name="y">70</property>
+	    </packing>
+	  </child>
 	</widget>
       </child>
     </widget>
@@ -6044,6 +6313,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 
 <widget class="GtkWindow" id="windowErreur">
   <property name="width_request">400</property>
+  <property name="height_request">0</property>
   <property name="visible">True</property>
   <property name="title" translatable="yes">Erreur</property>
   <property name="type">GTK_WINDOW_TOPLEVEL</property>
@@ -6073,24 +6343,9 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 
       <child>
 	<widget class="GtkFixed" id="fixed20">
+	  <property name="width_request">400</property>
+	  <property name="height_request">109</property>
 	  <property name="visible">True</property>
-
-	  <child>
-	    <widget class="GtkButton" id="button25">
-	      <property name="width_request">66</property>
-	      <property name="height_request">29</property>
-	      <property name="visible">True</property>
-	      <property name="can_focus">True</property>
-	      <property name="label" translatable="yes">OK</property>
-	      <property name="use_underline">True</property>
-	      <property name="relief">GTK_RELIEF_NORMAL</property>
-	      <property name="focus_on_click">True</property>
-	    </widget>
-	    <packing>
-	      <property name="x">160</property>
-	      <property name="y">80</property>
-	    </packing>
-	  </child>
 
 	  <child>
 	    <widget class="GtkImage" id="image15">
@@ -6135,6 +6390,23 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	      <property name="y">16</property>
 	    </packing>
 	  </child>
+
+	  <child>
+	    <widget class="GtkButton" id="button25">
+	      <property name="width_request">100</property>
+	      <property name="height_request">35</property>
+	      <property name="visible">True</property>
+	      <property name="can_focus">True</property>
+	      <property name="label" translatable="yes">OK</property>
+	      <property name="use_underline">True</property>
+	      <property name="relief">GTK_RELIEF_NORMAL</property>
+	      <property name="focus_on_click">True</property>
+	    </widget>
+	    <packing>
+	      <property name="x">150</property>
+	      <property name="y">70</property>
+	    </packing>
+	  </child>
 	</widget>
       </child>
     </widget>
@@ -6164,7 +6436,167 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       <property name="visible">True</property>
 
       <child>
-	<widget class="GtkLabel" id="label83">
+	<widget class="GtkEntry" id="WriteNomShowUser">
+	  <property name="width_request">200</property>
+	  <property name="height_request">35</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="editable">True</property>
+	  <property name="visibility">True</property>
+	  <property name="max_length">0</property>
+	  <property name="text" translatable="yes"></property>
+	  <property name="has_frame">True</property>
+	  <property name="invisible_char">•</property>
+	  <property name="activates_default">False</property>
+	</widget>
+	<packing>
+	  <property name="x">200</property>
+	  <property name="y">24</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkEntry" id="WritePasseShowUser">
+	  <property name="width_request">200</property>
+	  <property name="height_request">35</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="editable">True</property>
+	  <property name="visibility">True</property>
+	  <property name="max_length">0</property>
+	  <property name="text" translatable="yes"></property>
+	  <property name="has_frame">True</property>
+	  <property name="invisible_char">•</property>
+	  <property name="activates_default">False</property>
+	</widget>
+	<packing>
+	  <property name="x">200</property>
+	  <property name="y">473</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkEntry" id="WriteCINShowUser">
+	  <property name="width_request">200</property>
+	  <property name="height_request">35</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="editable">True</property>
+	  <property name="visibility">True</property>
+	  <property name="max_length">0</property>
+	  <property name="text" translatable="yes"></property>
+	  <property name="has_frame">True</property>
+	  <property name="invisible_char">•</property>
+	  <property name="activates_default">False</property>
+	</widget>
+	<packing>
+	  <property name="x">200</property>
+	  <property name="y">73</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkEntry" id="WriteNationaliteShowUser">
+	  <property name="width_request">200</property>
+	  <property name="height_request">35</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="editable">True</property>
+	  <property name="visibility">True</property>
+	  <property name="max_length">0</property>
+	  <property name="text" translatable="yes"></property>
+	  <property name="has_frame">True</property>
+	  <property name="invisible_char">•</property>
+	  <property name="activates_default">False</property>
+	</widget>
+	<packing>
+	  <property name="x">680</property>
+	  <property name="y">128</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkEntry" id="WriteIdShowUser">
+	  <property name="width_request">200</property>
+	  <property name="height_request">35</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="editable">True</property>
+	  <property name="visibility">True</property>
+	  <property name="max_length">0</property>
+	  <property name="text" translatable="yes"></property>
+	  <property name="has_frame">True</property>
+	  <property name="invisible_char">•</property>
+	  <property name="activates_default">False</property>
+	</widget>
+	<packing>
+	  <property name="x">680</property>
+	  <property name="y">73</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkEntry" id="WritePrenomShowUser">
+	  <property name="width_request">200</property>
+	  <property name="height_request">35</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="editable">True</property>
+	  <property name="visibility">True</property>
+	  <property name="max_length">0</property>
+	  <property name="text" translatable="yes"></property>
+	  <property name="has_frame">True</property>
+	  <property name="invisible_char">•</property>
+	  <property name="activates_default">False</property>
+	</widget>
+	<packing>
+	  <property name="x">680</property>
+	  <property name="y">23</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkEntry" id="WriteAdresseShowUser">
+	  <property name="width_request">200</property>
+	  <property name="height_request">35</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="editable">True</property>
+	  <property name="visibility">True</property>
+	  <property name="max_length">0</property>
+	  <property name="text" translatable="yes"></property>
+	  <property name="has_frame">True</property>
+	  <property name="invisible_char">•</property>
+	  <property name="activates_default">False</property>
+	</widget>
+	<packing>
+	  <property name="x">200</property>
+	  <property name="y">120</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkSpinButton" id="WriteRoleShowUser">
+	  <property name="width_request">200</property>
+	  <property name="height_request">35</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="climb_rate">0</property>
+	  <property name="digits">0</property>
+	  <property name="numeric">False</property>
+	  <property name="update_policy">GTK_UPDATE_ALWAYS</property>
+	  <property name="snap_to_ticks">False</property>
+	  <property name="wrap">False</property>
+	  <property name="adjustment">0 0 100 1 10 10</property>
+	</widget>
+	<packing>
+	  <property name="x">200</property>
+	  <property name="y">384</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="NomSĥowUser">
 	  <property name="width_request">150</property>
 	  <property name="height_request">40</property>
 	  <property name="visible">True</property>
@@ -6190,7 +6622,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkLabel" id="label84">
+	<widget class="GtkLabel" id="CINShowUser">
 	  <property name="width_request">150</property>
 	  <property name="height_request">40</property>
 	  <property name="visible">True</property>
@@ -6216,7 +6648,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkLabel" id="label85">
+	<widget class="GtkLabel" id="AdresseShowUser">
 	  <property name="width_request">150</property>
 	  <property name="height_request">40</property>
 	  <property name="visible">True</property>
@@ -6242,383 +6674,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkLabel" id="label86">
-	  <property name="width_request">150</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Prenom</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">500</property>
-	  <property name="y">20</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="label87">
-	  <property name="width_request">150</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Identidiant</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">500</property>
-	  <property name="y">70</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="label88">
-	  <property name="width_request">150</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Nationalite</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">500</property>
-	  <property name="y">120</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkEntry" id="entry26">
-	  <property name="width_request">200</property>
-	  <property name="height_request">35</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="editable">True</property>
-	  <property name="visibility">True</property>
-	  <property name="max_length">0</property>
-	  <property name="text" translatable="yes"></property>
-	  <property name="has_frame">True</property>
-	  <property name="invisible_char">•</property>
-	  <property name="activates_default">False</property>
-	</widget>
-	<packing>
-	  <property name="x">200</property>
-	  <property name="y">24</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkEntry" id="entry27">
-	  <property name="width_request">200</property>
-	  <property name="height_request">35</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="editable">True</property>
-	  <property name="visibility">True</property>
-	  <property name="max_length">0</property>
-	  <property name="text" translatable="yes"></property>
-	  <property name="has_frame">True</property>
-	  <property name="invisible_char">•</property>
-	  <property name="activates_default">False</property>
-	</widget>
-	<packing>
-	  <property name="x">200</property>
-	  <property name="y">473</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkEntry" id="entry28">
-	  <property name="width_request">200</property>
-	  <property name="height_request">35</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="editable">True</property>
-	  <property name="visibility">True</property>
-	  <property name="max_length">0</property>
-	  <property name="text" translatable="yes"></property>
-	  <property name="has_frame">True</property>
-	  <property name="invisible_char">•</property>
-	  <property name="activates_default">False</property>
-	</widget>
-	<packing>
-	  <property name="x">200</property>
-	  <property name="y">73</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkEntry" id="entry29">
-	  <property name="width_request">200</property>
-	  <property name="height_request">35</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="editable">True</property>
-	  <property name="visibility">True</property>
-	  <property name="max_length">0</property>
-	  <property name="text" translatable="yes"></property>
-	  <property name="has_frame">True</property>
-	  <property name="invisible_char">•</property>
-	  <property name="activates_default">False</property>
-	</widget>
-	<packing>
-	  <property name="x">680</property>
-	  <property name="y">123</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkEntry" id="entry30">
-	  <property name="width_request">200</property>
-	  <property name="height_request">35</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="editable">True</property>
-	  <property name="visibility">True</property>
-	  <property name="max_length">0</property>
-	  <property name="text" translatable="yes"></property>
-	  <property name="has_frame">True</property>
-	  <property name="invisible_char">•</property>
-	  <property name="activates_default">False</property>
-	</widget>
-	<packing>
-	  <property name="x">680</property>
-	  <property name="y">73</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkEntry" id="entry31">
-	  <property name="width_request">200</property>
-	  <property name="height_request">35</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="editable">True</property>
-	  <property name="visibility">True</property>
-	  <property name="max_length">0</property>
-	  <property name="text" translatable="yes"></property>
-	  <property name="has_frame">True</property>
-	  <property name="invisible_char">•</property>
-	  <property name="activates_default">False</property>
-	</widget>
-	<packing>
-	  <property name="x">680</property>
-	  <property name="y">23</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkEntry" id="entry32">
-	  <property name="width_request">200</property>
-	  <property name="height_request">35</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="editable">True</property>
-	  <property name="visibility">True</property>
-	  <property name="max_length">0</property>
-	  <property name="text" translatable="yes"></property>
-	  <property name="has_frame">True</property>
-	  <property name="invisible_char">•</property>
-	  <property name="activates_default">False</property>
-	</widget>
-	<packing>
-	  <property name="x">200</property>
-	  <property name="y">123</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkCalendar" id="calendar3">
-	  <property name="width_request">216</property>
-	  <property name="height_request">160</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="display_options">GTK_CALENDAR_SHOW_HEADING|GTK_CALENDAR_SHOW_DAY_NAMES|GTK_CALENDAR_SHOW_DETAILS</property>
-	</widget>
-	<packing>
-	  <property name="x">200</property>
-	  <property name="y">190</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="label89">
-	  <property name="width_request">150</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Date de naissance</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">20</property>
-	  <property name="y">240</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="label90">
-	  <property name="width_request">150</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">MotDePasse</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">20</property>
-	  <property name="y">470</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="label91">
-	  <property name="width_request">150</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Role</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">20</property>
-	  <property name="y">375</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="label92">
-	  <property name="width_request">150</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Sexe</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">500</property>
-	  <property name="y">240</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkRadioButton" id="radiobutton11">
-	  <property name="width_request">116</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Femme</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	</widget>
-	<packing>
-	  <property name="x">685</property>
-	  <property name="y">250</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkRadioButton" id="radiobutton12">
-	  <property name="width_request">116</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Homme</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	</widget>
-	<packing>
-	  <property name="x">785</property>
-	  <property name="y">250</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="label93">
+	<widget class="GtkLabel" id="VoteShowUser">
 	  <property name="width_request">150</property>
 	  <property name="height_request">40</property>
 	  <property name="visible">True</property>
@@ -6644,7 +6700,137 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkCheckButton" id="checkbutton10">
+	<widget class="GtkLabel" id="RoleShowUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Role</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">20</property>
+	  <property name="y">375</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="PasseShowUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Mot de passe</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">20</property>
+	  <property name="y">470</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="PrenomShowUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Prenom</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">500</property>
+	  <property name="y">20</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="IdShowUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Identidiant</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">500</property>
+	  <property name="y">70</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="NationaliteShowUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Nationalite</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">504</property>
+	  <property name="y">120</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkCheckButton" id="Vote1ShowUser">
 	  <property name="width_request">118</property>
 	  <property name="height_request">24</property>
 	  <property name="visible">True</property>
@@ -6664,7 +6850,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkCheckButton" id="checkbutton11">
+	<widget class="GtkCheckButton" id="Vote0ShowUser">
 	  <property name="width_request">118</property>
 	  <property name="height_request">24</property>
 	  <property name="visible">True</property>
@@ -6684,7 +6870,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkCheckButton" id="checkbutton12">
+	<widget class="GtkCheckButton" id="NonVoteShowUser">
 	  <property name="width_request">118</property>
 	  <property name="height_request">24</property>
 	  <property name="visible">True</property>
@@ -6704,31 +6890,77 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkSpinButton" id="spinbutton4">
-	  <property name="width_request">200</property>
-	  <property name="height_request">35</property>
+	<widget class="GtkLabel" id="SexeShowUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">40</property>
 	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="climb_rate">0</property>
-	  <property name="digits">0</property>
-	  <property name="numeric">False</property>
-	  <property name="update_policy">GTK_UPDATE_ALWAYS</property>
-	  <property name="snap_to_ticks">False</property>
+	  <property name="label" translatable="yes">Sexe</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
 	  <property name="wrap">False</property>
-	  <property name="adjustment">0 0 100 1 10 10</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
 	</widget>
 	<packing>
-	  <property name="x">200</property>
-	  <property name="y">380</property>
+	  <property name="x">500</property>
+	  <property name="y">240</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkButton" id="button26">
+	<widget class="GtkRadioButton" id="FemmeShowUser">
+	  <property name="width_request">116</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Femme</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	</widget>
+	<packing>
+	  <property name="x">685</property>
+	  <property name="y">250</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkRadioButton" id="HommeShowUser">
+	  <property name="width_request">116</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Homme</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	</widget>
+	<packing>
+	  <property name="x">785</property>
+	  <property name="y">250</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="BouttonPrecedentShowUser">
 	  <property name="width_request">150</property>
 	  <property name="height_request">50</property>
 	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Precedent</property>
+	  <property name="label" translatable="yes">Précédent</property>
 	  <property name="use_underline">True</property>
 	  <property name="relief">GTK_RELIEF_NORMAL</property>
 	  <property name="focus_on_click">True</property>
@@ -6736,6 +6968,170 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	<packing>
 	  <property name="x">100</property>
 	  <property name="y">600</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="DateShowUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Date de naissance</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">20</property>
+	  <property name="y">275</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="AnneeShowUser">
+	  <property name="width_request">60</property>
+	  <property name="height_request">20</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Année</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">360</property>
+	  <property name="y">240</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="MoisShowUser">
+	  <property name="width_request">60</property>
+	  <property name="height_request">20</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Mois</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">270</property>
+	  <property name="y">240</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="JourShowUser">
+	  <property name="width_request">60</property>
+	  <property name="height_request">20</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Jour</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">200</property>
+	  <property name="y">240</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkSpinButton" id="WriteJourShowUser">
+	  <property name="width_request">60</property>
+	  <property name="height_request">30</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="climb_rate">1</property>
+	  <property name="digits">0</property>
+	  <property name="numeric">False</property>
+	  <property name="update_policy">GTK_UPDATE_ALWAYS</property>
+	  <property name="snap_to_ticks">False</property>
+	  <property name="wrap">False</property>
+	  <property name="adjustment">1 0 100 1 10 10</property>
+	</widget>
+	<packing>
+	  <property name="x">200</property>
+	  <property name="y">280</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkSpinButton" id="WriteAnneeShowUser">
+	  <property name="width_request">80</property>
+	  <property name="height_request">30</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="climb_rate">1</property>
+	  <property name="digits">0</property>
+	  <property name="numeric">False</property>
+	  <property name="update_policy">GTK_UPDATE_ALWAYS</property>
+	  <property name="snap_to_ticks">False</property>
+	  <property name="wrap">False</property>
+	  <property name="adjustment">1 0 100 1 10 10</property>
+	</widget>
+	<packing>
+	  <property name="x">352</property>
+	  <property name="y">280</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkSpinButton" id="WriteMoisShowUser">
+	  <property name="width_request">60</property>
+	  <property name="height_request">30</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="climb_rate">1</property>
+	  <property name="digits">0</property>
+	  <property name="numeric">False</property>
+	  <property name="update_policy">GTK_UPDATE_ALWAYS</property>
+	  <property name="snap_to_ticks">False</property>
+	  <property name="wrap">False</property>
+	  <property name="adjustment">1 0 100 1 10 10</property>
+	</widget>
+	<packing>
+	  <property name="x">272</property>
+	  <property name="y">280</property>
 	</packing>
       </child>
     </widget>
@@ -7753,7 +8149,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       <property name="visible">True</property>
 
       <child>
-	<widget class="GtkEntry" id="entry48">
+	<widget class="GtkEntry" id="entry_id_ajou_election">
 	  <property name="width_request">200</property>
 	  <property name="height_request">35</property>
 	  <property name="visible">True</property>
@@ -7773,11 +8169,71 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
+	<widget class="GtkSpinButton" id="nbh_ajou_election">
+	  <property name="width_request">200</property>
+	  <property name="height_request">35</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="climb_rate">1</property>
+	  <property name="digits">0</property>
+	  <property name="numeric">False</property>
+	  <property name="update_policy">GTK_UPDATE_ALWAYS</property>
+	  <property name="snap_to_ticks">False</property>
+	  <property name="wrap">False</property>
+	  <property name="adjustment">0 0 10000 1 10 10</property>
+	</widget>
+	<packing>
+	  <property name="x">580</property>
+	  <property name="y">120</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkSpinButton" id="nbc_ajou_electon">
+	  <property name="width_request">200</property>
+	  <property name="height_request">35</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="climb_rate">1</property>
+	  <property name="digits">0</property>
+	  <property name="numeric">False</property>
+	  <property name="update_policy">GTK_UPDATE_ALWAYS</property>
+	  <property name="snap_to_ticks">False</property>
+	  <property name="wrap">False</property>
+	  <property name="adjustment">0 0 10000 1 10 10</property>
+	</widget>
+	<packing>
+	  <property name="x">580</property>
+	  <property name="y">270</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkEntry" id="muni_ajou_election">
+	  <property name="width_request">200</property>
+	  <property name="height_request">35</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="editable">True</property>
+	  <property name="visibility">True</property>
+	  <property name="max_length">0</property>
+	  <property name="text" translatable="yes"></property>
+	  <property name="has_frame">True</property>
+	  <property name="invisible_char">•</property>
+	  <property name="activates_default">False</property>
+	</widget>
+	<packing>
+	  <property name="x">580</property>
+	  <property name="y">410</property>
+	</packing>
+      </child>
+
+      <child>
 	<widget class="GtkLabel" id="IdentifiantDeElecteur">
 	  <property name="width_request">200</property>
 	  <property name="height_request">40</property>
 	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Identifiant d'un electeur</property>
+	  <property name="label" translatable="yes">Identifiant d'une election</property>
 	  <property name="use_underline">False</property>
 	  <property name="use_markup">False</property>
 	  <property name="justify">GTK_JUSTIFY_LEFT</property>
@@ -7799,9 +8255,9 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkSpinButton" id="spinbutton12">
-	  <property name="width_request">200</property>
-	  <property name="height_request">35</property>
+	<widget class="GtkSpinButton" id="jour_ajou_election">
+	  <property name="width_request">60</property>
+	  <property name="height_request">27</property>
 	  <property name="visible">True</property>
 	  <property name="can_focus">True</property>
 	  <property name="climb_rate">1</property>
@@ -7810,18 +8266,18 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="update_policy">GTK_UPDATE_ALWAYS</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
-	  <property name="adjustment">0 0 10000 1 10 10</property>
+	  <property name="adjustment">1 0 100 1 10 10</property>
 	</widget>
 	<packing>
-	  <property name="x">580</property>
-	  <property name="y">120</property>
+	  <property name="x">104</property>
+	  <property name="y">280</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkSpinButton" id="spinbutton13">
-	  <property name="width_request">200</property>
-	  <property name="height_request">35</property>
+	<widget class="GtkSpinButton" id="mois_ajou_election">
+	  <property name="width_request">60</property>
+	  <property name="height_request">27</property>
 	  <property name="visible">True</property>
 	  <property name="can_focus">True</property>
 	  <property name="climb_rate">1</property>
@@ -7830,11 +8286,204 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="update_policy">GTK_UPDATE_ALWAYS</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
-	  <property name="adjustment">0 0 10000 1 10 10</property>
+	  <property name="adjustment">1 0 100 1 10 10</property>
 	</widget>
 	<packing>
-	  <property name="x">580</property>
-	  <property name="y">270</property>
+	  <property name="x">232</property>
+	  <property name="y">280</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkSpinButton" id="annee_ajou_election">
+	  <property name="width_request">60</property>
+	  <property name="height_request">27</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="climb_rate">1</property>
+	  <property name="digits">0</property>
+	  <property name="numeric">False</property>
+	  <property name="update_policy">GTK_UPDATE_ALWAYS</property>
+	  <property name="snap_to_ticks">False</property>
+	  <property name="wrap">False</property>
+	  <property name="adjustment">1 0 100 1 10 10</property>
+	</widget>
+	<packing>
+	  <property name="x">360</property>
+	  <property name="y">280</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="Ajouter_election">
+	  <property name="width_request">150</property>
+	  <property name="height_request">50</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Ajouter</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	</widget>
+	<packing>
+	  <property name="x">725</property>
+	  <property name="y">600</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="label240">
+	  <property name="width_request">56</property>
+	  <property name="height_request">25</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">jour :</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">40</property>
+	  <property name="y">280</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="label241">
+	  <property name="width_request">56</property>
+	  <property name="height_request">25</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">mois :</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">168</property>
+	  <property name="y">280</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="label242">
+	  <property name="width_request">56</property>
+	  <property name="height_request">25</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">annee :</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">296</property>
+	  <property name="y">280</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="NombreDeConseillers">
+	  <property name="width_request">200</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Nombre de conseillers</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">576</property>
+	  <property name="y">216</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="NombreDeHabitants">
+	  <property name="width_request">200</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Nombre d'habitants</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">576</property>
+	  <property name="y">72</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="label114">
+	  <property name="width_request">200</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Municipalité</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">576</property>
+	  <property name="y">360</property>
 	</packing>
       </child>
 
@@ -7865,119 +8514,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkCalendar" id="calendar4">
-	  <property name="width_request">208</property>
-	  <property name="height_request">160</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="display_options">GTK_CALENDAR_SHOW_HEADING|GTK_CALENDAR_SHOW_DAY_NAMES|GTK_CALENDAR_SHOW_DETAILS</property>
-	</widget>
-	<packing>
-	  <property name="x">65</property>
-	  <property name="y">285</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="NombreDeHabitants">
-	  <property name="width_request">200</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Nombre d'habitants</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">550</property>
-	  <property name="y">72</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="NombreDeConseillers">
-	  <property name="width_request">200</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Nombre de conseillers</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">550</property>
-	  <property name="y">220</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="label114">
-	  <property name="width_request">200</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Identifiant d'un electeur</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">552</property>
-	  <property name="y">360</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkEntry" id="entry49">
-	  <property name="width_request">200</property>
-	  <property name="height_request">35</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="editable">True</property>
-	  <property name="visibility">True</property>
-	  <property name="max_length">0</property>
-	  <property name="text" translatable="yes"></property>
-	  <property name="has_frame">True</property>
-	  <property name="invisible_char">•</property>
-	  <property name="activates_default">False</property>
-	</widget>
-	<packing>
-	  <property name="x">580</property>
-	  <property name="y">410</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="Precedent">
+	<widget class="GtkButton" id="Precedent1_election">
 	  <property name="width_request">150</property>
 	  <property name="height_request">50</property>
 	  <property name="visible">True</property>
@@ -7989,23 +8526,6 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	</widget>
 	<packing>
 	  <property name="x">75</property>
-	  <property name="y">600</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="Ajouter">
-	  <property name="width_request">150</property>
-	  <property name="height_request">50</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Ajouter</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	</widget>
-	<packing>
-	  <property name="x">725</property>
 	  <property name="y">600</property>
 	</packing>
       </child>
@@ -8036,7 +8556,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       <property name="visible">True</property>
 
       <child>
-	<widget class="GtkEntry" id="entry50">
+	<widget class="GtkEntry" id="entry_id_modif_election">
 	  <property name="width_request">200</property>
 	  <property name="height_request">35</property>
 	  <property name="visible">True</property>
@@ -8050,39 +8570,13 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="activates_default">False</property>
 	</widget>
 	<packing>
-	  <property name="x">65</property>
-	  <property name="y">120</property>
+	  <property name="x">80</property>
+	  <property name="y">128</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkLabel" id="label118">
-	  <property name="width_request">200</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Identifiant d'un electeur</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">50</property>
-	  <property name="y">70</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkSpinButton" id="spinbutton14">
+	<widget class="GtkSpinButton" id="nbh_modi_election">
 	  <property name="width_request">200</property>
 	  <property name="height_request">35</property>
 	  <property name="visible">True</property>
@@ -8102,7 +8596,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkSpinButton" id="spinbutton15">
+	<widget class="GtkSpinButton" id="nbc_modi_election">
 	  <property name="width_request">200</property>
 	  <property name="height_request">35</property>
 	  <property name="visible">True</property>
@@ -8122,68 +8616,82 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkLabel" id="label119">
+	<widget class="GtkEntry" id="muni_modi_election">
 	  <property name="width_request">200</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Date de l'election</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">50</property>
-	  <property name="y">220</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkCalendar" id="calendar5">
-	  <property name="width_request">208</property>
-	  <property name="height_request">160</property>
+	  <property name="height_request">35</property>
 	  <property name="visible">True</property>
 	  <property name="can_focus">True</property>
-	  <property name="display_options">GTK_CALENDAR_SHOW_HEADING|GTK_CALENDAR_SHOW_DAY_NAMES|GTK_CALENDAR_SHOW_DETAILS</property>
+	  <property name="editable">True</property>
+	  <property name="visibility">True</property>
+	  <property name="max_length">0</property>
+	  <property name="text" translatable="yes"></property>
+	  <property name="has_frame">True</property>
+	  <property name="invisible_char">•</property>
+	  <property name="activates_default">False</property>
 	</widget>
 	<packing>
-	  <property name="x">65</property>
-	  <property name="y">285</property>
+	  <property name="x">580</property>
+	  <property name="y">410</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkLabel" id="label120">
-	  <property name="width_request">200</property>
-	  <property name="height_request">40</property>
+	<widget class="GtkSpinButton" id="jour_modi_election">
+	  <property name="width_request">60</property>
+	  <property name="height_request">27</property>
 	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Nombre d'habitants</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="can_focus">True</property>
+	  <property name="climb_rate">1</property>
+	  <property name="digits">0</property>
+	  <property name="numeric">False</property>
+	  <property name="update_policy">GTK_UPDATE_ALWAYS</property>
+	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
+	  <property name="adjustment">1 0 100 1 10 10</property>
 	</widget>
 	<packing>
-	  <property name="x">550</property>
-	  <property name="y">72</property>
+	  <property name="x">80</property>
+	  <property name="y">272</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkSpinButton" id="mois_modi_election">
+	  <property name="width_request">60</property>
+	  <property name="height_request">27</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="climb_rate">1</property>
+	  <property name="digits">0</property>
+	  <property name="numeric">False</property>
+	  <property name="update_policy">GTK_UPDATE_ALWAYS</property>
+	  <property name="snap_to_ticks">False</property>
+	  <property name="wrap">False</property>
+	  <property name="adjustment">1 0 100 1 10 10</property>
+	</widget>
+	<packing>
+	  <property name="x">208</property>
+	  <property name="y">272</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkSpinButton" id="annee_modi_election">
+	  <property name="width_request">72</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="climb_rate">1</property>
+	  <property name="digits">0</property>
+	  <property name="numeric">False</property>
+	  <property name="update_policy">GTK_UPDATE_ALWAYS</property>
+	  <property name="snap_to_ticks">False</property>
+	  <property name="wrap">False</property>
+	  <property name="adjustment">1 0 100 1 10 10</property>
+	</widget>
+	<packing>
+	  <property name="x">360</property>
+	  <property name="y">272</property>
 	</packing>
       </child>
 
@@ -8208,8 +8716,8 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="angle">0</property>
 	</widget>
 	<packing>
-	  <property name="x">550</property>
-	  <property name="y">220</property>
+	  <property name="x">576</property>
+	  <property name="y">216</property>
 	</packing>
       </child>
 
@@ -8218,7 +8726,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="width_request">200</property>
 	  <property name="height_request">40</property>
 	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Identifiant d'un electeur</property>
+	  <property name="label" translatable="yes">Municipalité</property>
 	  <property name="use_underline">False</property>
 	  <property name="use_markup">False</property>
 	  <property name="justify">GTK_JUSTIFY_LEFT</property>
@@ -8234,33 +8742,30 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="angle">0</property>
 	</widget>
 	<packing>
-	  <property name="x">552</property>
+	  <property name="x">576</property>
 	  <property name="y">360</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkEntry" id="entry51">
-	  <property name="width_request">200</property>
-	  <property name="height_request">35</property>
+	<widget class="GtkButton" id="Modifier_election">
+	  <property name="width_request">150</property>
+	  <property name="height_request">50</property>
 	  <property name="visible">True</property>
 	  <property name="can_focus">True</property>
-	  <property name="editable">True</property>
-	  <property name="visibility">True</property>
-	  <property name="max_length">0</property>
-	  <property name="text" translatable="yes"></property>
-	  <property name="has_frame">True</property>
-	  <property name="invisible_char">•</property>
-	  <property name="activates_default">False</property>
+	  <property name="label" translatable="yes">Modifier</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
 	</widget>
 	<packing>
-	  <property name="x">580</property>
-	  <property name="y">410</property>
+	  <property name="x">725</property>
+	  <property name="y">600</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkButton" id="button36">
+	<widget class="GtkButton" id="precedent2_election">
 	  <property name="width_request">150</property>
 	  <property name="height_request">50</property>
 	  <property name="visible">True</property>
@@ -8277,19 +8782,158 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkButton" id="Modifier">
-	  <property name="width_request">150</property>
-	  <property name="height_request">50</property>
+	<widget class="GtkLabel" id="label119">
+	  <property name="width_request">200</property>
+	  <property name="height_request">40</property>
 	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Modifier</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
+	  <property name="label" translatable="yes">Date de l'election</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
 	</widget>
 	<packing>
-	  <property name="x">725</property>
-	  <property name="y">600</property>
+	  <property name="x">24</property>
+	  <property name="y">216</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="label243">
+	  <property name="width_request">57</property>
+	  <property name="height_request">25</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">jour :</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">24</property>
+	  <property name="y">272</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="label244">
+	  <property name="width_request">57</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">mois :</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">152</property>
+	  <property name="y">272</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="label245">
+	  <property name="width_request">64</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">annee :</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">288</property>
+	  <property name="y">272</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="label118">
+	  <property name="width_request">200</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Identifiant d'une election</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">80</property>
+	  <property name="y">72</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="label120">
+	  <property name="width_request">200</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Nombre d'habitants</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">576</property>
+	  <property name="y">72</property>
 	</packing>
       </child>
     </widget>
@@ -8319,7 +8963,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       <property name="visible">True</property>
 
       <child>
-	<widget class="GtkEntry" id="entry52">
+	<widget class="GtkEntry" id="entry_id_affi_election">
 	  <property name="width_request">200</property>
 	  <property name="height_request">35</property>
 	  <property name="visible">True</property>
@@ -8333,39 +8977,13 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="activates_default">False</property>
 	</widget>
 	<packing>
-	  <property name="x">65</property>
+	  <property name="x">56</property>
 	  <property name="y">120</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkLabel" id="label123">
-	  <property name="width_request">200</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Identifiant d'un electeur</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">50</property>
-	  <property name="y">70</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkSpinButton" id="spinbutton16">
+	<widget class="GtkSpinButton" id="nbh_affi_election">
 	  <property name="width_request">200</property>
 	  <property name="height_request">35</property>
 	  <property name="visible">True</property>
@@ -8379,13 +8997,13 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="adjustment">0 0 10000 1 10 10</property>
 	</widget>
 	<packing>
-	  <property name="x">580</property>
+	  <property name="x">568</property>
 	  <property name="y">120</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkSpinButton" id="spinbutton17">
+	<widget class="GtkSpinButton" id="nbc_affi_election">
 	  <property name="width_request">200</property>
 	  <property name="height_request">35</property>
 	  <property name="visible">True</property>
@@ -8399,48 +9017,105 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="adjustment">0 0 10000 1 10 10</property>
 	</widget>
 	<packing>
-	  <property name="x">580</property>
-	  <property name="y">270</property>
+	  <property name="x">568</property>
+	  <property name="y">272</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkLabel" id="label124">
+	<widget class="GtkEntry" id="muni_affi_election">
 	  <property name="width_request">200</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Date de l'election</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">50</property>
-	  <property name="y">220</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkCalendar" id="calendar6">
-	  <property name="width_request">208</property>
-	  <property name="height_request">160</property>
+	  <property name="height_request">35</property>
 	  <property name="visible">True</property>
 	  <property name="can_focus">True</property>
-	  <property name="display_options">GTK_CALENDAR_SHOW_HEADING|GTK_CALENDAR_SHOW_DAY_NAMES|GTK_CALENDAR_SHOW_DETAILS</property>
+	  <property name="editable">True</property>
+	  <property name="visibility">True</property>
+	  <property name="max_length">0</property>
+	  <property name="text" translatable="yes"></property>
+	  <property name="has_frame">True</property>
+	  <property name="invisible_char">•</property>
+	  <property name="activates_default">False</property>
 	</widget>
 	<packing>
-	  <property name="x">65</property>
-	  <property name="y">285</property>
+	  <property name="x">568</property>
+	  <property name="y">408</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkSpinButton" id="jour_affi_election">
+	  <property name="width_request">60</property>
+	  <property name="height_request">27</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="climb_rate">1</property>
+	  <property name="digits">0</property>
+	  <property name="numeric">False</property>
+	  <property name="update_policy">GTK_UPDATE_ALWAYS</property>
+	  <property name="snap_to_ticks">False</property>
+	  <property name="wrap">False</property>
+	  <property name="adjustment">1 0 100 1 10 10</property>
+	</widget>
+	<packing>
+	  <property name="x">96</property>
+	  <property name="y">280</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkSpinButton" id="mois_affi_election">
+	  <property name="width_request">60</property>
+	  <property name="height_request">27</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="climb_rate">1</property>
+	  <property name="digits">0</property>
+	  <property name="numeric">False</property>
+	  <property name="update_policy">GTK_UPDATE_ALWAYS</property>
+	  <property name="snap_to_ticks">False</property>
+	  <property name="wrap">False</property>
+	  <property name="adjustment">1 0 100 1 10 10</property>
+	</widget>
+	<packing>
+	  <property name="x">224</property>
+	  <property name="y">280</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkSpinButton" id="annee_affi_election">
+	  <property name="width_request">60</property>
+	  <property name="height_request">27</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="climb_rate">1</property>
+	  <property name="digits">0</property>
+	  <property name="numeric">False</property>
+	  <property name="update_policy">GTK_UPDATE_ALWAYS</property>
+	  <property name="snap_to_ticks">False</property>
+	  <property name="wrap">False</property>
+	  <property name="adjustment">1 0 100 1 10 10</property>
+	</widget>
+	<packing>
+	  <property name="x">352</property>
+	  <property name="y">280</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="precedent3_election">
+	  <property name="width_request">150</property>
+	  <property name="height_request">50</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Precedent</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	</widget>
+	<packing>
+	  <property name="x">75</property>
+	  <property name="y">600</property>
 	</packing>
       </child>
 
@@ -8465,7 +9140,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="angle">0</property>
 	</widget>
 	<packing>
-	  <property name="x">550</property>
+	  <property name="x">568</property>
 	  <property name="y">72</property>
 	</packing>
       </child>
@@ -8491,8 +9166,8 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="angle">0</property>
 	</widget>
 	<packing>
-	  <property name="x">550</property>
-	  <property name="y">220</property>
+	  <property name="x">568</property>
+	  <property name="y">216</property>
 	</packing>
       </child>
 
@@ -8501,7 +9176,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="width_request">200</property>
 	  <property name="height_request">40</property>
 	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Identifiant d'un electeur</property>
+	  <property name="label" translatable="yes">Municipalité</property>
 	  <property name="use_underline">False</property>
 	  <property name="use_markup">False</property>
 	  <property name="justify">GTK_JUSTIFY_LEFT</property>
@@ -8517,45 +9192,138 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="angle">0</property>
 	</widget>
 	<packing>
-	  <property name="x">552</property>
+	  <property name="x">568</property>
 	  <property name="y">360</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkEntry" id="entry53">
-	  <property name="width_request">200</property>
-	  <property name="height_request">35</property>
+	<widget class="GtkLabel" id="label246">
+	  <property name="width_request">57</property>
+	  <property name="height_request">25</property>
 	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="editable">True</property>
-	  <property name="visibility">True</property>
-	  <property name="max_length">0</property>
-	  <property name="text" translatable="yes"></property>
-	  <property name="has_frame">True</property>
-	  <property name="invisible_char">•</property>
-	  <property name="activates_default">False</property>
+	  <property name="label" translatable="yes">jour :</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
 	</widget>
 	<packing>
-	  <property name="x">580</property>
-	  <property name="y">410</property>
+	  <property name="x">48</property>
+	  <property name="y">280</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkButton" id="button38">
-	  <property name="width_request">150</property>
-	  <property name="height_request">50</property>
+	<widget class="GtkLabel" id="label123">
+	  <property name="width_request">200</property>
+	  <property name="height_request">40</property>
 	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Precedent</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
+	  <property name="label" translatable="yes">Identifiant d'une election</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
 	</widget>
 	<packing>
-	  <property name="x">75</property>
-	  <property name="y">600</property>
+	  <property name="x">56</property>
+	  <property name="y">64</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="label124">
+	  <property name="width_request">200</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Date de l'election</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">40</property>
+	  <property name="y">216</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="label247">
+	  <property name="width_request">64</property>
+	  <property name="height_request">25</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">mois :</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">160</property>
+	  <property name="y">280</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="label248">
+	  <property name="width_request">64</property>
+	  <property name="height_request">25</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">annee :</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">288</property>
+	  <property name="y">280</property>
 	</packing>
       </child>
     </widget>
@@ -11157,6 +11925,111 @@ nationaux et étrangers</property>
 	<packing>
 	  <property name="x">16</property>
 	  <property name="y">0</property>
+	</packing>
+      </child>
+    </widget>
+  </child>
+</widget>
+
+<widget class="GtkWindow" id="WindowVote">
+  <property name="width_request">400</property>
+  <property name="height_request">150</property>
+  <property name="visible">True</property>
+  <property name="title" translatable="yes">Votez une liste electoral</property>
+  <property name="type">GTK_WINDOW_TOPLEVEL</property>
+  <property name="window_position">GTK_WIN_POS_NONE</property>
+  <property name="modal">True</property>
+  <property name="resizable">False</property>
+  <property name="destroy_with_parent">False</property>
+  <property name="decorated">True</property>
+  <property name="skip_taskbar_hint">False</property>
+  <property name="skip_pager_hint">False</property>
+  <property name="type_hint">GDK_WINDOW_TYPE_HINT_NORMAL</property>
+  <property name="gravity">GDK_GRAVITY_NORTH_WEST</property>
+  <property name="focus_on_map">True</property>
+  <property name="urgency_hint">False</property>
+
+  <child>
+    <widget class="GtkFixed" id="fixed36">
+      <property name="visible">True</property>
+
+      <child>
+	<widget class="GtkEntry" id="EntryIdListWindowVote">
+	  <property name="width_request">160</property>
+	  <property name="height_request">27</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="editable">True</property>
+	  <property name="visibility">True</property>
+	  <property name="max_length">0</property>
+	  <property name="text" translatable="yes"></property>
+	  <property name="has_frame">True</property>
+	  <property name="invisible_char">•</property>
+	  <property name="activates_default">False</property>
+	</widget>
+	<packing>
+	  <property name="x">120</property>
+	  <property name="y">40</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="label249">
+	  <property name="width_request">168</property>
+	  <property name="height_request">16</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Identifiant  de la liste</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">112</property>
+	  <property name="y">16</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="ButtonVoteWindowVote">
+	  <property name="width_request">112</property>
+	  <property name="height_request">32</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Votez</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	</widget>
+	<packing>
+	  <property name="x">216</property>
+	  <property name="y">80</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="ButtonNothingWindowVote">
+	  <property name="width_request">104</property>
+	  <property name="height_request">32</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">S'abstenir</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	</widget>
+	<packing>
+	  <property name="x">80</property>
+	  <property name="y">80</property>
 	</packing>
       </child>
     </widget>
