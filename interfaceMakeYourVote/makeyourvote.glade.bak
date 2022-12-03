@@ -97,6 +97,7 @@
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">1 0 100 1 10 10</property>
+	  <signal name="change_value" handler="on_SpinButtonMaxResultSearchWindowListMain_change_value" last_modification_time="Wed, 30 Nov 2022 22:25:06 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">888</property>
@@ -181,6 +182,7 @@
 		  <property name="use_underline">True</property>
 		  <property name="relief">GTK_RELIEF_NORMAL</property>
 		  <property name="focus_on_click">True</property>
+		  <signal name="clicked" handler="on_ButtonCreateListWindowListMain_clicked" last_modification_time="Wed, 30 Nov 2022 22:24:01 GMT"/>
 		</widget>
 	      </child>
 	    </widget>
@@ -205,6 +207,7 @@
 		  <property name="use_underline">True</property>
 		  <property name="relief">GTK_RELIEF_NORMAL</property>
 		  <property name="focus_on_click">True</property>
+		  <signal name="clicked" handler="on_ButtonModifyListWindowListMain_clicked" last_modification_time="Wed, 30 Nov 2022 22:24:08 GMT"/>
 		</widget>
 	      </child>
 	    </widget>
@@ -229,6 +232,7 @@
 		  <property name="use_underline">True</property>
 		  <property name="relief">GTK_RELIEF_NORMAL</property>
 		  <property name="focus_on_click">True</property>
+		  <signal name="clicked" handler="on_ButtonDeleteListWindowListMain_clicked" last_modification_time="Wed, 30 Nov 2022 22:24:16 GMT"/>
 		</widget>
 	      </child>
 	    </widget>
@@ -461,147 +465,6 @@
       </child>
 
       <child>
-	<widget class="GtkRadioButton" id="RadioButtonLeftOrientationSearchWindowListMain">
-	  <property name="width_request">124</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Gauche</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	</widget>
-	<packing>
-	  <property name="x">24</property>
-	  <property name="y">424</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkRadioButton" id="RadioButtonCenterOrientationSearchWindowListMain">
-	  <property name="width_request">124</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Centre</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	  <property name="group">RadioButtonLeftOrientationSearchWindowListMain</property>
-	</widget>
-	<packing>
-	  <property name="x">104</property>
-	  <property name="y">424</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkRadioButton" id="RadioButtonRightOrientationSearchWindowListMain">
-	  <property name="width_request">124</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Droite</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	  <property name="group">RadioButtonLeftOrientationSearchWindowListMain</property>
-	</widget>
-	<packing>
-	  <property name="x">184</property>
-	  <property name="y">424</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="ButtonSearchWindowListMain">
-	  <property name="width_request">144</property>
-	  <property name="height_request">32</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-
-	  <child>
-	    <widget class="GtkAlignment" id="alignment16">
-	      <property name="visible">True</property>
-	      <property name="xalign">0.5</property>
-	      <property name="yalign">0.5</property>
-	      <property name="xscale">0</property>
-	      <property name="yscale">0</property>
-	      <property name="top_padding">0</property>
-	      <property name="bottom_padding">0</property>
-	      <property name="left_padding">0</property>
-	      <property name="right_padding">0</property>
-
-	      <child>
-		<widget class="GtkHBox" id="hbox15">
-		  <property name="visible">True</property>
-		  <property name="homogeneous">False</property>
-		  <property name="spacing">2</property>
-
-		  <child>
-		    <widget class="GtkImage" id="image31">
-		      <property name="visible">True</property>
-		      <property name="stock">gtk-find</property>
-		      <property name="icon_size">4</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		    </widget>
-		    <packing>
-		      <property name="padding">0</property>
-		      <property name="expand">False</property>
-		      <property name="fill">False</property>
-		    </packing>
-		  </child>
-
-		  <child>
-		    <widget class="GtkLabel" id="label159">
-		      <property name="visible">True</property>
-		      <property name="label" translatable="yes">  Rechercher</property>
-		      <property name="use_underline">True</property>
-		      <property name="use_markup">False</property>
-		      <property name="justify">GTK_JUSTIFY_LEFT</property>
-		      <property name="wrap">False</property>
-		      <property name="selectable">False</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-		      <property name="width_chars">-1</property>
-		      <property name="single_line_mode">False</property>
-		      <property name="angle">0</property>
-		    </widget>
-		    <packing>
-		      <property name="padding">0</property>
-		      <property name="expand">False</property>
-		      <property name="fill">False</property>
-		    </packing>
-		  </child>
-		</widget>
-	      </child>
-	    </widget>
-	  </child>
-	</widget>
-	<packing>
-	  <property name="x">72</property>
-	  <property name="y">472</property>
-	</packing>
-      </child>
-
-      <child>
 	<widget class="GtkLabel" id="label32">
 	  <property name="width_request">160</property>
 	  <property name="height_request">32</property>
@@ -640,82 +503,98 @@
       </child>
 
       <child>
-	<widget class="GtkCheckButton" id="CheckButtonOrientationCriteriaWindowListMain">
-	  <property name="width_request">126</property>
-	  <property name="height_request">24</property>
+	<widget class="GtkImage" id="ImageUserPoster">
+	  <property name="width_request">64</property>
+	  <property name="height_request">56</property>
 	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Orientation</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
 	</widget>
 	<packing>
-	  <property name="x">672</property>
-	  <property name="y">176</property>
+	  <property name="x">16</property>
+	  <property name="y">8</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkCheckButton" id="CheckButtonNameListCriteriaWindowListMain">
-	  <property name="width_request">118</property>
-	  <property name="height_request">24</property>
+	<widget class="GtkButton" id="ButtonProposeList">
+	  <property name="width_request">160</property>
+	  <property name="height_request">32</property>
 	  <property name="visible">True</property>
 	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Nom de liste</property>
-	  <property name="use_underline">True</property>
 	  <property name="relief">GTK_RELIEF_NORMAL</property>
 	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	</widget>
-	<packing>
-	  <property name="x">544</property>
-	  <property name="y">176</property>
-	</packing>
-      </child>
+	  <signal name="clicked" handler="on_ButtonProposeList_clicked" last_modification_time="Wed, 30 Nov 2022 22:26:24 GMT"/>
 
-      <child>
-	<widget class="GtkCheckButton" id="CheckButtonHeadListCriteriaWindowListMain">
-	  <property name="width_request">136</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">ID tête de liste</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	</widget>
-	<packing>
-	  <property name="x">408</property>
-	  <property name="y">176</property>
-	</packing>
-      </child>
+	  <child>
+	    <widget class="GtkAlignment" id="alignment15">
+	      <property name="visible">True</property>
+	      <property name="xalign">0.5</property>
+	      <property name="yalign">0.5</property>
+	      <property name="xscale">0</property>
+	      <property name="yscale">0</property>
+	      <property name="top_padding">0</property>
+	      <property name="bottom_padding">0</property>
+	      <property name="left_padding">0</property>
+	      <property name="right_padding">0</property>
 
-      <child>
-	<widget class="GtkCheckButton" id="CheckButtonIdListCriteriaWindowListMain">
-	  <property name="width_request">118</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">ID Liste</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
+	      <child>
+		<widget class="GtkHBox" id="hbox14">
+		  <property name="visible">True</property>
+		  <property name="homogeneous">False</property>
+		  <property name="spacing">2</property>
+
+		  <child>
+		    <widget class="GtkImage" id="image30">
+		      <property name="visible">True</property>
+		      <property name="stock">gtk-new</property>
+		      <property name="icon_size">4</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		    </widget>
+		    <packing>
+		      <property name="padding">0</property>
+		      <property name="expand">False</property>
+		      <property name="fill">False</property>
+		    </packing>
+		  </child>
+
+		  <child>
+		    <widget class="GtkLabel" id="label158">
+		      <property name="visible">True</property>
+		      <property name="label" translatable="yes">  Proposer</property>
+		      <property name="use_underline">True</property>
+		      <property name="use_markup">False</property>
+		      <property name="justify">GTK_JUSTIFY_LEFT</property>
+		      <property name="wrap">False</property>
+		      <property name="selectable">False</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+		      <property name="width_chars">-1</property>
+		      <property name="single_line_mode">False</property>
+		      <property name="angle">0</property>
+		    </widget>
+		    <packing>
+		      <property name="padding">0</property>
+		      <property name="expand">False</property>
+		      <property name="fill">False</property>
+		    </packing>
+		  </child>
+		</widget>
+	      </child>
+	    </widget>
+	  </child>
 	</widget>
 	<packing>
-	  <property name="x">304</property>
-	  <property name="y">176</property>
+	  <property name="x">808</property>
+	  <property name="y">648</property>
 	</packing>
       </child>
 
@@ -727,6 +606,7 @@
 	  <property name="can_focus">True</property>
 	  <property name="relief">GTK_RELIEF_NORMAL</property>
 	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_ButtonShowListWindowListMain_clicked" last_modification_time="Wed, 30 Nov 2022 22:24:25 GMT"/>
 
 	  <child>
 	    <widget class="GtkAlignment" id="alignment17">
@@ -799,18 +679,147 @@
       </child>
 
       <child>
-	<widget class="GtkImage" id="ImageUserPoster">
-	  <property name="width_request">64</property>
-	  <property name="height_request">56</property>
+	<widget class="GtkRadioButton" id="RadioButtonLeftOrientationSearchWindowListMain">
+	  <property name="width_request">124</property>
+	  <property name="height_request">24</property>
 	  <property name="visible">True</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Gauche</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <signal name="toggled" handler="on_RadioButtonLeftOrientationSearchWindowListMain_toggled" last_modification_time="Wed, 30 Nov 2022 22:25:18 GMT"/>
 	</widget>
 	<packing>
-	  <property name="x">16</property>
-	  <property name="y">8</property>
+	  <property name="x">24</property>
+	  <property name="y">424</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkRadioButton" id="RadioButtonCenterOrientationSearchWindowListMain">
+	  <property name="width_request">124</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Centre</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <property name="group">RadioButtonLeftOrientationSearchWindowListMain</property>
+	  <signal name="toggled" handler="on_RadioButtonCenterOrientationSearchWindowListMain_toggled" last_modification_time="Wed, 30 Nov 2022 22:25:33 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">104</property>
+	  <property name="y">424</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkRadioButton" id="RadioButtonRightOrientationSearchWindowListMain">
+	  <property name="width_request">124</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Droite</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <property name="group">RadioButtonLeftOrientationSearchWindowListMain</property>
+	  <signal name="toggled" handler="on_RadioButtonRightOrientationSearchWindowListMain_toggled" last_modification_time="Wed, 30 Nov 2022 22:25:42 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">184</property>
+	  <property name="y">424</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="ButtonSearchWindowListMain">
+	  <property name="width_request">144</property>
+	  <property name="height_request">32</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_ButtonSearchWindowListMain_clicked" last_modification_time="Wed, 30 Nov 2022 22:25:57 GMT"/>
+
+	  <child>
+	    <widget class="GtkAlignment" id="alignment16">
+	      <property name="visible">True</property>
+	      <property name="xalign">0.5</property>
+	      <property name="yalign">0.5</property>
+	      <property name="xscale">0</property>
+	      <property name="yscale">0</property>
+	      <property name="top_padding">0</property>
+	      <property name="bottom_padding">0</property>
+	      <property name="left_padding">0</property>
+	      <property name="right_padding">0</property>
+
+	      <child>
+		<widget class="GtkHBox" id="hbox15">
+		  <property name="visible">True</property>
+		  <property name="homogeneous">False</property>
+		  <property name="spacing">2</property>
+
+		  <child>
+		    <widget class="GtkImage" id="image31">
+		      <property name="visible">True</property>
+		      <property name="stock">gtk-find</property>
+		      <property name="icon_size">4</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		    </widget>
+		    <packing>
+		      <property name="padding">0</property>
+		      <property name="expand">False</property>
+		      <property name="fill">False</property>
+		    </packing>
+		  </child>
+
+		  <child>
+		    <widget class="GtkLabel" id="label159">
+		      <property name="visible">True</property>
+		      <property name="label" translatable="yes">  Rechercher</property>
+		      <property name="use_underline">True</property>
+		      <property name="use_markup">False</property>
+		      <property name="justify">GTK_JUSTIFY_LEFT</property>
+		      <property name="wrap">False</property>
+		      <property name="selectable">False</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+		      <property name="width_chars">-1</property>
+		      <property name="single_line_mode">False</property>
+		      <property name="angle">0</property>
+		    </widget>
+		    <packing>
+		      <property name="padding">0</property>
+		      <property name="expand">False</property>
+		      <property name="fill">False</property>
+		    </packing>
+		  </child>
+		</widget>
+	      </child>
+	    </widget>
+	  </child>
+	</widget>
+	<packing>
+	  <property name="x">72</property>
+	  <property name="y">472</property>
 	</packing>
       </child>
 
@@ -822,6 +831,7 @@
 	  <property name="can_focus">True</property>
 	  <property name="relief">GTK_RELIEF_NORMAL</property>
 	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_ButtonPreviousWindowListMain_clicked" last_modification_time="Wed, 30 Nov 2022 22:26:10 GMT"/>
 
 	  <child>
 	    <widget class="GtkAlignment" id="alignment14">
@@ -895,85 +905,6 @@
       </child>
 
       <child>
-	<widget class="GtkButton" id="ButtonProposeList">
-	  <property name="width_request">160</property>
-	  <property name="height_request">32</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-
-	  <child>
-	    <widget class="GtkAlignment" id="alignment15">
-	      <property name="visible">True</property>
-	      <property name="xalign">0.5</property>
-	      <property name="yalign">0.5</property>
-	      <property name="xscale">0</property>
-	      <property name="yscale">0</property>
-	      <property name="top_padding">0</property>
-	      <property name="bottom_padding">0</property>
-	      <property name="left_padding">0</property>
-	      <property name="right_padding">0</property>
-
-	      <child>
-		<widget class="GtkHBox" id="hbox14">
-		  <property name="visible">True</property>
-		  <property name="homogeneous">False</property>
-		  <property name="spacing">2</property>
-
-		  <child>
-		    <widget class="GtkImage" id="image30">
-		      <property name="visible">True</property>
-		      <property name="stock">gtk-new</property>
-		      <property name="icon_size">4</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		    </widget>
-		    <packing>
-		      <property name="padding">0</property>
-		      <property name="expand">False</property>
-		      <property name="fill">False</property>
-		    </packing>
-		  </child>
-
-		  <child>
-		    <widget class="GtkLabel" id="label158">
-		      <property name="visible">True</property>
-		      <property name="label" translatable="yes">  Proposer</property>
-		      <property name="use_underline">True</property>
-		      <property name="use_markup">False</property>
-		      <property name="justify">GTK_JUSTIFY_LEFT</property>
-		      <property name="wrap">False</property>
-		      <property name="selectable">False</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-		      <property name="width_chars">-1</property>
-		      <property name="single_line_mode">False</property>
-		      <property name="angle">0</property>
-		    </widget>
-		    <packing>
-		      <property name="padding">0</property>
-		      <property name="expand">False</property>
-		      <property name="fill">False</property>
-		    </packing>
-		  </child>
-		</widget>
-	      </child>
-	    </widget>
-	  </child>
-	</widget>
-	<packing>
-	  <property name="x">808</property>
-	  <property name="y">648</property>
-	</packing>
-      </child>
-
-      <child>
 	<widget class="GtkButton" id="ButtonVoteWindowListMain">
 	  <property name="width_request">160</property>
 	  <property name="height_request">48</property>
@@ -983,10 +914,95 @@
 	  <property name="use_underline">True</property>
 	  <property name="relief">GTK_RELIEF_NORMAL</property>
 	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_ButtonVoteWindowListMain_clicked" last_modification_time="Wed, 30 Nov 2022 22:26:17 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">424</property>
 	  <property name="y">632</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkCheckButton" id="CheckButtonIdListCriteriaWindowListMain">
+	  <property name="width_request">118</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">ID Liste</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <signal name="toggled" handler="on_CheckButtonIdListCriteriaWindowListMain_toggled" last_modification_time="Wed, 30 Nov 2022 22:24:35 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">304</property>
+	  <property name="y">176</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkCheckButton" id="CheckButtonHeadListCriteriaWindowListMain">
+	  <property name="width_request">136</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">ID tête de liste</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <signal name="toggled" handler="on_CheckButtonHeadListCriteriaWindowListMain_toggled" last_modification_time="Wed, 30 Nov 2022 22:24:40 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">408</property>
+	  <property name="y">176</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkCheckButton" id="CheckButtonNameListCriteriaWindowListMain">
+	  <property name="width_request">118</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Nom de liste</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <signal name="toggled" handler="on_CheckButtonNameListCriteriaWindowListMain_toggled" last_modification_time="Wed, 30 Nov 2022 22:24:48 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">544</property>
+	  <property name="y">176</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkCheckButton" id="CheckButtonOrientationCriteriaWindowListMain">
+	  <property name="width_request">126</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Orientation</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <signal name="toggled" handler="on_CheckButtonOrientationCriteriaWindowListMain_toggled" last_modification_time="Wed, 30 Nov 2022 22:24:55 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">672</property>
+	  <property name="y">176</property>
 	</packing>
       </child>
     </widget>
@@ -1335,68 +1351,6 @@
       </child>
 
       <child>
-	<widget class="GtkRadioButton" id="RadioButtonLeftOrientationWindowManageList">
-	  <property name="width_request">124</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Gauche</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	</widget>
-	<packing>
-	  <property name="x">32</property>
-	  <property name="y">160</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkRadioButton" id="RadioButtonCenterOrientationWindowOrientation">
-	  <property name="width_request">124</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Centre</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	  <property name="group">RadioButtonLeftOrientationWindowManageList</property>
-	</widget>
-	<packing>
-	  <property name="x">120</property>
-	  <property name="y">160</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkRadioButton" id="RadioButtonRightOrientationWindowManageList">
-	  <property name="width_request">124</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Droite</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	  <property name="group">RadioButtonLeftOrientationWindowManageList</property>
-	</widget>
-	<packing>
-	  <property name="x">216</property>
-	  <property name="y">160</property>
-	</packing>
-      </child>
-
-      <child>
 	<widget class="GtkEntry" id="EntryPosterListWindowManageList">
 	  <property name="width_request">160</property>
 	  <property name="height_request">32</property>
@@ -1491,164 +1445,6 @@
 	<packing>
 	  <property name="x">28</property>
 	  <property name="y">200</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="ButtonDeleteMemberWindowManageList">
-	  <property name="width_request">160</property>
-	  <property name="height_request">32</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-
-	  <child>
-	    <widget class="GtkAlignment" id="alignment13">
-	      <property name="visible">True</property>
-	      <property name="xalign">0.5</property>
-	      <property name="yalign">0.5</property>
-	      <property name="xscale">0</property>
-	      <property name="yscale">0</property>
-	      <property name="top_padding">0</property>
-	      <property name="bottom_padding">0</property>
-	      <property name="left_padding">0</property>
-	      <property name="right_padding">0</property>
-
-	      <child>
-		<widget class="GtkHBox" id="hbox12">
-		  <property name="visible">True</property>
-		  <property name="homogeneous">False</property>
-		  <property name="spacing">2</property>
-
-		  <child>
-		    <widget class="GtkImage" id="image28">
-		      <property name="visible">True</property>
-		      <property name="stock">gtk-delete</property>
-		      <property name="icon_size">4</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		    </widget>
-		    <packing>
-		      <property name="padding">0</property>
-		      <property name="expand">False</property>
-		      <property name="fill">False</property>
-		    </packing>
-		  </child>
-
-		  <child>
-		    <widget class="GtkLabel" id="label156">
-		      <property name="visible">True</property>
-		      <property name="label" translatable="yes">Supprimer</property>
-		      <property name="use_underline">True</property>
-		      <property name="use_markup">False</property>
-		      <property name="justify">GTK_JUSTIFY_LEFT</property>
-		      <property name="wrap">False</property>
-		      <property name="selectable">False</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-		      <property name="width_chars">-1</property>
-		      <property name="single_line_mode">False</property>
-		      <property name="angle">0</property>
-		    </widget>
-		    <packing>
-		      <property name="padding">0</property>
-		      <property name="expand">False</property>
-		      <property name="fill">False</property>
-		    </packing>
-		  </child>
-		</widget>
-	      </child>
-	    </widget>
-	  </child>
-	</widget>
-	<packing>
-	  <property name="x">136</property>
-	  <property name="y">496</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="ButtonAddMemberWindowManageList">
-	  <property name="width_request">160</property>
-	  <property name="height_request">32</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-
-	  <child>
-	    <widget class="GtkAlignment" id="alignment12">
-	      <property name="visible">True</property>
-	      <property name="xalign">0.5</property>
-	      <property name="yalign">0.5</property>
-	      <property name="xscale">0</property>
-	      <property name="yscale">0</property>
-	      <property name="top_padding">0</property>
-	      <property name="bottom_padding">0</property>
-	      <property name="left_padding">0</property>
-	      <property name="right_padding">0</property>
-
-	      <child>
-		<widget class="GtkHBox" id="hbox11">
-		  <property name="visible">True</property>
-		  <property name="homogeneous">False</property>
-		  <property name="spacing">2</property>
-
-		  <child>
-		    <widget class="GtkImage" id="image26">
-		      <property name="visible">True</property>
-		      <property name="stock">gtk-add</property>
-		      <property name="icon_size">4</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		    </widget>
-		    <packing>
-		      <property name="padding">0</property>
-		      <property name="expand">False</property>
-		      <property name="fill">False</property>
-		    </packing>
-		  </child>
-
-		  <child>
-		    <widget class="GtkLabel" id="label155">
-		      <property name="visible">True</property>
-		      <property name="label" translatable="yes">Ajouter</property>
-		      <property name="use_underline">True</property>
-		      <property name="use_markup">False</property>
-		      <property name="justify">GTK_JUSTIFY_LEFT</property>
-		      <property name="wrap">False</property>
-		      <property name="selectable">False</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-		      <property name="width_chars">-1</property>
-		      <property name="single_line_mode">False</property>
-		      <property name="angle">0</property>
-		    </widget>
-		    <packing>
-		      <property name="padding">0</property>
-		      <property name="expand">False</property>
-		      <property name="fill">False</property>
-		    </packing>
-		  </child>
-		</widget>
-	      </child>
-	    </widget>
-	  </child>
-	</widget>
-	<packing>
-	  <property name="x">136</property>
-	  <property name="y">368</property>
 	</packing>
       </child>
 
@@ -1847,243 +1643,6 @@
       </child>
 
       <child>
-	<widget class="GtkButton" id="ButtonValidateWindowManageList">
-	  <property name="width_request">136</property>
-	  <property name="height_request">32</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-
-	  <child>
-	    <widget class="GtkAlignment" id="alignment10">
-	      <property name="visible">True</property>
-	      <property name="xalign">0.5</property>
-	      <property name="yalign">0.5</property>
-	      <property name="xscale">0</property>
-	      <property name="yscale">0</property>
-	      <property name="top_padding">0</property>
-	      <property name="bottom_padding">0</property>
-	      <property name="left_padding">0</property>
-	      <property name="right_padding">0</property>
-
-	      <child>
-		<widget class="GtkHBox" id="hbox9">
-		  <property name="visible">True</property>
-		  <property name="homogeneous">False</property>
-		  <property name="spacing">2</property>
-
-		  <child>
-		    <widget class="GtkImage" id="image24">
-		      <property name="visible">True</property>
-		      <property name="stock">gtk-apply</property>
-		      <property name="icon_size">4</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		    </widget>
-		    <packing>
-		      <property name="padding">0</property>
-		      <property name="expand">False</property>
-		      <property name="fill">False</property>
-		    </packing>
-		  </child>
-
-		  <child>
-		    <widget class="GtkLabel" id="label153">
-		      <property name="visible">True</property>
-		      <property name="label" translatable="yes">Valider</property>
-		      <property name="use_underline">True</property>
-		      <property name="use_markup">False</property>
-		      <property name="justify">GTK_JUSTIFY_LEFT</property>
-		      <property name="wrap">False</property>
-		      <property name="selectable">False</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-		      <property name="width_chars">-1</property>
-		      <property name="single_line_mode">False</property>
-		      <property name="angle">0</property>
-		    </widget>
-		    <packing>
-		      <property name="padding">0</property>
-		      <property name="expand">False</property>
-		      <property name="fill">False</property>
-		    </packing>
-		  </child>
-		</widget>
-	      </child>
-	    </widget>
-	  </child>
-	</widget>
-	<packing>
-	  <property name="x">432</property>
-	  <property name="y">640</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="ButtonResetWindowManageList">
-	  <property name="width_request">128</property>
-	  <property name="height_request">32</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-
-	  <child>
-	    <widget class="GtkAlignment" id="alignment9">
-	      <property name="visible">True</property>
-	      <property name="xalign">0.5</property>
-	      <property name="yalign">0.5</property>
-	      <property name="xscale">0</property>
-	      <property name="yscale">0</property>
-	      <property name="top_padding">0</property>
-	      <property name="bottom_padding">0</property>
-	      <property name="left_padding">0</property>
-	      <property name="right_padding">0</property>
-
-	      <child>
-		<widget class="GtkHBox" id="hbox8">
-		  <property name="visible">True</property>
-		  <property name="homogeneous">False</property>
-		  <property name="spacing">2</property>
-
-		  <child>
-		    <widget class="GtkImage" id="image23">
-		      <property name="visible">True</property>
-		      <property name="stock">gtk-refresh</property>
-		      <property name="icon_size">4</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		    </widget>
-		    <packing>
-		      <property name="padding">0</property>
-		      <property name="expand">False</property>
-		      <property name="fill">False</property>
-		    </packing>
-		  </child>
-
-		  <child>
-		    <widget class="GtkLabel" id="label152">
-		      <property name="visible">True</property>
-		      <property name="label" translatable="yes">Reinitialiser</property>
-		      <property name="use_underline">True</property>
-		      <property name="use_markup">False</property>
-		      <property name="justify">GTK_JUSTIFY_LEFT</property>
-		      <property name="wrap">False</property>
-		      <property name="selectable">False</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-		      <property name="width_chars">-1</property>
-		      <property name="single_line_mode">False</property>
-		      <property name="angle">0</property>
-		    </widget>
-		    <packing>
-		      <property name="padding">0</property>
-		      <property name="expand">False</property>
-		      <property name="fill">False</property>
-		    </packing>
-		  </child>
-		</widget>
-	      </child>
-	    </widget>
-	  </child>
-	</widget>
-	<packing>
-	  <property name="x">632</property>
-	  <property name="y">640</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="ButtonCancelWindowManageList">
-	  <property name="width_request">144</property>
-	  <property name="height_request">32</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-
-	  <child>
-	    <widget class="GtkAlignment" id="alignment11">
-	      <property name="visible">True</property>
-	      <property name="xalign">0.5</property>
-	      <property name="yalign">0.5</property>
-	      <property name="xscale">0</property>
-	      <property name="yscale">0</property>
-	      <property name="top_padding">0</property>
-	      <property name="bottom_padding">0</property>
-	      <property name="left_padding">0</property>
-	      <property name="right_padding">0</property>
-
-	      <child>
-		<widget class="GtkHBox" id="hbox10">
-		  <property name="visible">True</property>
-		  <property name="homogeneous">False</property>
-		  <property name="spacing">2</property>
-
-		  <child>
-		    <widget class="GtkImage" id="image25">
-		      <property name="visible">True</property>
-		      <property name="stock">gtk-cancel</property>
-		      <property name="icon_size">4</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		    </widget>
-		    <packing>
-		      <property name="padding">0</property>
-		      <property name="expand">False</property>
-		      <property name="fill">False</property>
-		    </packing>
-		  </child>
-
-		  <child>
-		    <widget class="GtkLabel" id="label154">
-		      <property name="visible">True</property>
-		      <property name="label" translatable="yes">Annuler</property>
-		      <property name="use_underline">True</property>
-		      <property name="use_markup">False</property>
-		      <property name="justify">GTK_JUSTIFY_LEFT</property>
-		      <property name="wrap">False</property>
-		      <property name="selectable">False</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-		      <property name="width_chars">-1</property>
-		      <property name="single_line_mode">False</property>
-		      <property name="angle">0</property>
-		    </widget>
-		    <packing>
-		      <property name="padding">0</property>
-		      <property name="expand">False</property>
-		      <property name="fill">False</property>
-		    </packing>
-		  </child>
-		</widget>
-	      </child>
-	    </widget>
-	  </child>
-	</widget>
-	<packing>
-	  <property name="x">216</property>
-	  <property name="y">640</property>
-	</packing>
-      </child>
-
-      <child>
 	<widget class="GtkImage" id="ImagePosterListPreviewWindowManageList">
 	  <property name="width_request">72</property>
 	  <property name="height_request">64</property>
@@ -2192,6 +1751,471 @@
 	  <property name="y">16</property>
 	</packing>
       </child>
+
+      <child>
+	<widget class="GtkRadioButton" id="RadioButtonLeftOrientationWindowManageList">
+	  <property name="width_request">124</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Gauche</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <signal name="toggled" handler="on_RadioButtonLeftOrientationWindowManageList_toggled" last_modification_time="Wed, 30 Nov 2022 22:27:14 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">32</property>
+	  <property name="y">160</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkRadioButton" id="RadioButtonRightOrientationWindowManageList">
+	  <property name="width_request">124</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Droite</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <property name="group">RadioButtonLeftOrientationWindowManageList</property>
+	  <signal name="toggled" handler="on_RadioButtonRightOrientationWindowManageList_toggled" last_modification_time="Wed, 30 Nov 2022 22:27:34 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">216</property>
+	  <property name="y">160</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="ButtonAddMemberWindowManageList">
+	  <property name="width_request">160</property>
+	  <property name="height_request">32</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_ButtonAddMemberWindowManageList_clicked" last_modification_time="Wed, 30 Nov 2022 22:27:54 GMT"/>
+
+	  <child>
+	    <widget class="GtkAlignment" id="alignment12">
+	      <property name="visible">True</property>
+	      <property name="xalign">0.5</property>
+	      <property name="yalign">0.5</property>
+	      <property name="xscale">0</property>
+	      <property name="yscale">0</property>
+	      <property name="top_padding">0</property>
+	      <property name="bottom_padding">0</property>
+	      <property name="left_padding">0</property>
+	      <property name="right_padding">0</property>
+
+	      <child>
+		<widget class="GtkHBox" id="hbox11">
+		  <property name="visible">True</property>
+		  <property name="homogeneous">False</property>
+		  <property name="spacing">2</property>
+
+		  <child>
+		    <widget class="GtkImage" id="image26">
+		      <property name="visible">True</property>
+		      <property name="stock">gtk-add</property>
+		      <property name="icon_size">4</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		    </widget>
+		    <packing>
+		      <property name="padding">0</property>
+		      <property name="expand">False</property>
+		      <property name="fill">False</property>
+		    </packing>
+		  </child>
+
+		  <child>
+		    <widget class="GtkLabel" id="label155">
+		      <property name="visible">True</property>
+		      <property name="label" translatable="yes">Ajouter</property>
+		      <property name="use_underline">True</property>
+		      <property name="use_markup">False</property>
+		      <property name="justify">GTK_JUSTIFY_LEFT</property>
+		      <property name="wrap">False</property>
+		      <property name="selectable">False</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+		      <property name="width_chars">-1</property>
+		      <property name="single_line_mode">False</property>
+		      <property name="angle">0</property>
+		    </widget>
+		    <packing>
+		      <property name="padding">0</property>
+		      <property name="expand">False</property>
+		      <property name="fill">False</property>
+		    </packing>
+		  </child>
+		</widget>
+	      </child>
+	    </widget>
+	  </child>
+	</widget>
+	<packing>
+	  <property name="x">136</property>
+	  <property name="y">368</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="ButtonDeleteMemberWindowManageList">
+	  <property name="width_request">160</property>
+	  <property name="height_request">32</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_ButtonDeleteMemberWindowManageList_clicked" last_modification_time="Wed, 30 Nov 2022 22:28:05 GMT"/>
+
+	  <child>
+	    <widget class="GtkAlignment" id="alignment13">
+	      <property name="visible">True</property>
+	      <property name="xalign">0.5</property>
+	      <property name="yalign">0.5</property>
+	      <property name="xscale">0</property>
+	      <property name="yscale">0</property>
+	      <property name="top_padding">0</property>
+	      <property name="bottom_padding">0</property>
+	      <property name="left_padding">0</property>
+	      <property name="right_padding">0</property>
+
+	      <child>
+		<widget class="GtkHBox" id="hbox12">
+		  <property name="visible">True</property>
+		  <property name="homogeneous">False</property>
+		  <property name="spacing">2</property>
+
+		  <child>
+		    <widget class="GtkImage" id="image28">
+		      <property name="visible">True</property>
+		      <property name="stock">gtk-delete</property>
+		      <property name="icon_size">4</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		    </widget>
+		    <packing>
+		      <property name="padding">0</property>
+		      <property name="expand">False</property>
+		      <property name="fill">False</property>
+		    </packing>
+		  </child>
+
+		  <child>
+		    <widget class="GtkLabel" id="label156">
+		      <property name="visible">True</property>
+		      <property name="label" translatable="yes">Supprimer</property>
+		      <property name="use_underline">True</property>
+		      <property name="use_markup">False</property>
+		      <property name="justify">GTK_JUSTIFY_LEFT</property>
+		      <property name="wrap">False</property>
+		      <property name="selectable">False</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+		      <property name="width_chars">-1</property>
+		      <property name="single_line_mode">False</property>
+		      <property name="angle">0</property>
+		    </widget>
+		    <packing>
+		      <property name="padding">0</property>
+		      <property name="expand">False</property>
+		      <property name="fill">False</property>
+		    </packing>
+		  </child>
+		</widget>
+	      </child>
+	    </widget>
+	  </child>
+	</widget>
+	<packing>
+	  <property name="x">136</property>
+	  <property name="y">496</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="ButtonCancelWindowManageList">
+	  <property name="width_request">144</property>
+	  <property name="height_request">32</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_ButtonCancelWindowManageList_clicked" last_modification_time="Wed, 30 Nov 2022 22:28:14 GMT"/>
+
+	  <child>
+	    <widget class="GtkAlignment" id="alignment11">
+	      <property name="visible">True</property>
+	      <property name="xalign">0.5</property>
+	      <property name="yalign">0.5</property>
+	      <property name="xscale">0</property>
+	      <property name="yscale">0</property>
+	      <property name="top_padding">0</property>
+	      <property name="bottom_padding">0</property>
+	      <property name="left_padding">0</property>
+	      <property name="right_padding">0</property>
+
+	      <child>
+		<widget class="GtkHBox" id="hbox10">
+		  <property name="visible">True</property>
+		  <property name="homogeneous">False</property>
+		  <property name="spacing">2</property>
+
+		  <child>
+		    <widget class="GtkImage" id="image25">
+		      <property name="visible">True</property>
+		      <property name="stock">gtk-cancel</property>
+		      <property name="icon_size">4</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		    </widget>
+		    <packing>
+		      <property name="padding">0</property>
+		      <property name="expand">False</property>
+		      <property name="fill">False</property>
+		    </packing>
+		  </child>
+
+		  <child>
+		    <widget class="GtkLabel" id="label154">
+		      <property name="visible">True</property>
+		      <property name="label" translatable="yes">Annuler</property>
+		      <property name="use_underline">True</property>
+		      <property name="use_markup">False</property>
+		      <property name="justify">GTK_JUSTIFY_LEFT</property>
+		      <property name="wrap">False</property>
+		      <property name="selectable">False</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+		      <property name="width_chars">-1</property>
+		      <property name="single_line_mode">False</property>
+		      <property name="angle">0</property>
+		    </widget>
+		    <packing>
+		      <property name="padding">0</property>
+		      <property name="expand">False</property>
+		      <property name="fill">False</property>
+		    </packing>
+		  </child>
+		</widget>
+	      </child>
+	    </widget>
+	  </child>
+	</widget>
+	<packing>
+	  <property name="x">216</property>
+	  <property name="y">640</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="ButtonValidateWindowManageList">
+	  <property name="width_request">136</property>
+	  <property name="height_request">32</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_ButtonValidateWindowManageList_clicked" last_modification_time="Wed, 30 Nov 2022 22:28:23 GMT"/>
+
+	  <child>
+	    <widget class="GtkAlignment" id="alignment10">
+	      <property name="visible">True</property>
+	      <property name="xalign">0.5</property>
+	      <property name="yalign">0.5</property>
+	      <property name="xscale">0</property>
+	      <property name="yscale">0</property>
+	      <property name="top_padding">0</property>
+	      <property name="bottom_padding">0</property>
+	      <property name="left_padding">0</property>
+	      <property name="right_padding">0</property>
+
+	      <child>
+		<widget class="GtkHBox" id="hbox9">
+		  <property name="visible">True</property>
+		  <property name="homogeneous">False</property>
+		  <property name="spacing">2</property>
+
+		  <child>
+		    <widget class="GtkImage" id="image24">
+		      <property name="visible">True</property>
+		      <property name="stock">gtk-apply</property>
+		      <property name="icon_size">4</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		    </widget>
+		    <packing>
+		      <property name="padding">0</property>
+		      <property name="expand">False</property>
+		      <property name="fill">False</property>
+		    </packing>
+		  </child>
+
+		  <child>
+		    <widget class="GtkLabel" id="label153">
+		      <property name="visible">True</property>
+		      <property name="label" translatable="yes">Valider</property>
+		      <property name="use_underline">True</property>
+		      <property name="use_markup">False</property>
+		      <property name="justify">GTK_JUSTIFY_LEFT</property>
+		      <property name="wrap">False</property>
+		      <property name="selectable">False</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+		      <property name="width_chars">-1</property>
+		      <property name="single_line_mode">False</property>
+		      <property name="angle">0</property>
+		    </widget>
+		    <packing>
+		      <property name="padding">0</property>
+		      <property name="expand">False</property>
+		      <property name="fill">False</property>
+		    </packing>
+		  </child>
+		</widget>
+	      </child>
+	    </widget>
+	  </child>
+	</widget>
+	<packing>
+	  <property name="x">432</property>
+	  <property name="y">640</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="ButtonResetWindowManageList">
+	  <property name="width_request">128</property>
+	  <property name="height_request">32</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_ButtonResetWindowManageList_clicked" last_modification_time="Wed, 30 Nov 2022 22:28:35 GMT"/>
+
+	  <child>
+	    <widget class="GtkAlignment" id="alignment9">
+	      <property name="visible">True</property>
+	      <property name="xalign">0.5</property>
+	      <property name="yalign">0.5</property>
+	      <property name="xscale">0</property>
+	      <property name="yscale">0</property>
+	      <property name="top_padding">0</property>
+	      <property name="bottom_padding">0</property>
+	      <property name="left_padding">0</property>
+	      <property name="right_padding">0</property>
+
+	      <child>
+		<widget class="GtkHBox" id="hbox8">
+		  <property name="visible">True</property>
+		  <property name="homogeneous">False</property>
+		  <property name="spacing">2</property>
+
+		  <child>
+		    <widget class="GtkImage" id="image23">
+		      <property name="visible">True</property>
+		      <property name="stock">gtk-refresh</property>
+		      <property name="icon_size">4</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		    </widget>
+		    <packing>
+		      <property name="padding">0</property>
+		      <property name="expand">False</property>
+		      <property name="fill">False</property>
+		    </packing>
+		  </child>
+
+		  <child>
+		    <widget class="GtkLabel" id="label152">
+		      <property name="visible">True</property>
+		      <property name="label" translatable="yes">Reinitialiser</property>
+		      <property name="use_underline">True</property>
+		      <property name="use_markup">False</property>
+		      <property name="justify">GTK_JUSTIFY_LEFT</property>
+		      <property name="wrap">False</property>
+		      <property name="selectable">False</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+		      <property name="width_chars">-1</property>
+		      <property name="single_line_mode">False</property>
+		      <property name="angle">0</property>
+		    </widget>
+		    <packing>
+		      <property name="padding">0</property>
+		      <property name="expand">False</property>
+		      <property name="fill">False</property>
+		    </packing>
+		  </child>
+		</widget>
+	      </child>
+	    </widget>
+	  </child>
+	</widget>
+	<packing>
+	  <property name="x">632</property>
+	  <property name="y">640</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkRadioButton" id="RadioButtonCenterOrientationWindowManageList">
+	  <property name="width_request">124</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Centre</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <property name="group">RadioButtonLeftOrientationWindowManageList</property>
+	  <signal name="toggled" handler="on_RadioButtonCenterOrientationWindowOrientation_toggled" last_modification_time="Wed, 30 Nov 2022 22:27:22 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">120</property>
+	  <property name="y">160</property>
+	</packing>
+      </child>
     </widget>
   </child>
 </widget>
@@ -2272,6 +2296,7 @@
 	  <property name="use_underline">True</property>
 	  <property name="relief">GTK_RELIEF_NORMAL</property>
 	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_ButtonOkWindowAlert_clicked" last_modification_time="Wed, 30 Nov 2022 22:30:32 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">136</property>
@@ -2618,6 +2643,58 @@
       </child>
 
       <child>
+	<widget class="GtkLabel" id="LabelIsValidWindowShowList">
+	  <property name="width_request">49</property>
+	  <property name="height_request">17</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Non</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">192</property>
+	  <property name="y">408</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="label9">
+	  <property name="width_request">264</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">LISTE ELECTORALE</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">176</property>
+	  <property name="y">8</property>
+	</packing>
+      </child>
+
+      <child>
 	<widget class="GtkButton" id="ButtonCloseWindowShowList">
 	  <property name="width_request">136</property>
 	  <property name="height_request">32</property>
@@ -2625,6 +2702,7 @@
 	  <property name="can_focus">True</property>
 	  <property name="relief">GTK_RELIEF_NORMAL</property>
 	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_ButtonCloseWindowShowList_clicked" last_modification_time="Wed, 30 Nov 2022 22:31:00 GMT"/>
 
 	  <child>
 	    <widget class="GtkAlignment" id="alignment8">
@@ -2695,58 +2773,6 @@
 	  <property name="y">448</property>
 	</packing>
       </child>
-
-      <child>
-	<widget class="GtkLabel" id="LabelIsValidWindowShowList">
-	  <property name="width_request">49</property>
-	  <property name="height_request">17</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Non</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">192</property>
-	  <property name="y">408</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="label9">
-	  <property name="width_request">264</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">LISTE ELECTORALE</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">176</property>
-	  <property name="y">8</property>
-	</packing>
-      </child>
     </widget>
   </child>
 </widget>
@@ -2794,22 +2820,6 @@
       </child>
 
       <child>
-	<widget class="GtkComboBox" id="ComboBoxSelectActionWindowActionOnList">
-	  <property name="width_request">160</property>
-	  <property name="height_request">32</property>
-	  <property name="visible">True</property>
-	  <property name="items" translatable="yes">Modifier
-Supprimer</property>
-	  <property name="add_tearoffs">False</property>
-	  <property name="focus_on_click">True</property>
-	</widget>
-	<packing>
-	  <property name="x">216</property>
-	  <property name="y">32</property>
-	</packing>
-      </child>
-
-      <child>
 	<widget class="GtkButton" id="ButtonCancelWindowActionOnList">
 	  <property name="width_request">112</property>
 	  <property name="height_request">32</property>
@@ -2817,6 +2827,7 @@ Supprimer</property>
 	  <property name="can_focus">True</property>
 	  <property name="relief">GTK_RELIEF_NORMAL</property>
 	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_ButtonCancelWindowActionOnList_clicked" last_modification_time="Wed, 30 Nov 2022 22:31:30 GMT"/>
 
 	  <child>
 	    <widget class="GtkAlignment" id="alignment4">
@@ -2896,6 +2907,7 @@ Supprimer</property>
 	  <property name="can_focus">True</property>
 	  <property name="relief">GTK_RELIEF_NORMAL</property>
 	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_ButtonConfirmWindowActionOnList_clicked" last_modification_time="Wed, 30 Nov 2022 22:31:44 GMT"/>
 
 	  <child>
 	    <widget class="GtkAlignment" id="alignment3">
@@ -2964,6 +2976,23 @@ Supprimer</property>
 	<packing>
 	  <property name="x">216</property>
 	  <property name="y">88</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkComboBox" id="ComboBoxSelectActionWindowActionOnList">
+	  <property name="width_request">160</property>
+	  <property name="height_request">32</property>
+	  <property name="visible">True</property>
+	  <property name="items" translatable="yes">Modifier
+Supprimer</property>
+	  <property name="add_tearoffs">False</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="changed" handler="on_ComboBoxSelectActionWindowActionOnList_changed" last_modification_time="Wed, 30 Nov 2022 22:32:03 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">216</property>
+	  <property name="y">32</property>
 	</packing>
       </child>
     </widget>
@@ -3038,6 +3067,7 @@ Supprimer</property>
 	  <property name="use_underline">True</property>
 	  <property name="relief">GTK_RELIEF_NORMAL</property>
 	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_ButtonNextWindowStart_clicked" last_modification_time="Wed, 30 Nov 2022 22:32:43 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">350</property>
@@ -3050,13 +3080,13 @@ Supprimer</property>
 
 <widget class="GtkWindow" id="WindowConnection">
   <property name="width_request">700</property>
-  <property name="height_request">400</property>
+  <property name="height_request">600</property>
   <property name="visible">True</property>
   <property name="title" translatable="yes">Connection</property>
   <property name="type">GTK_WINDOW_TOPLEVEL</property>
   <property name="window_position">GTK_WIN_POS_NONE</property>
   <property name="modal">False</property>
-  <property name="resizable">True</property>
+  <property name="resizable">False</property>
   <property name="destroy_with_parent">False</property>
   <property name="decorated">True</property>
   <property name="skip_taskbar_hint">False</property>
@@ -3120,6 +3150,7 @@ Supprimer</property>
 	  <property name="can_focus">True</property>
 	  <property name="relief">GTK_RELIEF_NORMAL</property>
 	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_ButtonPreviousWindowConnection_clicked" last_modification_time="Wed, 30 Nov 2022 22:33:35 GMT"/>
 
 	  <child>
 	    <widget class="GtkAlignment" id="alignment5">
@@ -3199,6 +3230,7 @@ Supprimer</property>
 	  <property name="can_focus">True</property>
 	  <property name="relief">GTK_RELIEF_NORMAL</property>
 	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_ButtonResetWindowConnection_clicked" last_modification_time="Wed, 30 Nov 2022 22:33:45 GMT"/>
 
 	  <child>
 	    <widget class="GtkAlignment" id="alignment7">
@@ -3330,6 +3362,7 @@ Supprimer</property>
 	  <property name="can_focus">True</property>
 	  <property name="relief">GTK_RELIEF_NORMAL</property>
 	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_ButtonConnectionWindowConnection_clicked" last_modification_time="Wed, 30 Nov 2022 22:33:56 GMT"/>
 
 	  <child>
 	    <widget class="GtkAlignment" id="alignment6">
@@ -3459,23 +3492,6 @@ Supprimer</property>
 	      <property name="visible">True</property>
 
 	      <child>
-		<widget class="GtkButton" id="Ouvrir">
-		  <property name="width_request">100</property>
-		  <property name="height_request">35</property>
-		  <property name="visible">True</property>
-		  <property name="can_focus">True</property>
-		  <property name="label" translatable="yes">Ouvrir</property>
-		  <property name="use_underline">True</property>
-		  <property name="relief">GTK_RELIEF_NORMAL</property>
-		  <property name="focus_on_click">True</property>
-		</widget>
-		<packing>
-		  <property name="x">150</property>
-		  <property name="y">130</property>
-		</packing>
-	      </child>
-
-	      <child>
 		<widget class="GtkLabel" id="label38">
 		  <property name="width_request">150</property>
 		  <property name="height_request">50</property>
@@ -3517,6 +3533,24 @@ Supprimer</property>
 		  <property name="y">10</property>
 		</packing>
 	      </child>
+
+	      <child>
+		<widget class="GtkButton" id="BouttonOpenUser">
+		  <property name="width_request">100</property>
+		  <property name="height_request">35</property>
+		  <property name="visible">True</property>
+		  <property name="can_focus">True</property>
+		  <property name="label" translatable="yes">Ouvrir</property>
+		  <property name="use_underline">True</property>
+		  <property name="relief">GTK_RELIEF_NORMAL</property>
+		  <property name="focus_on_click">True</property>
+		  <signal name="clicked" handler="on_BouttonOpenUser_clicked" last_modification_time="Sat, 03 Dec 2022 19:45:06 GMT"/>
+		</widget>
+		<packing>
+		  <property name="x">150</property>
+		  <property name="y">130</property>
+		</packing>
+	      </child>
 	    </widget>
 	    <packing>
 	      <property name="left_attach">0</property>
@@ -3529,23 +3563,6 @@ Supprimer</property>
 	  <child>
 	    <widget class="GtkFixed" id="fixed10">
 	      <property name="visible">True</property>
-
-	      <child>
-		<widget class="GtkButton" id="button11">
-		  <property name="width_request">100</property>
-		  <property name="height_request">35</property>
-		  <property name="visible">True</property>
-		  <property name="can_focus">True</property>
-		  <property name="label" translatable="yes">Ouvrir</property>
-		  <property name="use_underline">True</property>
-		  <property name="relief">GTK_RELIEF_NORMAL</property>
-		  <property name="focus_on_click">True</property>
-		</widget>
-		<packing>
-		  <property name="x">150</property>
-		  <property name="y">130</property>
-		</packing>
-	      </child>
 
 	      <child>
 		<widget class="GtkImage" id="image12">
@@ -3587,6 +3604,24 @@ Supprimer</property>
 		<packing>
 		  <property name="x">120</property>
 		  <property name="y">20</property>
+		</packing>
+	      </child>
+
+	      <child>
+		<widget class="GtkButton" id="OpenBDV">
+		  <property name="width_request">100</property>
+		  <property name="height_request">35</property>
+		  <property name="visible">True</property>
+		  <property name="can_focus">True</property>
+		  <property name="label" translatable="yes">Ouvrir</property>
+		  <property name="use_underline">True</property>
+		  <property name="relief">GTK_RELIEF_NORMAL</property>
+		  <property name="focus_on_click">True</property>
+		  <signal name="clicked" handler="on_OpenBDV_clicked" last_modification_time="Thu, 01 Dec 2022 17:21:31 GMT"/>
+		</widget>
+		<packing>
+		  <property name="x">150</property>
+		  <property name="y">130</property>
 		</packing>
 	      </child>
 	    </widget>
@@ -3647,7 +3682,7 @@ Supprimer</property>
 	      </child>
 
 	      <child>
-		<widget class="GtkButton" id="button9">
+		<widget class="GtkButton" id="OpenObservation">
 		  <property name="width_request">100</property>
 		  <property name="height_request">35</property>
 		  <property name="visible">True</property>
@@ -3656,6 +3691,7 @@ Supprimer</property>
 		  <property name="use_underline">True</property>
 		  <property name="relief">GTK_RELIEF_NORMAL</property>
 		  <property name="focus_on_click">True</property>
+		  <signal name="clicked" handler="on_OpenObservation_clicked" last_modification_time="Thu, 01 Dec 2022 17:20:26 GMT"/>
 		</widget>
 		<packing>
 		  <property name="x">150</property>
@@ -3675,23 +3711,6 @@ Supprimer</property>
 	  <child>
 	    <widget class="GtkFixed" id="fixed12">
 	      <property name="visible">True</property>
-
-	      <child>
-		<widget class="GtkButton" id="button12">
-		  <property name="width_request">100</property>
-		  <property name="height_request">35</property>
-		  <property name="visible">True</property>
-		  <property name="can_focus">True</property>
-		  <property name="label" translatable="yes">Ouvrir</property>
-		  <property name="use_underline">True</property>
-		  <property name="relief">GTK_RELIEF_NORMAL</property>
-		  <property name="focus_on_click">True</property>
-		</widget>
-		<packing>
-		  <property name="x">150</property>
-		  <property name="y">130</property>
-		</packing>
-	      </child>
 
 	      <child>
 		<widget class="GtkImage" id="image11">
@@ -3733,6 +3752,24 @@ Supprimer</property>
 		<packing>
 		  <property name="x">120</property>
 		  <property name="y">20</property>
+		</packing>
+	      </child>
+
+	      <child>
+		<widget class="GtkButton" id="ButtonOpenElectoralList">
+		  <property name="width_request">100</property>
+		  <property name="height_request">35</property>
+		  <property name="visible">True</property>
+		  <property name="can_focus">True</property>
+		  <property name="label" translatable="yes">Ouvrir</property>
+		  <property name="use_underline">True</property>
+		  <property name="relief">GTK_RELIEF_NORMAL</property>
+		  <property name="focus_on_click">True</property>
+		  <signal name="clicked" handler="on_ButtonOpenElectoralList_clicked" last_modification_time="Sat, 03 Dec 2022 19:46:21 GMT"/>
+		</widget>
+		<packing>
+		  <property name="x">150</property>
+		  <property name="y">130</property>
 		</packing>
 	      </child>
 	    </widget>
@@ -3794,7 +3831,7 @@ Supprimer</property>
 	      </child>
 
 	      <child>
-		<widget class="GtkButton" id="button10">
+		<widget class="GtkButton" id="OpenElection">
 		  <property name="width_request">100</property>
 		  <property name="height_request">35</property>
 		  <property name="visible">True</property>
@@ -3803,6 +3840,7 @@ Supprimer</property>
 		  <property name="use_underline">True</property>
 		  <property name="relief">GTK_RELIEF_NORMAL</property>
 		  <property name="focus_on_click">True</property>
+		  <signal name="clicked" handler="on_OpenElection_clicked" last_modification_time="Thu, 01 Dec 2022 17:19:26 GMT"/>
 		</widget>
 		<packing>
 		  <property name="x">150</property>
@@ -3822,23 +3860,6 @@ Supprimer</property>
 	  <child>
 	    <widget class="GtkFixed" id="fixed14">
 	      <property name="visible">True</property>
-
-	      <child>
-		<widget class="GtkButton" id="button13">
-		  <property name="width_request">100</property>
-		  <property name="height_request">35</property>
-		  <property name="visible">True</property>
-		  <property name="can_focus">True</property>
-		  <property name="label" translatable="yes">Ouvrir</property>
-		  <property name="use_underline">True</property>
-		  <property name="relief">GTK_RELIEF_NORMAL</property>
-		  <property name="focus_on_click">True</property>
-		</widget>
-		<packing>
-		  <property name="x">150</property>
-		  <property name="y">130</property>
-		</packing>
-	      </child>
 
 	      <child>
 		<widget class="GtkImage" id="image10">
@@ -3882,6 +3903,24 @@ Supprimer</property>
 		  <property name="y">20</property>
 		</packing>
 	      </child>
+
+	      <child>
+		<widget class="GtkButton" id="OpenReclamation">
+		  <property name="width_request">100</property>
+		  <property name="height_request">35</property>
+		  <property name="visible">True</property>
+		  <property name="can_focus">True</property>
+		  <property name="label" translatable="yes">Ouvrir</property>
+		  <property name="use_underline">True</property>
+		  <property name="relief">GTK_RELIEF_NORMAL</property>
+		  <property name="focus_on_click">True</property>
+		  <signal name="clicked" handler="on_OpenReclamation_clicked" last_modification_time="Thu, 01 Dec 2022 17:22:26 GMT"/>
+		</widget>
+		<packing>
+		  <property name="x">150</property>
+		  <property name="y">130</property>
+		</packing>
+	      </child>
 	    </widget>
 	    <packing>
 	      <property name="left_attach">2</property>
@@ -3896,23 +3935,6 @@ Supprimer</property>
 	<packing>
 	  <property name="x">30</property>
 	  <property name="y">260</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="Precedent">
-	  <property name="width_request">180</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Precedent</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	</widget>
-	<packing>
-	  <property name="x">440</property>
-	  <property name="y">650</property>
 	</packing>
       </child>
 
@@ -3962,7 +3984,25 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkButton" id="Ouvrir">
+	<widget class="GtkButton" id="PrecedentMainMenu">
+	  <property name="width_request">180</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Précédent</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_PrecedentMainMenu_clicked" last_modification_time="Thu, 01 Dec 2022 17:22:56 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">440</property>
+	  <property name="y">650</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="ButtonOpenStat">
 	  <property name="width_request">120</property>
 	  <property name="height_request">40</property>
 	  <property name="visible">True</property>
@@ -3971,6 +4011,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="use_underline">True</property>
 	  <property name="relief">GTK_RELIEF_NORMAL</property>
 	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_ButtonOpenStat_clicked" last_modification_time="Sat, 03 Dec 2022 19:44:20 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">550</property>
@@ -4048,6 +4089,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 		  <property name="can_focus">True</property>
 		  <property name="relief">GTK_RELIEF_NORMAL</property>
 		  <property name="focus_on_click">True</property>
+		  <signal name="clicked" handler="on_BouttonShowUser_clicked" last_modification_time="Thu, 01 Dec 2022 17:23:35 GMT"/>
 
 		  <child>
 		    <widget class="GtkAlignment" id="alignment21">
@@ -4136,6 +4178,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 		  <property name="can_focus">True</property>
 		  <property name="relief">GTK_RELIEF_NORMAL</property>
 		  <property name="focus_on_click">True</property>
+		  <signal name="clicked" handler="on_BouttonModifyUser_clicked" last_modification_time="Thu, 01 Dec 2022 17:23:24 GMT"/>
 
 		  <child>
 		    <widget class="GtkAlignment" id="alignment20">
@@ -4224,6 +4267,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 		  <property name="can_focus">True</property>
 		  <property name="relief">GTK_RELIEF_NORMAL</property>
 		  <property name="focus_on_click">True</property>
+		  <signal name="clicked" handler="on_BouttonDeleteUser_clicked" last_modification_time="Thu, 01 Dec 2022 17:23:43 GMT"/>
 
 		  <child>
 		    <widget class="GtkAlignment" id="alignment19">
@@ -4368,87 +4412,6 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkButton" id="AddUser">
-	  <property name="width_request">120</property>
-	  <property name="height_request">50</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-
-	  <child>
-	    <widget class="GtkAlignment" id="alignment18">
-	      <property name="visible">True</property>
-	      <property name="xalign">0.5</property>
-	      <property name="yalign">0.5</property>
-	      <property name="xscale">0</property>
-	      <property name="yscale">0</property>
-	      <property name="top_padding">0</property>
-	      <property name="bottom_padding">0</property>
-	      <property name="left_padding">0</property>
-	      <property name="right_padding">0</property>
-
-	      <child>
-		<widget class="GtkHBox" id="hbox20">
-		  <property name="visible">True</property>
-		  <property name="homogeneous">False</property>
-		  <property name="spacing">2</property>
-
-		  <child>
-		    <widget class="GtkImage" id="image38">
-		      <property name="visible">True</property>
-		      <property name="stock">gtk-add</property>
-		      <property name="icon_size">4</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		    </widget>
-		    <packing>
-		      <property name="padding">0</property>
-		      <property name="expand">False</property>
-		      <property name="fill">False</property>
-		    </packing>
-		  </child>
-
-		  <child>
-		    <widget class="GtkLabel" id="label168">
-		      <property name="width_request">70</property>
-		      <property name="height_request">17</property>
-		      <property name="visible">True</property>
-		      <property name="label" translatable="yes">  Ajouter</property>
-		      <property name="use_underline">True</property>
-		      <property name="use_markup">False</property>
-		      <property name="justify">GTK_JUSTIFY_LEFT</property>
-		      <property name="wrap">False</property>
-		      <property name="selectable">False</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-		      <property name="width_chars">-1</property>
-		      <property name="single_line_mode">False</property>
-		      <property name="angle">0</property>
-		    </widget>
-		    <packing>
-		      <property name="padding">0</property>
-		      <property name="expand">False</property>
-		      <property name="fill">False</property>
-		    </packing>
-		  </child>
-		</widget>
-	      </child>
-	    </widget>
-	  </child>
-	</widget>
-	<packing>
-	  <property name="x">780</property>
-	  <property name="y">150</property>
-	</packing>
-      </child>
-
-      <child>
 	<widget class="GtkLabel" id="Id">
 	  <property name="width_request">150</property>
 	  <property name="height_request">35</property>
@@ -4544,6 +4507,88 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
+	<widget class="GtkButton" id="AddUser">
+	  <property name="width_request">120</property>
+	  <property name="height_request">50</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_AddUser_clicked" last_modification_time="Thu, 01 Dec 2022 17:24:17 GMT"/>
+
+	  <child>
+	    <widget class="GtkAlignment" id="alignment18">
+	      <property name="visible">True</property>
+	      <property name="xalign">0.5</property>
+	      <property name="yalign">0.5</property>
+	      <property name="xscale">0</property>
+	      <property name="yscale">0</property>
+	      <property name="top_padding">0</property>
+	      <property name="bottom_padding">0</property>
+	      <property name="left_padding">0</property>
+	      <property name="right_padding">0</property>
+
+	      <child>
+		<widget class="GtkHBox" id="hbox20">
+		  <property name="visible">True</property>
+		  <property name="homogeneous">False</property>
+		  <property name="spacing">2</property>
+
+		  <child>
+		    <widget class="GtkImage" id="image38">
+		      <property name="visible">True</property>
+		      <property name="stock">gtk-add</property>
+		      <property name="icon_size">4</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		    </widget>
+		    <packing>
+		      <property name="padding">0</property>
+		      <property name="expand">False</property>
+		      <property name="fill">False</property>
+		    </packing>
+		  </child>
+
+		  <child>
+		    <widget class="GtkLabel" id="label168">
+		      <property name="width_request">70</property>
+		      <property name="height_request">17</property>
+		      <property name="visible">True</property>
+		      <property name="label" translatable="yes">  Ajouter</property>
+		      <property name="use_underline">True</property>
+		      <property name="use_markup">False</property>
+		      <property name="justify">GTK_JUSTIFY_LEFT</property>
+		      <property name="wrap">False</property>
+		      <property name="selectable">False</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+		      <property name="width_chars">-1</property>
+		      <property name="single_line_mode">False</property>
+		      <property name="angle">0</property>
+		    </widget>
+		    <packing>
+		      <property name="padding">0</property>
+		      <property name="expand">False</property>
+		      <property name="fill">False</property>
+		    </packing>
+		  </child>
+		</widget>
+	      </child>
+	    </widget>
+	  </child>
+	</widget>
+	<packing>
+	  <property name="x">784</property>
+	  <property name="y">152</property>
+	</packing>
+      </child>
+
+      <child>
 	<widget class="GtkRadioButton" id="SearchNameUser">
 	  <property name="width_request">124</property>
 	  <property name="height_request">24</property>
@@ -4556,6 +4601,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="active">False</property>
 	  <property name="inconsistent">False</property>
 	  <property name="draw_indicator">True</property>
+	  <signal name="toggled" handler="on_SearchNameUser_toggled" last_modification_time="Thu, 01 Dec 2022 17:24:44 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">200</property>
@@ -4578,6 +4624,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="inconsistent">False</property>
 	  <property name="draw_indicator">True</property>
 	  <property name="group">SearchNameUser</property>
+	  <signal name="toggled" handler="on_SearchSexeUser_toggled" last_modification_time="Thu, 01 Dec 2022 17:24:56 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">272</property>
@@ -4599,6 +4646,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="inconsistent">False</property>
 	  <property name="draw_indicator">True</property>
 	  <property name="group">SearchNameUser</property>
+	  <signal name="toggled" handler="on_SearchDateUser_toggled" last_modification_time="Thu, 01 Dec 2022 17:25:10 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">344</property>
@@ -4620,10 +4668,29 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="inconsistent">False</property>
 	  <property name="draw_indicator">True</property>
 	  <property name="group">SearchNameUser</property>
+	  <signal name="toggled" handler="on_SearchRoleUser_toggled" last_modification_time="Thu, 01 Dec 2022 17:25:37 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">504</property>
 	  <property name="y">184</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="SearchUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">45</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Rechercher</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_SearchUser_clicked" last_modification_time="Thu, 01 Dec 2022 17:25:47 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">240</property>
+	  <property name="y">238</property>
 	</packing>
       </child>
 
@@ -4635,6 +4702,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="can_focus">True</property>
 	  <property name="relief">GTK_RELIEF_NORMAL</property>
 	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_PrecedentUser_clicked" last_modification_time="Thu, 01 Dec 2022 17:26:08 GMT"/>
 
 	  <child>
 	    <widget class="GtkAlignment" id="alignment23">
@@ -4703,23 +4771,6 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	<packing>
 	  <property name="x">440</property>
 	  <property name="y">625</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="SearchUser">
-	  <property name="width_request">150</property>
-	  <property name="height_request">45</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Rechercher</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	</widget>
-	<packing>
-	  <property name="x">240</property>
-	  <property name="y">238</property>
 	</packing>
       </child>
     </widget>
@@ -5169,139 +5220,6 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkRadioButton" id="FemmeAddUser">
-	  <property name="width_request">116</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Femme</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	</widget>
-	<packing>
-	  <property name="x">685</property>
-	  <property name="y">250</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkRadioButton" id="HommeAddUser">
-	  <property name="width_request">116</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Homme</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	  <property name="group">FemmeAddUser</property>
-	</widget>
-	<packing>
-	  <property name="x">785</property>
-	  <property name="y">250</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="BouttonPrecedentAddUser">
-	  <property name="width_request">150</property>
-	  <property name="height_request">50</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Précédent</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	</widget>
-	<packing>
-	  <property name="x">100</property>
-	  <property name="y">600</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="BouttonAjouterAddUser">
-	  <property name="width_request">150</property>
-	  <property name="height_request">50</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Ajouter</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	</widget>
-	<packing>
-	  <property name="x">728</property>
-	  <property name="y">600</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkCheckButton" id="NonVoteAddUser">
-	  <property name="width_request">118</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Non voté</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	</widget>
-	<packing>
-	  <property name="x">400</property>
-	  <property name="y">432</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkCheckButton" id="Vote0AddUser">
-	  <property name="width_request">118</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Vote blanche</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	</widget>
-	<packing>
-	  <property name="x">272</property>
-	  <property name="y">428</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkCheckButton" id="Vote1AddUser">
-	  <property name="width_request">118</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Voté</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	</widget>
-	<packing>
-	  <property name="x">200</property>
-	  <property name="y">428</property>
-	</packing>
-      </child>
-
-      <child>
 	<widget class="GtkSpinButton" id="WriteJourAddUser">
 	  <property name="width_request">60</property>
 	  <property name="height_request">30</property>
@@ -5314,6 +5232,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">1 0 100 1 10 10</property>
+	  <signal name="changed" handler="on_WriteJourAddUser_changed" last_modification_time="Thu, 01 Dec 2022 17:27:01 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">200</property>
@@ -5334,6 +5253,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">1 0 100 1 10 10</property>
+	  <signal name="changed" handler="on_WriteAnneeAddUser_changed" last_modification_time="Thu, 01 Dec 2022 17:27:22 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">352</property>
@@ -5354,6 +5274,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">1 0 100 1 10 10</property>
+	  <signal name="changed" handler="on_WriteMoiAddUser_changed" last_modification_time="Thu, 01 Dec 2022 17:27:11 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">272</property>
@@ -5462,6 +5383,146 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	<packing>
 	  <property name="x">20</property>
 	  <property name="y">275</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkCheckButton" id="NonVoteAddUser">
+	  <property name="width_request">118</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Non voté</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <signal name="toggled" handler="on_NonVoteAddUser_toggled" last_modification_time="Thu, 01 Dec 2022 17:28:03 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">400</property>
+	  <property name="y">428</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkCheckButton" id="Vote0AddUser">
+	  <property name="width_request">118</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Vote blanche</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <signal name="toggled" handler="on_Vote0AddUser_toggled" last_modification_time="Thu, 01 Dec 2022 17:28:15 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">272</property>
+	  <property name="y">428</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkCheckButton" id="Vote1AddUser">
+	  <property name="width_request">118</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Voté</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <signal name="toggled" handler="on_Vote1AddUser_toggled" last_modification_time="Thu, 01 Dec 2022 17:28:26 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">200</property>
+	  <property name="y">428</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkRadioButton" id="FemmeAddUser">
+	  <property name="width_request">116</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Femme</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <signal name="toggled" handler="on_FemmeAddUser_toggled" last_modification_time="Thu, 01 Dec 2022 17:28:44 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">685</property>
+	  <property name="y">250</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkRadioButton" id="HommeAddUser">
+	  <property name="width_request">116</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Homme</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <property name="group">FemmeAddUser</property>
+	  <signal name="toggled" handler="on_HommeAddUser_toggled" last_modification_time="Thu, 01 Dec 2022 17:28:57 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">785</property>
+	  <property name="y">250</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="BouttonAjouterAddUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">50</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Ajouter</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_BouttonAjouterAddUser_clicked" last_modification_time="Thu, 01 Dec 2022 17:29:07 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">728</property>
+	  <property name="y">600</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="BouttonPrecedentAddUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">50</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Précédent</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_BouttonPrecedentAddUser_clicked" last_modification_time="Thu, 01 Dec 2022 17:29:14 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">100</property>
+	  <property name="y">600</property>
 	</packing>
       </child>
     </widget>
@@ -5643,6 +5704,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">0 0 100 1 10 10</property>
+	  <signal name="changed" handler="on_WriteRoleModifyUser_changed" last_modification_time="Thu, 01 Dec 2022 17:29:55 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">200</property>
@@ -5911,138 +5973,6 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkRadioButton" id="FemmeModifyUser">
-	  <property name="width_request">116</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Femme</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	</widget>
-	<packing>
-	  <property name="x">685</property>
-	  <property name="y">250</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkRadioButton" id="HommeModifyUser">
-	  <property name="width_request">116</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Homme</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	</widget>
-	<packing>
-	  <property name="x">785</property>
-	  <property name="y">250</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="BouttonModifierUser">
-	  <property name="width_request">150</property>
-	  <property name="height_request">50</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Modifier</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	</widget>
-	<packing>
-	  <property name="x">728</property>
-	  <property name="y">600</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="BouttonPrecedentModifyUser">
-	  <property name="width_request">150</property>
-	  <property name="height_request">50</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Précédent</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	</widget>
-	<packing>
-	  <property name="x">100</property>
-	  <property name="y">600</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkCheckButton" id="Vote1ModifyUser">
-	  <property name="width_request">118</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Voté</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	</widget>
-	<packing>
-	  <property name="x">200</property>
-	  <property name="y">428</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkCheckButton" id="Vote0ModifyUser">
-	  <property name="width_request">118</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Vote blanche</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	</widget>
-	<packing>
-	  <property name="x">272</property>
-	  <property name="y">428</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkCheckButton" id="NonModifyUser">
-	  <property name="width_request">118</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Non voté</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	</widget>
-	<packing>
-	  <property name="x">400</property>
-	  <property name="y">424</property>
-	</packing>
-      </child>
-
-      <child>
 	<widget class="GtkLabel" id="JourModifyUser">
 	  <property name="width_request">60</property>
 	  <property name="height_request">20</property>
@@ -6107,6 +6037,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">1 0 100 1 10 10</property>
+	  <signal name="changed" handler="on_WriteJourModifyUser_changed" last_modification_time="Thu, 01 Dec 2022 17:30:02 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">200</property>
@@ -6127,6 +6058,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">1 0 100 1 10 10</property>
+	  <signal name="changed" handler="on_WriteAnneeModifyUser_changed" last_modification_time="Thu, 01 Dec 2022 17:30:15 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">352</property>
@@ -6147,6 +6079,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">1 0 100 1 10 10</property>
+	  <signal name="changed" handler="on_WriteMoisModifyUser_changed" last_modification_time="Thu, 01 Dec 2022 17:30:09 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">272</property>
@@ -6203,6 +6136,145 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	<packing>
 	  <property name="x">20</property>
 	  <property name="y">275</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkCheckButton" id="Vote0ModifyUser">
+	  <property name="width_request">118</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Vote blanche</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <signal name="toggled" handler="on_Vote0ModifyUser_toggled" last_modification_time="Thu, 01 Dec 2022 17:30:44 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">272</property>
+	  <property name="y">428</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkCheckButton" id="Vote1ModifyUser">
+	  <property name="width_request">118</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Voté</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <signal name="toggled" handler="on_Vote1ModifyUser_toggled" last_modification_time="Thu, 01 Dec 2022 17:30:23 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">200</property>
+	  <property name="y">428</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkCheckButton" id="NonModifyUser">
+	  <property name="width_request">118</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Non voté</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <signal name="toggled" handler="on_NonModifyUser_toggled" last_modification_time="Thu, 01 Dec 2022 17:31:03 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">400</property>
+	  <property name="y">428</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkRadioButton" id="HommeModifyUser">
+	  <property name="width_request">116</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Homme</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <signal name="toggled" handler="on_HommeModifyUser_toggled" last_modification_time="Thu, 01 Dec 2022 17:31:23 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">785</property>
+	  <property name="y">250</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkRadioButton" id="FemmeModifyUser">
+	  <property name="width_request">116</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Femme</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <signal name="toggled" handler="on_FemmeModifyUser_toggled" last_modification_time="Thu, 01 Dec 2022 17:31:12 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">685</property>
+	  <property name="y">250</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="BouttonModifierUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">50</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Modifier</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_BouttonModifierUser_clicked" last_modification_time="Thu, 01 Dec 2022 17:31:31 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">728</property>
+	  <property name="y">600</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="BouttonPrecedentModifyUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">50</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Précédent</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_BouttonPrecedentModifyUser_clicked" last_modification_time="Thu, 01 Dec 2022 17:31:44 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">100</property>
+	  <property name="y">600</property>
 	</packing>
       </child>
     </widget>
@@ -6290,7 +6362,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  </child>
 
 	  <child>
-	    <widget class="GtkButton" id="button24">
+	    <widget class="GtkButton" id="BouttonSucces">
 	      <property name="width_request">100</property>
 	      <property name="height_request">35</property>
 	      <property name="visible">True</property>
@@ -6299,10 +6371,11 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	      <property name="use_underline">True</property>
 	      <property name="relief">GTK_RELIEF_NORMAL</property>
 	      <property name="focus_on_click">True</property>
+	      <signal name="clicked" handler="on_BouttonSucces_clicked" last_modification_time="Thu, 01 Dec 2022 17:32:48 GMT"/>
 	    </widget>
 	    <packing>
-	      <property name="x">150</property>
-	      <property name="y">70</property>
+	      <property name="x">152</property>
+	      <property name="y">72</property>
 	    </packing>
 	  </child>
 	</widget>
@@ -6392,7 +6465,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  </child>
 
 	  <child>
-	    <widget class="GtkButton" id="button25">
+	    <widget class="GtkButton" id="BouttonErreur">
 	      <property name="width_request">100</property>
 	      <property name="height_request">35</property>
 	      <property name="visible">True</property>
@@ -6401,6 +6474,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	      <property name="use_underline">True</property>
 	      <property name="relief">GTK_RELIEF_NORMAL</property>
 	      <property name="focus_on_click">True</property>
+	      <signal name="clicked" handler="on_BouttonErreur_clicked" last_modification_time="Thu, 01 Dec 2022 17:33:18 GMT"/>
 	    </widget>
 	    <packing>
 	      <property name="x">150</property>
@@ -6830,66 +6904,6 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkCheckButton" id="Vote1ShowUser">
-	  <property name="width_request">118</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Voté</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	</widget>
-	<packing>
-	  <property name="x">200</property>
-	  <property name="y">428</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkCheckButton" id="Vote0ShowUser">
-	  <property name="width_request">118</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Vote blanche</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	</widget>
-	<packing>
-	  <property name="x">272</property>
-	  <property name="y">428</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkCheckButton" id="NonVoteShowUser">
-	  <property name="width_request">118</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Non voté</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	</widget>
-	<packing>
-	  <property name="x">400</property>
-	  <property name="y">428</property>
-	</packing>
-      </child>
-
-      <child>
 	<widget class="GtkLabel" id="SexeShowUser">
 	  <property name="width_request">150</property>
 	  <property name="height_request">40</property>
@@ -6912,62 +6926,6 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	<packing>
 	  <property name="x">500</property>
 	  <property name="y">240</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkRadioButton" id="FemmeShowUser">
-	  <property name="width_request">116</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Femme</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	</widget>
-	<packing>
-	  <property name="x">685</property>
-	  <property name="y">250</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkRadioButton" id="HommeShowUser">
-	  <property name="width_request">116</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Homme</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	</widget>
-	<packing>
-	  <property name="x">785</property>
-	  <property name="y">250</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="BouttonPrecedentShowUser">
-	  <property name="width_request">150</property>
-	  <property name="height_request">50</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Précédent</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	</widget>
-	<packing>
-	  <property name="x">100</property>
-	  <property name="y">600</property>
 	</packing>
       </child>
 
@@ -7088,6 +7046,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">1 0 100 1 10 10</property>
+	  <signal name="changed" handler="on_WriteJourShowUser_changed" last_modification_time="Thu, 01 Dec 2022 17:33:39 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">200</property>
@@ -7108,6 +7067,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">1 0 100 1 10 10</property>
+	  <signal name="changed" handler="on_WriteAnneeShowUser_changed" last_modification_time="Thu, 01 Dec 2022 17:34:03 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">352</property>
@@ -7128,10 +7088,133 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">1 0 100 1 10 10</property>
+	  <signal name="changed" handler="on_WriteMoisShowUser_changed" last_modification_time="Thu, 01 Dec 2022 17:33:52 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">272</property>
 	  <property name="y">280</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkCheckButton" id="Vote0ShowUser">
+	  <property name="width_request">118</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Vote blanche</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <signal name="toggled" handler="on_Vote0ShowUser_toggled" last_modification_time="Thu, 01 Dec 2022 17:34:46 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">272</property>
+	  <property name="y">428</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkCheckButton" id="NonVoteShowUser">
+	  <property name="width_request">118</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Non voté</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <signal name="toggled" handler="on_NonVoteShowUser_toggled" last_modification_time="Thu, 01 Dec 2022 17:34:52 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">400</property>
+	  <property name="y">428</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkCheckButton" id="Vote1ShowUser">
+	  <property name="width_request">118</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Voté</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <signal name="toggled" handler="on_Vote1ShowUser_toggled" last_modification_time="Thu, 01 Dec 2022 17:34:36 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">200</property>
+	  <property name="y">428</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkRadioButton" id="FemmeShowUser">
+	  <property name="width_request">116</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Femme</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <signal name="toggled" handler="on_FemmeShowUser_toggled" last_modification_time="Thu, 01 Dec 2022 17:35:03 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">685</property>
+	  <property name="y">250</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="BouttonPrecedentShowUser">
+	  <property name="width_request">150</property>
+	  <property name="height_request">50</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Précédent</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_BouttonPrecedentShowUser_clicked" last_modification_time="Thu, 01 Dec 2022 17:35:20 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">100</property>
+	  <property name="y">600</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkRadioButton" id="HommeShowUser">
+	  <property name="width_request">116</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Homme</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <signal name="toggled" handler="on_HommeShowUser_toggled" last_modification_time="Thu, 01 Dec 2022 17:35:11 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">785</property>
+	  <property name="y">250</property>
 	</packing>
       </child>
     </widget>
@@ -7233,6 +7316,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">0 0 1000 1 10 10</property>
+	  <signal name="changed" handler="on_WriteCapaciteDeElecteurBVAdd_changed" last_modification_time="Thu, 01 Dec 2022 17:35:49 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">704</property>
@@ -7253,6 +7337,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">0 0 100 1 10 10</property>
+	  <signal name="changed" handler="on_WriteCapaciteDeObservateurBVAdd_changed" last_modification_time="Thu, 01 Dec 2022 17:35:42 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">240</property>
@@ -7277,23 +7362,6 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	<packing>
 	  <property name="x">704</property>
 	  <property name="y">104</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="AjouterBVAdd">
-	  <property name="width_request">150</property>
-	  <property name="height_request">50</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Ajouter</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	</widget>
-	<packing>
-	  <property name="x">725</property>
-	  <property name="y">600</property>
 	</packing>
       </child>
 
@@ -7463,9 +7531,28 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="use_underline">True</property>
 	  <property name="relief">GTK_RELIEF_NORMAL</property>
 	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_PrecedentBVAdd_clicked" last_modification_time="Thu, 01 Dec 2022 17:36:10 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">125</property>
+	  <property name="y">600</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="AjouterBVAdd">
+	  <property name="width_request">150</property>
+	  <property name="height_request">50</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Ajouter</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_AjouterBVAdd_clicked" last_modification_time="Thu, 01 Dec 2022 17:35:56 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">725</property>
 	  <property name="y">600</property>
 	</packing>
       </child>
@@ -7568,6 +7655,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">0 0 1000 1 10 10</property>
+	  <signal name="changed" handler="on_writeCapaciteDeElecteurBVSupp_changed" last_modification_time="Thu, 01 Dec 2022 17:36:50 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">704</property>
@@ -7588,6 +7676,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">0 0 100 1 10 10</property>
+	  <signal name="changed" handler="on_WriteCapaciteDeObservateurBVSupp_changed" last_modification_time="Thu, 01 Dec 2022 17:36:41 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">240</property>
@@ -7772,23 +7861,6 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkButton" id="ModifierBVSupp">
-	  <property name="width_request">150</property>
-	  <property name="height_request">50</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Modifier</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	</widget>
-	<packing>
-	  <property name="x">725</property>
-	  <property name="y">600</property>
-	</packing>
-      </child>
-
-      <child>
 	<widget class="GtkButton" id="PrecedentBVSupp">
 	  <property name="width_request">150</property>
 	  <property name="height_request">50</property>
@@ -7798,9 +7870,28 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="use_underline">True</property>
 	  <property name="relief">GTK_RELIEF_NORMAL</property>
 	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_PrecedentBVSupp_clicked" last_modification_time="Thu, 01 Dec 2022 17:37:09 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">125</property>
+	  <property name="y">600</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="ModifierBVSupp">
+	  <property name="width_request">150</property>
+	  <property name="height_request">50</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Modifier</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_ModifierBVSupp_clicked" last_modification_time="Thu, 01 Dec 2022 17:37:01 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">725</property>
 	  <property name="y">600</property>
 	</packing>
       </child>
@@ -7923,6 +8014,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">0 0 1000 1 10 10</property>
+	  <signal name="changed" handler="on_WriteCapaciteDeElecteurBVAff_changed" last_modification_time="Thu, 01 Dec 2022 17:37:34 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">704</property>
@@ -7943,6 +8035,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">0 0 100 1 10 10</property>
+	  <signal name="changed" handler="on_WriteCapaciteDeObservateurBVAff_changed" last_modification_time="Thu, 01 Dec 2022 17:37:28 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">240</property>
@@ -7973,23 +8066,6 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	<packing>
 	  <property name="x">500</property>
 	  <property name="y">460</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="PrecedentBVAff">
-	  <property name="width_request">150</property>
-	  <property name="height_request">50</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Precedent</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	</widget>
-	<packing>
-	  <property name="x">125</property>
-	  <property name="y">600</property>
 	</packing>
       </child>
 
@@ -8122,6 +8198,24 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="y">460</property>
 	</packing>
       </child>
+
+      <child>
+	<widget class="GtkButton" id="PrecedentBVAff">
+	  <property name="width_request">150</property>
+	  <property name="height_request">50</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Precedent</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_PrecedentBVAff_clicked" last_modification_time="Thu, 01 Dec 2022 17:37:41 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">125</property>
+	  <property name="y">600</property>
+	</packing>
+      </child>
     </widget>
   </child>
 </widget>
@@ -8130,7 +8224,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
   <property name="width_request">1000</property>
   <property name="height_request">700</property>
   <property name="visible">True</property>
-  <property name="title" translatable="yes">window ajouter electeur</property>
+  <property name="title" translatable="yes">window ajouter election</property>
   <property name="type">GTK_WINDOW_TOPLEVEL</property>
   <property name="window_position">GTK_WIN_POS_NONE</property>
   <property name="modal">False</property>
@@ -8181,6 +8275,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">0 0 10000 1 10 10</property>
+	  <signal name="changed" handler="on_nbh_ajou_election_changed" last_modification_time="Thu, 01 Dec 2022 17:38:26 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">580</property>
@@ -8201,6 +8296,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">0 0 10000 1 10 10</property>
+	  <signal name="changed" handler="on_nbc_ajou_electon_changed" last_modification_time="Thu, 01 Dec 2022 17:38:34 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">580</property>
@@ -8267,6 +8363,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">1 0 100 1 10 10</property>
+	  <signal name="changed" handler="on_jour_ajou_election_changed" last_modification_time="Thu, 01 Dec 2022 17:38:42 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">104</property>
@@ -8287,6 +8384,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">1 0 100 1 10 10</property>
+	  <signal name="changed" handler="on_mois_ajou_election_changed" last_modification_time="Thu, 01 Dec 2022 17:38:52 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">232</property>
@@ -8307,27 +8405,11 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">1 0 100 1 10 10</property>
+	  <signal name="changed" handler="on_annee_ajou_election_changed" last_modification_time="Thu, 01 Dec 2022 17:39:00 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">360</property>
 	  <property name="y">280</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="Ajouter_election">
-	  <property name="width_request">150</property>
-	  <property name="height_request">50</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Ajouter</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	</widget>
-	<packing>
-	  <property name="x">725</property>
-	  <property name="y">600</property>
 	</packing>
       </child>
 
@@ -8523,9 +8605,28 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="use_underline">True</property>
 	  <property name="relief">GTK_RELIEF_NORMAL</property>
 	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_Precedent1_election_clicked" last_modification_time="Thu, 01 Dec 2022 17:39:13 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">75</property>
+	  <property name="y">600</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="Ajouter_election">
+	  <property name="width_request">150</property>
+	  <property name="height_request">50</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Ajouter</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_Ajouter_election_clicked" last_modification_time="Thu, 01 Dec 2022 17:39:21 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">725</property>
 	  <property name="y">600</property>
 	</packing>
       </child>
@@ -8588,6 +8689,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">0 0 10000 1 10 10</property>
+	  <signal name="changed" handler="on_nbh_modi_election_changed" last_modification_time="Thu, 01 Dec 2022 17:39:38 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">580</property>
@@ -8608,6 +8710,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">0 0 10000 1 10 10</property>
+	  <signal name="changed" handler="on_nbc_modi_election_changed" last_modification_time="Thu, 01 Dec 2022 17:39:46 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">580</property>
@@ -8648,6 +8751,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">1 0 100 1 10 10</property>
+	  <signal name="changed" handler="on_jour_modi_election_changed" last_modification_time="Thu, 01 Dec 2022 17:40:44 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">80</property>
@@ -8668,6 +8772,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">1 0 100 1 10 10</property>
+	  <signal name="changed" handler="on_mois_modi_election_changed" last_modification_time="Thu, 01 Dec 2022 17:40:37 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">208</property>
@@ -8688,6 +8793,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">1 0 100 1 10 10</property>
+	  <signal name="changed" handler="on_annee_modi_election_changed" last_modification_time="Thu, 01 Dec 2022 17:40:25 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">360</property>
@@ -8744,40 +8850,6 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	<packing>
 	  <property name="x">576</property>
 	  <property name="y">360</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="Modifier_election">
-	  <property name="width_request">150</property>
-	  <property name="height_request">50</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Modifier</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	</widget>
-	<packing>
-	  <property name="x">725</property>
-	  <property name="y">600</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="precedent2_election">
-	  <property name="width_request">150</property>
-	  <property name="height_request">50</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Precedent</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	</widget>
-	<packing>
-	  <property name="x">75</property>
-	  <property name="y">600</property>
 	</packing>
       </child>
 
@@ -8936,6 +9008,42 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="y">72</property>
 	</packing>
       </child>
+
+      <child>
+	<widget class="GtkButton" id="Modifier_election">
+	  <property name="width_request">150</property>
+	  <property name="height_request">50</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Modifier</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_Modifier_election_clicked" last_modification_time="Thu, 01 Dec 2022 17:40:51 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">725</property>
+	  <property name="y">600</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="precedent2_election">
+	  <property name="width_request">150</property>
+	  <property name="height_request">50</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Precedent</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_precedent2_election_clicked" last_modification_time="Thu, 01 Dec 2022 17:40:59 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">75</property>
+	  <property name="y">600</property>
+	</packing>
+      </child>
     </widget>
   </child>
 </widget>
@@ -8995,6 +9103,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">0 0 10000 1 10 10</property>
+	  <signal name="changed" handler="on_nbh_affi_election_changed" last_modification_time="Thu, 01 Dec 2022 17:42:03 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">568</property>
@@ -9015,6 +9124,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">0 0 10000 1 10 10</property>
+	  <signal name="changed" handler="on_nbc_affi_election_changed" last_modification_time="Thu, 01 Dec 2022 17:42:11 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">568</property>
@@ -9055,6 +9165,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">1 0 100 1 10 10</property>
+	  <signal name="changed" handler="on_jour_affi_election_changed" last_modification_time="Thu, 01 Dec 2022 17:42:50 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">96</property>
@@ -9075,6 +9186,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">1 0 100 1 10 10</property>
+	  <signal name="changed" handler="on_mois_affi_election_changed" last_modification_time="Thu, 01 Dec 2022 17:42:40 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">224</property>
@@ -9095,27 +9207,11 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="snap_to_ticks">False</property>
 	  <property name="wrap">False</property>
 	  <property name="adjustment">1 0 100 1 10 10</property>
+	  <signal name="changed" handler="on_annee_affi_election_changed" last_modification_time="Thu, 01 Dec 2022 17:42:23 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">352</property>
 	  <property name="y">280</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="precedent3_election">
-	  <property name="width_request">150</property>
-	  <property name="height_request">50</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Precedent</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	</widget>
-	<packing>
-	  <property name="x">75</property>
-	  <property name="y">600</property>
 	</packing>
       </child>
 
@@ -9324,6 +9420,24 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	<packing>
 	  <property name="x">288</property>
 	  <property name="y">280</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="precedent3_election">
+	  <property name="width_request">150</property>
+	  <property name="height_request">50</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Precedent</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_precedent3_election_clicked" last_modification_time="Thu, 01 Dec 2022 17:43:07 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">75</property>
+	  <property name="y">600</property>
 	</packing>
       </child>
     </widget>
@@ -10343,100 +10457,6 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
       </child>
 
       <child>
-	<widget class="GtkToolbar" id="toolbar3">
-	  <property name="width_request">362</property>
-	  <property name="height_request">50</property>
-	  <property name="visible">True</property>
-	  <property name="orientation">GTK_ORIENTATION_HORIZONTAL</property>
-	  <property name="toolbar_style">GTK_TOOLBAR_BOTH_HORIZ</property>
-	  <property name="tooltips">True</property>
-	  <property name="show_arrow">True</property>
-
-	  <child>
-	    <widget class="GtkToolItem" id="toolitem7">
-	      <property name="visible">True</property>
-	      <property name="visible_horizontal">True</property>
-	      <property name="visible_vertical">True</property>
-	      <property name="is_important">False</property>
-
-	      <child>
-		<widget class="GtkButton" id="buttonBVAdd">
-		  <property name="width_request">120</property>
-		  <property name="height_request">50</property>
-		  <property name="visible">True</property>
-		  <property name="can_focus">True</property>
-		  <property name="label" translatable="yes">Afficher</property>
-		  <property name="use_underline">True</property>
-		  <property name="relief">GTK_RELIEF_NORMAL</property>
-		  <property name="focus_on_click">True</property>
-		</widget>
-	      </child>
-	    </widget>
-	    <packing>
-	      <property name="expand">False</property>
-	      <property name="homogeneous">False</property>
-	    </packing>
-	  </child>
-
-	  <child>
-	    <widget class="GtkToolItem" id="toolitem8">
-	      <property name="visible">True</property>
-	      <property name="visible_horizontal">True</property>
-	      <property name="visible_vertical">True</property>
-	      <property name="is_important">False</property>
-
-	      <child>
-		<widget class="GtkButton" id="buttonBVMod">
-		  <property name="width_request">120</property>
-		  <property name="height_request">50</property>
-		  <property name="visible">True</property>
-		  <property name="can_focus">True</property>
-		  <property name="label" translatable="yes">Modifier</property>
-		  <property name="use_underline">True</property>
-		  <property name="relief">GTK_RELIEF_NORMAL</property>
-		  <property name="focus_on_click">True</property>
-		</widget>
-	      </child>
-	    </widget>
-	    <packing>
-	      <property name="expand">False</property>
-	      <property name="homogeneous">False</property>
-	    </packing>
-	  </child>
-
-	  <child>
-	    <widget class="GtkToolItem" id="toolitem9">
-	      <property name="visible">True</property>
-	      <property name="visible_horizontal">True</property>
-	      <property name="visible_vertical">True</property>
-	      <property name="is_important">False</property>
-
-	      <child>
-		<widget class="GtkButton" id="buttonBVSupp">
-		  <property name="width_request">120</property>
-		  <property name="height_request">50</property>
-		  <property name="visible">True</property>
-		  <property name="can_focus">True</property>
-		  <property name="label" translatable="yes">Supprimer</property>
-		  <property name="use_underline">True</property>
-		  <property name="relief">GTK_RELIEF_NORMAL</property>
-		  <property name="focus_on_click">True</property>
-		</widget>
-	      </child>
-	    </widget>
-	    <packing>
-	      <property name="expand">False</property>
-	      <property name="homogeneous">False</property>
-	    </packing>
-	  </child>
-	</widget>
-	<packing>
-	  <property name="x">20</property>
-	  <property name="y">150</property>
-	</packing>
-      </child>
-
-      <child>
 	<widget class="GtkHBox" id="hbox17">
 	  <property name="width_request">750</property>
 	  <property name="height_request">300</property>
@@ -10477,23 +10497,6 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	<packing>
 	  <property name="x">50</property>
 	  <property name="y">300</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkButton" id="buttonBVAdd">
-	  <property name="width_request">120</property>
-	  <property name="height_request">50</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Ajouter</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	</widget>
-	<packing>
-	  <property name="x">760</property>
-	  <property name="y">150</property>
 	</packing>
       </child>
 
@@ -10563,6 +10566,121 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	<packing>
 	  <property name="x">690</property>
 	  <property name="y">70</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkToolbar" id="toolbar3">
+	  <property name="width_request">362</property>
+	  <property name="height_request">50</property>
+	  <property name="visible">True</property>
+	  <property name="orientation">GTK_ORIENTATION_HORIZONTAL</property>
+	  <property name="toolbar_style">GTK_TOOLBAR_BOTH_HORIZ</property>
+	  <property name="tooltips">True</property>
+	  <property name="show_arrow">True</property>
+
+	  <child>
+	    <widget class="GtkToolItem" id="toolitem7">
+	      <property name="visible">True</property>
+	      <property name="visible_horizontal">True</property>
+	      <property name="visible_vertical">True</property>
+	      <property name="is_important">False</property>
+
+	      <child>
+		<widget class="GtkButton" id="buttonBVAdd">
+		  <property name="width_request">120</property>
+		  <property name="height_request">50</property>
+		  <property name="visible">True</property>
+		  <property name="can_focus">True</property>
+		  <property name="label" translatable="yes">Afficher</property>
+		  <property name="use_underline">True</property>
+		  <property name="relief">GTK_RELIEF_NORMAL</property>
+		  <property name="focus_on_click">True</property>
+		  <signal name="clicked" handler="on_buttonBVAdd_clicked" last_modification_time="Thu, 01 Dec 2022 17:45:19 GMT"/>
+		</widget>
+	      </child>
+	    </widget>
+	    <packing>
+	      <property name="expand">False</property>
+	      <property name="homogeneous">False</property>
+	    </packing>
+	  </child>
+
+	  <child>
+	    <widget class="GtkToolItem" id="toolitem8">
+	      <property name="visible">True</property>
+	      <property name="visible_horizontal">True</property>
+	      <property name="visible_vertical">True</property>
+	      <property name="is_important">False</property>
+
+	      <child>
+		<widget class="GtkButton" id="buttonBVMod">
+		  <property name="width_request">120</property>
+		  <property name="height_request">50</property>
+		  <property name="visible">True</property>
+		  <property name="can_focus">True</property>
+		  <property name="label" translatable="yes">Modifier</property>
+		  <property name="use_underline">True</property>
+		  <property name="relief">GTK_RELIEF_NORMAL</property>
+		  <property name="focus_on_click">True</property>
+		  <signal name="clicked" handler="on_buttonBVMod_clicked" last_modification_time="Thu, 01 Dec 2022 17:44:53 GMT"/>
+		</widget>
+	      </child>
+	    </widget>
+	    <packing>
+	      <property name="expand">False</property>
+	      <property name="homogeneous">False</property>
+	    </packing>
+	  </child>
+
+	  <child>
+	    <widget class="GtkToolItem" id="toolitem9">
+	      <property name="visible">True</property>
+	      <property name="visible_horizontal">True</property>
+	      <property name="visible_vertical">True</property>
+	      <property name="is_important">False</property>
+
+	      <child>
+		<widget class="GtkButton" id="buttonBVSupp">
+		  <property name="width_request">120</property>
+		  <property name="height_request">50</property>
+		  <property name="visible">True</property>
+		  <property name="can_focus">True</property>
+		  <property name="label" translatable="yes">Supprimer</property>
+		  <property name="use_underline">True</property>
+		  <property name="relief">GTK_RELIEF_NORMAL</property>
+		  <property name="focus_on_click">True</property>
+		  <signal name="clicked" handler="on_buttonBVSupp_clicked" last_modification_time="Thu, 01 Dec 2022 17:44:39 GMT"/>
+		</widget>
+	      </child>
+	    </widget>
+	    <packing>
+	      <property name="expand">False</property>
+	      <property name="homogeneous">False</property>
+	    </packing>
+	  </child>
+	</widget>
+	<packing>
+	  <property name="x">20</property>
+	  <property name="y">150</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="buttonBVAdd">
+	  <property name="width_request">120</property>
+	  <property name="height_request">50</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Ajouter</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_buttonBVAdd_clicked" last_modification_time="Thu, 01 Dec 2022 17:44:32 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">760</property>
+	  <property name="y">150</property>
 	</packing>
       </child>
     </widget>
@@ -10690,6 +10808,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 		  <property name="use_underline">True</property>
 		  <property name="relief">GTK_RELIEF_NORMAL</property>
 		  <property name="focus_on_click">True</property>
+		  <signal name="clicked" handler="on_button48_clicked" last_modification_time="Thu, 01 Dec 2022 17:46:52 GMT"/>
 		</widget>
 	      </child>
 	    </widget>
@@ -10716,6 +10835,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 		  <property name="use_underline">True</property>
 		  <property name="relief">GTK_RELIEF_NORMAL</property>
 		  <property name="focus_on_click">True</property>
+		  <signal name="clicked" handler="on_button49_clicked" last_modification_time="Thu, 01 Dec 2022 17:46:43 GMT"/>
 		</widget>
 	      </child>
 	    </widget>
@@ -10742,6 +10862,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 		  <property name="use_underline">True</property>
 		  <property name="relief">GTK_RELIEF_NORMAL</property>
 		  <property name="focus_on_click">True</property>
+		  <signal name="clicked" handler="on_button50_clicked" last_modification_time="Thu, 01 Dec 2022 17:46:31 GMT"/>
 		</widget>
 	      </child>
 	    </widget>
@@ -10828,6 +10949,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 	  <property name="use_underline">True</property>
 	  <property name="relief">GTK_RELIEF_NORMAL</property>
 	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_button51_clicked" last_modification_time="Thu, 01 Dec 2022 17:46:17 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">760</property>
@@ -11128,85 +11250,6 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
   <child>
     <widget class="GtkFixed" id="fixed34">
       <property name="visible">True</property>
-
-      <child>
-	<widget class="GtkButton" id="ButtonPreviousWindowStatistic">
-	  <property name="width_request">120</property>
-	  <property name="height_request">40</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-
-	  <child>
-	    <widget class="GtkAlignment" id="alignment24">
-	      <property name="visible">True</property>
-	      <property name="xalign">0.5</property>
-	      <property name="yalign">0.5</property>
-	      <property name="xscale">0</property>
-	      <property name="yscale">0</property>
-	      <property name="top_padding">0</property>
-	      <property name="bottom_padding">0</property>
-	      <property name="left_padding">0</property>
-	      <property name="right_padding">0</property>
-
-	      <child>
-		<widget class="GtkHBox" id="hbox26">
-		  <property name="visible">True</property>
-		  <property name="homogeneous">False</property>
-		  <property name="spacing">2</property>
-
-		  <child>
-		    <widget class="GtkImage" id="image44">
-		      <property name="visible">True</property>
-		      <property name="stock">gtk-go-back</property>
-		      <property name="icon_size">4</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		    </widget>
-		    <packing>
-		      <property name="padding">0</property>
-		      <property name="expand">False</property>
-		      <property name="fill">False</property>
-		    </packing>
-		  </child>
-
-		  <child>
-		    <widget class="GtkLabel" id="label182">
-		      <property name="visible">True</property>
-		      <property name="label" translatable="yes">  Précédent</property>
-		      <property name="use_underline">True</property>
-		      <property name="use_markup">False</property>
-		      <property name="justify">GTK_JUSTIFY_LEFT</property>
-		      <property name="wrap">False</property>
-		      <property name="selectable">False</property>
-		      <property name="xalign">0.5</property>
-		      <property name="yalign">0.5</property>
-		      <property name="xpad">0</property>
-		      <property name="ypad">0</property>
-		      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-		      <property name="width_chars">-1</property>
-		      <property name="single_line_mode">False</property>
-		      <property name="angle">0</property>
-		    </widget>
-		    <packing>
-		      <property name="padding">0</property>
-		      <property name="expand">False</property>
-		      <property name="fill">False</property>
-		    </packing>
-		  </child>
-		</widget>
-	      </child>
-	    </widget>
-	  </child>
-	</widget>
-	<packing>
-	  <property name="x">440</property>
-	  <property name="y">648</property>
-	</packing>
-      </child>
 
       <child>
 	<widget class="GtkScrolledWindow" id="scrolledwindow9">
@@ -11924,7 +11967,87 @@ nationaux et étrangers</property>
 	</widget>
 	<packing>
 	  <property name="x">16</property>
-	  <property name="y">0</property>
+	  <property name="y">8</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="ButtonPreviousWindowStatistic">
+	  <property name="width_request">120</property>
+	  <property name="height_request">40</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_ButtonPreviousWindowStatistic_clicked" last_modification_time="Thu, 01 Dec 2022 17:47:33 GMT"/>
+
+	  <child>
+	    <widget class="GtkAlignment" id="alignment24">
+	      <property name="visible">True</property>
+	      <property name="xalign">0.5</property>
+	      <property name="yalign">0.5</property>
+	      <property name="xscale">0</property>
+	      <property name="yscale">0</property>
+	      <property name="top_padding">0</property>
+	      <property name="bottom_padding">0</property>
+	      <property name="left_padding">0</property>
+	      <property name="right_padding">0</property>
+
+	      <child>
+		<widget class="GtkHBox" id="hbox26">
+		  <property name="visible">True</property>
+		  <property name="homogeneous">False</property>
+		  <property name="spacing">2</property>
+
+		  <child>
+		    <widget class="GtkImage" id="image44">
+		      <property name="visible">True</property>
+		      <property name="stock">gtk-go-back</property>
+		      <property name="icon_size">4</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		    </widget>
+		    <packing>
+		      <property name="padding">0</property>
+		      <property name="expand">False</property>
+		      <property name="fill">False</property>
+		    </packing>
+		  </child>
+
+		  <child>
+		    <widget class="GtkLabel" id="label182">
+		      <property name="visible">True</property>
+		      <property name="label" translatable="yes">  Précédent</property>
+		      <property name="use_underline">True</property>
+		      <property name="use_markup">False</property>
+		      <property name="justify">GTK_JUSTIFY_LEFT</property>
+		      <property name="wrap">False</property>
+		      <property name="selectable">False</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		      <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+		      <property name="width_chars">-1</property>
+		      <property name="single_line_mode">False</property>
+		      <property name="angle">0</property>
+		    </widget>
+		    <packing>
+		      <property name="padding">0</property>
+		      <property name="expand">False</property>
+		      <property name="fill">False</property>
+		    </packing>
+		  </child>
+		</widget>
+	      </child>
+	    </widget>
+	  </child>
+	</widget>
+	<packing>
+	  <property name="x">440</property>
+	  <property name="y">648</property>
 	</packing>
       </child>
     </widget>
@@ -12000,23 +12123,6 @@ nationaux et étrangers</property>
       </child>
 
       <child>
-	<widget class="GtkButton" id="ButtonVoteWindowVote">
-	  <property name="width_request">112</property>
-	  <property name="height_request">32</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Votez</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	</widget>
-	<packing>
-	  <property name="x">216</property>
-	  <property name="y">80</property>
-	</packing>
-      </child>
-
-      <child>
 	<widget class="GtkButton" id="ButtonNothingWindowVote">
 	  <property name="width_request">104</property>
 	  <property name="height_request">32</property>
@@ -12026,9 +12132,28 @@ nationaux et étrangers</property>
 	  <property name="use_underline">True</property>
 	  <property name="relief">GTK_RELIEF_NORMAL</property>
 	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_ButtonNothingWindowVote_clicked" last_modification_time="Wed, 30 Nov 2022 22:34:19 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">80</property>
+	  <property name="y">80</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkButton" id="ButtonVoteWindowVote">
+	  <property name="width_request">112</property>
+	  <property name="height_request">32</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Votez</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <signal name="clicked" handler="on_ButtonVoteWindowVote_clicked" last_modification_time="Wed, 30 Nov 2022 22:34:26 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">216</property>
 	  <property name="y">80</property>
 	</packing>
       </child>
