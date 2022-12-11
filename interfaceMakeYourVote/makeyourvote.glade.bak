@@ -106,58 +106,6 @@
       </child>
 
       <child>
-	<widget class="GtkLabel" id="LabelUserMain">
-	  <property name="width_request">100</property>
-	  <property name="height_request">30</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Nom&amp;Prenom</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">88</property>
-	  <property name="y">32</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkLabel" id="label57">
-	  <property name="width_request">100</property>
-	  <property name="height_request">30</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">#identifiant</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">80</property>
-	  <property name="y">8</property>
-	</packing>
-      </child>
-
-      <child>
 	<widget class="GtkToolbar" id="toolbar1">
 	  <property name="width_request">216</property>
 	  <property name="height_request">32</property>
@@ -679,71 +627,6 @@
       </child>
 
       <child>
-	<widget class="GtkRadioButton" id="RadioButtonLeftOrientationSearchWindowListMain">
-	  <property name="width_request">124</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Gauche</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	  <signal name="toggled" handler="on_RadioButtonLeftOrientationSearchWindowListMain_toggled" last_modification_time="Wed, 30 Nov 2022 22:25:18 GMT"/>
-	</widget>
-	<packing>
-	  <property name="x">24</property>
-	  <property name="y">424</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkRadioButton" id="RadioButtonCenterOrientationSearchWindowListMain">
-	  <property name="width_request">124</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Centre</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	  <property name="group">RadioButtonLeftOrientationSearchWindowListMain</property>
-	  <signal name="toggled" handler="on_RadioButtonCenterOrientationSearchWindowListMain_toggled" last_modification_time="Wed, 30 Nov 2022 22:25:33 GMT"/>
-	</widget>
-	<packing>
-	  <property name="x">104</property>
-	  <property name="y">424</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkRadioButton" id="RadioButtonRightOrientationSearchWindowListMain">
-	  <property name="width_request">124</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Droite</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	  <property name="group">RadioButtonLeftOrientationSearchWindowListMain</property>
-	  <signal name="toggled" handler="on_RadioButtonRightOrientationSearchWindowListMain_toggled" last_modification_time="Wed, 30 Nov 2022 22:25:42 GMT"/>
-	</widget>
-	<packing>
-	  <property name="x">184</property>
-	  <property name="y">424</property>
-	</packing>
-      </child>
-
-      <child>
 	<widget class="GtkButton" id="ButtonSearchWindowListMain">
 	  <property name="width_request">144</property>
 	  <property name="height_request">32</property>
@@ -923,43 +806,165 @@
       </child>
 
       <child>
-	<widget class="GtkCheckButton" id="CheckButtonIdListCriteriaWindowListMain">
-	  <property name="width_request">118</property>
-	  <property name="height_request">24</property>
+	<widget class="GtkLabel" id="LabelIdElectionWindowListMain">
+	  <property name="width_request">184</property>
+	  <property name="height_request">40</property>
 	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">ID Liste</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	  <signal name="toggled" handler="on_CheckButtonIdListCriteriaWindowListMain_toggled" last_modification_time="Wed, 30 Nov 2022 22:24:35 GMT"/>
+	  <property name="label" translatable="yes">Election :</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
 	</widget>
 	<packing>
-	  <property name="x">304</property>
-	  <property name="y">176</property>
+	  <property name="x">408</property>
+	  <property name="y">0</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkCheckButton" id="CheckButtonHeadListCriteriaWindowListMain">
-	  <property name="width_request">136</property>
+	<widget class="GtkLabel" id="LabelIdUserWindowListMain">
+	  <property name="width_request">100</property>
+	  <property name="height_request">30</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">#identifiant</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">80</property>
+	  <property name="y">8</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="LabelNameUserWindowListMain">
+	  <property name="width_request">100</property>
+	  <property name="height_request">30</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">Nom&amp;Prenom</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">88</property>
+	  <property name="y">32</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkRadioButton" id="RadioButtonRightOrientationSearchWindowListMain">
+	  <property name="width_request">124</property>
 	  <property name="height_request">24</property>
 	  <property name="visible">True</property>
 	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">ID tête de liste</property>
+	  <property name="label" translatable="yes">Droite</property>
 	  <property name="use_underline">True</property>
 	  <property name="relief">GTK_RELIEF_NORMAL</property>
 	  <property name="focus_on_click">True</property>
 	  <property name="active">False</property>
 	  <property name="inconsistent">False</property>
 	  <property name="draw_indicator">True</property>
-	  <signal name="toggled" handler="on_CheckButtonHeadListCriteriaWindowListMain_toggled" last_modification_time="Wed, 30 Nov 2022 22:24:40 GMT"/>
+	  <signal name="toggled" handler="on_RadioButtonRightOrientationSearchWindowListMain_toggled" last_modification_time="Wed, 30 Nov 2022 22:25:42 GMT"/>
 	</widget>
 	<packing>
-	  <property name="x">408</property>
+	  <property name="x">184</property>
+	  <property name="y">424</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkRadioButton" id="RadioButtonCenterOrientationSearchWindowListMain">
+	  <property name="width_request">124</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Centre</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <property name="group">RadioButtonRightOrientationSearchWindowListMain</property>
+	  <signal name="toggled" handler="on_RadioButtonCenterOrientationSearchWindowListMain_toggled" last_modification_time="Wed, 30 Nov 2022 22:25:33 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">104</property>
+	  <property name="y">424</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkRadioButton" id="RadioButtonLeftOrientationSearchWindowListMain">
+	  <property name="width_request">124</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Gauche</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <property name="group">RadioButtonRightOrientationSearchWindowListMain</property>
+	  <signal name="toggled" handler="on_RadioButtonLeftOrientationSearchWindowListMain_toggled" last_modification_time="Wed, 30 Nov 2022 22:25:18 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">24</property>
+	  <property name="y">424</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkCheckButton" id="CheckButtonOrientationCriteriaWindowListMain">
+	  <property name="width_request">126</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Orientation</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <signal name="toggled" handler="on_CheckButtonOrientationCriteriaWindowListMain_toggled" last_modification_time="Wed, 30 Nov 2022 22:24:55 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">672</property>
 	  <property name="y">176</property>
 	</packing>
       </child>
@@ -986,49 +991,44 @@
       </child>
 
       <child>
-	<widget class="GtkCheckButton" id="CheckButtonOrientationCriteriaWindowListMain">
-	  <property name="width_request">126</property>
+	<widget class="GtkCheckButton" id="CheckButtonHeadListCriteriaWindowListMain">
+	  <property name="width_request">136</property>
 	  <property name="height_request">24</property>
 	  <property name="visible">True</property>
 	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Orientation</property>
+	  <property name="label" translatable="yes">ID tête de liste</property>
 	  <property name="use_underline">True</property>
 	  <property name="relief">GTK_RELIEF_NORMAL</property>
 	  <property name="focus_on_click">True</property>
 	  <property name="active">False</property>
 	  <property name="inconsistent">False</property>
 	  <property name="draw_indicator">True</property>
-	  <signal name="toggled" handler="on_CheckButtonOrientationCriteriaWindowListMain_toggled" last_modification_time="Wed, 30 Nov 2022 22:24:55 GMT"/>
+	  <signal name="toggled" handler="on_CheckButtonHeadListCriteriaWindowListMain_toggled" last_modification_time="Wed, 30 Nov 2022 22:24:40 GMT"/>
 	</widget>
 	<packing>
-	  <property name="x">672</property>
+	  <property name="x">408</property>
 	  <property name="y">176</property>
 	</packing>
       </child>
 
       <child>
-	<widget class="GtkLabel" id="LabelIdElectionWindowListMain">
-	  <property name="width_request">184</property>
-	  <property name="height_request">40</property>
+	<widget class="GtkCheckButton" id="CheckButtonIdListCriteriaWindowListMain">
+	  <property name="width_request">118</property>
+	  <property name="height_request">24</property>
 	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">Election :</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">ID Liste</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <signal name="toggled" handler="on_CheckButtonIdListCriteriaWindowListMain_toggled" last_modification_time="Wed, 30 Nov 2022 22:24:35 GMT"/>
 	</widget>
 	<packing>
-	  <property name="x">408</property>
-	  <property name="y">0</property>
+	  <property name="x">304</property>
+	  <property name="y">176</property>
 	</packing>
       </child>
     </widget>
@@ -1513,32 +1513,6 @@
       </child>
 
       <child>
-	<widget class="GtkLabel" id="LabelNameListPreviewWindowManageLIst">
-	  <property name="width_request">88</property>
-	  <property name="height_request">16</property>
-	  <property name="visible">True</property>
-	  <property name="label" translatable="yes">list_name</property>
-	  <property name="use_underline">False</property>
-	  <property name="use_markup">False</property>
-	  <property name="justify">GTK_JUSTIFY_LEFT</property>
-	  <property name="wrap">False</property>
-	  <property name="selectable">False</property>
-	  <property name="xalign">0.5</property>
-	  <property name="yalign">0.5</property>
-	  <property name="xpad">0</property>
-	  <property name="ypad">0</property>
-	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-	  <property name="width_chars">-1</property>
-	  <property name="single_line_mode">False</property>
-	  <property name="angle">0</property>
-	</widget>
-	<packing>
-	  <property name="x">504</property>
-	  <property name="y">152</property>
-	</packing>
-      </child>
-
-      <child>
 	<widget class="GtkLabel" id="LabelIdListPreviewIdManageList">
 	  <property name="width_request">49</property>
 	  <property name="height_request">17</property>
@@ -1775,49 +1749,6 @@
 	<packing>
 	  <property name="x">72</property>
 	  <property name="y">16</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkRadioButton" id="RadioButtonLeftOrientationWindowManageList">
-	  <property name="width_request">124</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Gauche</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	  <signal name="toggled" handler="on_RadioButtonLeftOrientationWindowManageList_toggled" last_modification_time="Wed, 30 Nov 2022 22:27:14 GMT"/>
-	</widget>
-	<packing>
-	  <property name="x">32</property>
-	  <property name="y">160</property>
-	</packing>
-      </child>
-
-      <child>
-	<widget class="GtkRadioButton" id="RadioButtonRightOrientationWindowManageList">
-	  <property name="width_request">124</property>
-	  <property name="height_request">24</property>
-	  <property name="visible">True</property>
-	  <property name="can_focus">True</property>
-	  <property name="label" translatable="yes">Droite</property>
-	  <property name="use_underline">True</property>
-	  <property name="relief">GTK_RELIEF_NORMAL</property>
-	  <property name="focus_on_click">True</property>
-	  <property name="active">False</property>
-	  <property name="inconsistent">False</property>
-	  <property name="draw_indicator">True</property>
-	  <property name="group">RadioButtonLeftOrientationWindowManageList</property>
-	  <signal name="toggled" handler="on_RadioButtonRightOrientationWindowManageList_toggled" last_modification_time="Wed, 30 Nov 2022 22:27:34 GMT"/>
-	</widget>
-	<packing>
-	  <property name="x">216</property>
-	  <property name="y">160</property>
 	</packing>
       </child>
 
@@ -2234,12 +2165,81 @@
 	  <property name="active">False</property>
 	  <property name="inconsistent">False</property>
 	  <property name="draw_indicator">True</property>
-	  <property name="group">RadioButtonLeftOrientationWindowManageList</property>
 	  <signal name="toggled" handler="on_RadioButtonCenterOrientationWindowOrientation_toggled" last_modification_time="Wed, 30 Nov 2022 22:27:22 GMT"/>
 	</widget>
 	<packing>
 	  <property name="x">120</property>
 	  <property name="y">160</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkRadioButton" id="RadioButtonRightOrientationWindowManageList">
+	  <property name="width_request">124</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Droite</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <property name="group">RadioButtonCenterOrientationWindowManageList</property>
+	  <signal name="toggled" handler="on_RadioButtonRightOrientationWindowManageList_toggled" last_modification_time="Wed, 30 Nov 2022 22:27:34 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">216</property>
+	  <property name="y">160</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkRadioButton" id="RadioButtonLeftOrientationWindowManageList">
+	  <property name="width_request">124</property>
+	  <property name="height_request">24</property>
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="label" translatable="yes">Gauche</property>
+	  <property name="use_underline">True</property>
+	  <property name="relief">GTK_RELIEF_NORMAL</property>
+	  <property name="focus_on_click">True</property>
+	  <property name="active">False</property>
+	  <property name="inconsistent">False</property>
+	  <property name="draw_indicator">True</property>
+	  <property name="group">RadioButtonCenterOrientationWindowManageList</property>
+	  <signal name="toggled" handler="on_RadioButtonLeftOrientationWindowManageList_toggled" last_modification_time="Wed, 30 Nov 2022 22:27:14 GMT"/>
+	</widget>
+	<packing>
+	  <property name="x">32</property>
+	  <property name="y">160</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkLabel" id="LabelNameListPreviewWindowManageLIst">
+	  <property name="width_request">88</property>
+	  <property name="height_request">16</property>
+	  <property name="visible">True</property>
+	  <property name="label" translatable="yes">list_name</property>
+	  <property name="use_underline">False</property>
+	  <property name="use_markup">False</property>
+	  <property name="justify">GTK_JUSTIFY_LEFT</property>
+	  <property name="wrap">False</property>
+	  <property name="selectable">False</property>
+	  <property name="xalign">0.5</property>
+	  <property name="yalign">0.5</property>
+	  <property name="xpad">0</property>
+	  <property name="ypad">0</property>
+	  <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
+	  <property name="width_chars">-1</property>
+	  <property name="single_line_mode">False</property>
+	  <property name="angle">0</property>
+	</widget>
+	<packing>
+	  <property name="x">504</property>
+	  <property name="y">152</property>
 	</packing>
       </child>
     </widget>
