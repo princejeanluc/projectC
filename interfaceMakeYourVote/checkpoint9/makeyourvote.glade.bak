@@ -6310,8 +6310,8 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 </widget>
 
 <widget class="GtkWindow" id="WindowSucceed">
-  <property name="width_request">0</property>
-  <property name="height_request">0</property>
+  <property name="width_request">400</property>
+  <property name="height_request">120</property>
   <property name="visible">True</property>
   <property name="title" translatable="yes">Succés</property>
   <property name="type">GTK_WINDOW_TOPLEVEL</property>
@@ -6414,7 +6414,7 @@ Avec l'application MYV vous  ne raterez aucune miette .</property>
 
 <widget class="GtkWindow" id="WindowErreur">
   <property name="width_request">400</property>
-  <property name="height_request">0</property>
+  <property name="height_request">120</property>
   <property name="visible">True</property>
   <property name="title" translatable="yes">Erreur</property>
   <property name="type">GTK_WINDOW_TOPLEVEL</property>
