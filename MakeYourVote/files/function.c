@@ -289,6 +289,25 @@ Utilisateur chercherUser( int id)
 
 }
 
+void chercherpar(char * filename,char ch[])
+{
+    Utilisateur U ;
+
+    FILE * f=fopen(filename, "r");
+    FILE * f1=fopen("nouv1.txt", "w");
+    if(f!=NULL)
+    {
+while(fscanf(f,"%s %s %d %d %s %s %s %s %d %d %d %d %d\n",U.nom,U.prenom,&U.cin,&U.id,U.sexe,U.nationalite,U.adresse,U.role,&U.vote,&U.mot_de_passe,&U.date_de_naissance.jj,&U.date_de_naissance.mm,&U.date_de_naissance.aa)!=EOF)
+        {
+		if(strcmp(U.role,ch)==0){fprintf(f1,"%s %s %d %d %s %s %s %s %d %d %d %d %d\n",U.nom,U.prenom,U.cin,U.id,U.sexe,U.nationalite,U.adresse,U.role,U.vote,U.mot_de_passe,U.date_de_naissance.jj,U.date_de_naissance.mm,U.date_de_naissance.aa);}
+	}
+			
+    }
+    fclose(f);
+    fclose(f1);
+
+}
+
 // ----- Bureau de vote -----
 
 
@@ -756,6 +775,215 @@ _Bool CheckEntryId(char entry[]){
 
 
 /*Fonction supplementaire d'interfacage*/
+
+
+
+// -----Utilisateur-----
+
+void afficher_User(GtkWidget *liste)
+{
+Utilisateur u,U;
+/*
+char nom[20];
+char prenom[20];
+int cin;
+int id;
+char sexe[10];
+char nationalite[25];
+Date date_de_naissance;
+char adresse [30];
+char role[30];
+int vote;
+int mot_de_passe;*/
+
+char DATE[30];
+GtkCellRenderer *renderer;
+GtkTreeViewColumn *column;
+GtkTreeIter iter;
+GtkListStore *store;
+store = NULL;
+FILE *fp;
+
+
+store = gtk_tree_view_get_model(liste);
+if (store == NULL)
+{
+renderer = gtk_cell_renderer_text_new();
+column = gtk_tree_view_column_new_with_attributes("Id",renderer,"text",EID,NULL);
+gtk_tree_view_append_column(GTK_TREE_VIEW(liste),column);
+
+renderer = gtk_cell_renderer_text_new();
+column = gtk_tree_view_column_new_with_attributes(" Nom",renderer,"text",ENOM,NULL);
+gtk_tree_view_append_column(GTK_TREE_VIEW(liste),column);
+
+renderer = gtk_cell_renderer_text_new();
+column = gtk_tree_view_column_new_with_attributes(" Prenom",renderer,"text",EPRENOM,NULL);
+gtk_tree_view_append_column(GTK_TREE_VIEW(liste),column);
+
+renderer = gtk_cell_renderer_text_new();
+column = gtk_tree_view_column_new_with_attributes(" C.I.N ",renderer,"text",ECIN,NULL);
+gtk_tree_view_append_column(GTK_TREE_VIEW(liste),column);
+
+renderer = gtk_cell_renderer_text_new();
+column = gtk_tree_view_column_new_with_attributes("Sexe",renderer,"text",ESEXE,NULL);
+gtk_tree_view_append_column(GTK_TREE_VIEW(liste),column);
+
+renderer = gtk_cell_renderer_text_new();
+column = gtk_tree_view_column_new_with_attributes(" Nationalite",renderer,"text",ENATIONALITE,NULL);
+gtk_tree_view_append_column(GTK_TREE_VIEW(liste),column);
+
+renderer = gtk_cell_renderer_text_new();
+column = gtk_tree_view_column_new_with_attributes("Date",renderer,"text",EDATE,NULL);
+gtk_tree_view_append_column(GTK_TREE_VIEW(liste),column);
+
+renderer = gtk_cell_renderer_text_new();
+column = gtk_tree_view_column_new_with_attributes("Adresse ",renderer,"text",EADRESSE,NULL);
+gtk_tree_view_append_column(GTK_TREE_VIEW(liste),column);
+
+renderer = gtk_cell_renderer_text_new();
+
+column = gtk_tree_view_column_new_with_attributes("Role",renderer,"text",EROLE,NULL);
+gtk_tree_view_append_column(GTK_TREE_VIEW(liste),column);
+
+renderer = gtk_cell_renderer_text_new();
+column = gtk_tree_view_column_new_with_attributes("Vote ",renderer,"text",EVOTE,NULL);
+gtk_tree_view_append_column(GTK_TREE_VIEW(liste),column);
+
+renderer = gtk_cell_renderer_text_new();
+column = gtk_tree_view_column_new_with_attributes("Mot de passe ",renderer,"text",EPASSE,NULL);
+gtk_tree_view_append_column(GTK_TREE_VIEW(liste),column);
+
+}
+store = gtk_list_store_new(COLUMNS, G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING);
+fp = fopen("Utilisateur.txt", "r");
+
+if(fp==NULL)
+{
+return;
+}
+
+else
+{
+fp = fopen("Utilisateur.txt", "a");
+while(fscanf(fp,"%s %s %d %d %s %s %s %s %d %d %d %d %d\n",U.nom,U.prenom,&U.cin,&U.id,U.sexe,U.nationalite,U.adresse,U.role,&U.vote,&U.mot_de_passe,&U.date_de_naissance.jj,&U.date_de_naissance.mm,&U.date_de_naissance.aa)!=EOF)
+{
+sprintf(DATE, "%d/%d/%d", U.date_de_naissance.jj,U.date_de_naissance.mm,U.date_de_naissance.aa);
+
+gtk_list_store_append(store, &iter);
+gtk_list_store_set(store, &iter, EID, U.id, ENOM, U.nom,EPRENOM, U.prenom,EDATE,DATE , ECIN,u.cin,ESEXE, U.sexe,  ENATIONALITE, U.nationalite,  EADRESSE, U.adresse,  EROLE, U.role,  EVOTE, U.vote,  EPASSE, U.mot_de_passe,-1);
+}
+fclose(fp);
+gtk_tree_view_set_model(GTK_TREE_VIEW(liste), GTK_TREE_MODEL(store));
+g_object_unref(store);
+}
+
+}
+
+
+
+void afficherNom_User(GtkWidget *liste)
+{
+Utilisateur u,U;
+/*
+char nom[20];
+char prenom[20];
+int cin;
+int id;
+char sexe[10];
+char nationalite[25];
+Date date_de_naissance;
+char adresse [30];
+char role[30];
+int vote;
+int mot_de_passe;*/
+
+char DATE[30];
+GtkCellRenderer *renderer;
+GtkTreeViewColumn *column;
+GtkTreeIter iter;
+GtkListStore *store;
+store = NULL;
+FILE *fp;
+
+
+store = gtk_tree_view_get_model(liste);
+if (store == NULL)
+{
+renderer = gtk_cell_renderer_text_new();
+column = gtk_tree_view_column_new_with_attributes("Id",renderer,"text",EID,NULL);
+gtk_tree_view_append_column(GTK_TREE_VIEW(liste),column);
+
+renderer = gtk_cell_renderer_text_new();
+column = gtk_tree_view_column_new_with_attributes(" Nom",renderer,"text",ENOM,NULL);
+gtk_tree_view_append_column(GTK_TREE_VIEW(liste),column);
+
+renderer = gtk_cell_renderer_text_new();
+column = gtk_tree_view_column_new_with_attributes(" Prenom",renderer,"text",EPRENOM,NULL);
+gtk_tree_view_append_column(GTK_TREE_VIEW(liste),column);
+
+renderer = gtk_cell_renderer_text_new();
+column = gtk_tree_view_column_new_with_attributes(" C.I.N ",renderer,"text",ECIN,NULL);
+gtk_tree_view_append_column(GTK_TREE_VIEW(liste),column);
+
+renderer = gtk_cell_renderer_text_new();
+column = gtk_tree_view_column_new_with_attributes("Sexe",renderer,"text",ESEXE,NULL);
+gtk_tree_view_append_column(GTK_TREE_VIEW(liste),column);
+
+renderer = gtk_cell_renderer_text_new();
+column = gtk_tree_view_column_new_with_attributes(" Nationalite",renderer,"text",ENATIONALITE,NULL);
+gtk_tree_view_append_column(GTK_TREE_VIEW(liste),column);
+
+renderer = gtk_cell_renderer_text_new();
+column = gtk_tree_view_column_new_with_attributes("Date",renderer,"text",EDATE,NULL);
+gtk_tree_view_append_column(GTK_TREE_VIEW(liste),column);
+
+renderer = gtk_cell_renderer_text_new();
+column = gtk_tree_view_column_new_with_attributes("Adresse ",renderer,"text",EADRESSE,NULL);
+gtk_tree_view_append_column(GTK_TREE_VIEW(liste),column);
+
+renderer = gtk_cell_renderer_text_new();
+
+column = gtk_tree_view_column_new_with_attributes("Role",renderer,"text",EROLE,NULL);
+gtk_tree_view_append_column(GTK_TREE_VIEW(liste),column);
+
+renderer = gtk_cell_renderer_text_new();
+column = gtk_tree_view_column_new_with_attributes("Vote ",renderer,"text",EVOTE,NULL);
+gtk_tree_view_append_column(GTK_TREE_VIEW(liste),column);
+
+renderer = gtk_cell_renderer_text_new();
+column = gtk_tree_view_column_new_with_attributes("Mot de passe ",renderer,"text",EPASSE,NULL);
+gtk_tree_view_append_column(GTK_TREE_VIEW(liste),column);
+
+}
+store = gtk_list_store_new(COLUMNS, G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING);
+fp = fopen("Utilisateur.txt", "r");
+
+if(fp==NULL)
+{
+return;
+}
+
+else
+{
+fp = fopen("nouv1.txt", "a");
+while(fscanf(fp,"%s %s %d %d %s %s %s %s %d %d %d %d %d\n",U.nom,U.prenom,&U.cin,&U.id,U.sexe,U.nationalite,U.adresse,U.role,&U.vote,&U.mot_de_passe,&U.date_de_naissance.jj,&U.date_de_naissance.mm,&U.date_de_naissance.aa)!=EOF)
+{
+sprintf(DATE, "%d/%d/%d", U.date_de_naissance.jj,U.date_de_naissance.mm,U.date_de_naissance.aa);
+
+gtk_list_store_append(store, &iter);
+gtk_list_store_set(store, &iter, EID, U.id, ENOM, U.nom,EPRENOM, U.prenom,EDATE,DATE , ECIN,u.cin,ESEXE, U.sexe,  ENATIONALITE, U.nationalite,  EADRESSE, U.adresse,  EROLE, U.role,  EVOTE, U.vote,  EPASSE, U.mot_de_passe,-1);
+}
+fclose(fp);
+gtk_tree_view_set_model(GTK_TREE_VIEW(liste), GTK_TREE_MODEL(store));
+g_object_unref(store);
+}
+
+}
+
+
+
+
+
 
 
 
